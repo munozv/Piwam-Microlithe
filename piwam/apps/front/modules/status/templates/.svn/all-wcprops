@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1027/trunk/apps/front/modules/status/templates
+END
+showSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1027/trunk/apps/front/modules/status/templates/showSuccess.php
+END
+_statusRow.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/764/trunk/apps/front/modules/status/templates/_statusRow.php
+END
+editSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/719/trunk/apps/front/modules/status/templates/editSuccess.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/764/trunk/apps/front/modules/status/templates/indexSuccess.php
+END
+newSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/719/trunk/apps/front/modules/status/templates/newSuccess.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/764/trunk/apps/front/modules/status/templates/_form.php
+END

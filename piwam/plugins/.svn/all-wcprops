@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/877/trunk/plugins
+END
+.depdblock
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/15/trunk/plugins/.depdblock
+END
+.lock
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/15/trunk/plugins/.lock
+END
+.filemap
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/145/trunk/plugins/.filemap
+END
+.depdb
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/15/trunk/plugins/.depdb
+END

@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1184/trunk/lib/model/doctrine
+END
+DueTypeTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/552/trunk/lib/model/doctrine/DueTypeTable.class.php
+END
+AclCredential.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/552/trunk/lib/model/doctrine/AclCredential.class.php
+END
+StatusTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1027/trunk/lib/model/doctrine/StatusTable.class.php
+END
+Activity.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/552/trunk/lib/model/doctrine/Activity.class.php
+END
+AccountTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/552/trunk/lib/model/doctrine/AccountTable.class.php
+END
+AclModule.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/552/trunk/lib/model/doctrine/AclModule.class.php
+END
+Member.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1184/trunk/lib/model/doctrine/Member.class.php
+END
+MemberExtraValue.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1146/trunk/lib/model/doctrine/MemberExtraValue.class.php
+END
+Data.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/552/trunk/lib/model/doctrine/Data.class.php
+END
+ConfigValueTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/552/trunk/lib/model/doctrine/ConfigValueTable.class.php
+END
+Income.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/552/trunk/lib/model/doctrine/Income.class.php
+END
+Association.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/719/trunk/lib/model/doctrine/Association.class.php
+END
+Due.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/552/trunk/lib/model/doctrine/Due.class.php
+END
+AclModuleTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/552/trunk/lib/model/doctrine/AclModuleTable.class.php
+END
+MemberTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/966/trunk/lib/model/doctrine/MemberTable.class.php
+END
+DataTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/764/trunk/lib/model/doctrine/DataTable.class.php
+END
+DueTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/776/trunk/lib/model/doctrine/DueTable.class.php
+END
+Account.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/552/trunk/lib/model/doctrine/Account.class.php
+END
+AclAction.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/552/trunk/lib/model/doctrine/AclAction.class.php
+END
+AclCredentialTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/552/trunk/lib/model/doctrine/AclCredentialTable.class.php
+END
+ConfigValue.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/552/trunk/lib/model/doctrine/ConfigValue.class.php
+END
+MemberExtraRow.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1146/trunk/lib/model/doctrine/MemberExtraRow.class.php
+END
+ConfigCategory.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/552/trunk/lib/model/doctrine/ConfigCategory.class.php
+END
+ActivityTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/552/trunk/lib/model/doctrine/ActivityTable.class.php
+END
+AclActionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/AclActionTable.class.php
+END
+Expense.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/552/trunk/lib/model/doctrine/Expense.class.php
+END
+ConfigVariable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/552/trunk/lib/model/doctrine/ConfigVariable.class.php
+END
+ConfigCategoryTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/552/trunk/lib/model/doctrine/ConfigCategoryTable.class.php
+END
+MemberExtraRowTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1146/trunk/lib/model/doctrine/MemberExtraRowTable.class.php
+END
+ExpenseTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/823/trunk/lib/model/doctrine/ExpenseTable.class.php
+END
+DueType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/552/trunk/lib/model/doctrine/DueType.class.php
+END
+MemberExtraValueTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1107/trunk/lib/model/doctrine/MemberExtraValueTable.class.php
+END
+IncomeTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/823/trunk/lib/model/doctrine/IncomeTable.class.php
+END
+ConfigVariableTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/552/trunk/lib/model/doctrine/ConfigVariableTable.class.php
+END
+Status.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/552/trunk/lib/model/doctrine/Status.class.php
+END
+AssociationTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/802/trunk/lib/model/doctrine/AssociationTable.class.php
+END

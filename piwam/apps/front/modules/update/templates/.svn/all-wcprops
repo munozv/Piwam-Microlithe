@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/764/trunk/apps/front/modules/update/templates
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/764/trunk/apps/front/modules/update/templates/indexSuccess.php
+END
+performSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/105/trunk/apps/front/modules/update/templates/performSuccess.php
+END
+performError.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/105/trunk/apps/front/modules/update/templates/performError.php
+END

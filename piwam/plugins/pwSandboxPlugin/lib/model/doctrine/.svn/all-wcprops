@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/model/doctrine
+END
+PluginDebtTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/model/doctrine/PluginDebtTable.class.php
+END
+DebtTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/model/doctrine/DebtTable.class.php
+END
+PluginDebt.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/model/doctrine/PluginDebt.class.php
+END
+Debt.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/model/doctrine/Debt.class.php
+END

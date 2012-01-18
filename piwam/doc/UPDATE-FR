@@ -1,0 +1,88 @@
+
+    =========================================================================
+    |                                                                       |
+    |            #     # ######  ######     #    ####### #######            |
+    |            #     # #     # #     #   # #      #    #                  |
+    |            #     # #     # #     #  #   #     #    #                  |
+    |            #     # ######  #     # #     #    #    #####              |
+    |            #     # #       #     # #######    #    #                  |
+    |            #     # #       #     # #     #    #    #                  |
+    |             #####  #       ######  #     #    #    #######            |
+    |                                                                       |
+    =========================================================================
+
+
+    1) Configuration Requise
+    -------------------------
+    
+        Vérifiez  dans  le fichier  README-FR que la configuration requise est
+        toujours identique.
+
+
+    2) Précautions
+    --------------
+
+        Aucune donnée  n'est  actualement  stocké  sur le système de fichiers,
+        seulement  des paramètres de configuration.  Il  vous  est  recommandé
+        toutefois  de procéder  à  un  enregistrement  complet  du  répertoire
+        piwam actuel, au cas où un bug  important  encore  non  détecté serait
+        présent dans la nouvelle version, où en cas d'échec de la mise à jour.
+        
+        En revanche,  la sauvegarde complète de votre base de données est hau-
+        tement  conseillée  au cas où  une erreur innatendue survenait pendant
+        la mise à jour par le module d'update de Piwam.
+        
+
+    3) Comment mettre à jour Piwam
+    ------------------------------
+
+        A.1- Depuis le dépôt SVN :
+        
+            0- lancez la commande `svn up`
+            1- Si un conflit est détecté sur /config/databases.yml, conservez
+               votre version du fichier.
+            2- Si un conflit est détecté sur /config/projectConfiguration.yml,
+               remplacez votre fichier par le nouveau.
+            2- Cliquez sur `mise à jour` dans le menu.
+               
+               
+        A.2- Depuis une tarball téléchargée :
+        
+            0- Sauvegardez votre fichier `/config/databases/yml`. Si vous avez
+               modifié le fichier `/apps/front/config/app.yml`, sauvegardez le
+               également.
+            1- Sauvegardez également le contenu du dossier /web/uploads/
+            2- Décompressez la nouvelle tarball
+            3- Remplacez le répertoire de la version actuellement utilisée par
+               celui de la  nouvelle version  (pensez à renommer le nom du ré-
+               pertoire principal si besoin)
+            4- Remettez en place votre fichier /config/databases.yml et le cas
+               échéant, le fichier app.yml
+            5- Replacez le contenu sauvegardé dans /web/uploads/
+            6- Rendez inscriptibles les répertoires  'cache' et 'log',  ainsi
+               que les répertoires dans '/web/uploads/' (sous un serveur 
+               Windows, vous pouvez oublier cette étape !)
+            7- Cliquez sur `mise à jour` dans le menu.
+            
+            Attention :  Un bug étrange peut subvenir.  Aucun message d'erreur 
+            apparaît mais la mise à jour n'est pas totalement finie. Cliquez à
+            nouveau sur mise  à jour pour vérifier que tout s'est correctement
+            déroulé. 
+            
+            
+        TEMPORAIRE : MIGRER VERS PIWAM 1.2
+        ----------------------------------
+        
+        Envie de tester Piwam 1.2 dès maintenant ? La mise  à jour par le menu
+        ne fonctionnera pas, il y a trop de choses nouvelles !
+        Le  seul moyen pour le moment  est  d'exécuter  le  fichier SQL qui se
+        trouve dans /data/updates/1.1.2-to-1.2/r639.sql.
+        
+        Il est  indispensable  de  sauvegarder  vos  données  avant d'effectuer
+        cette opération !
+               
+        
+    -------------------------------------------------------------------------
+    | (c) 2009                                                              |
+    -------------------------------------------------------------------------
+    

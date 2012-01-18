@@ -1,0 +1,14 @@
+index:
+  credentials: list_income
+  
+create:
+  credentials: add_income
+
+new:
+  credentials: add_income
+  
+edit:
+  credentials: edit_income
+  
+delete:
+  credentials: del_income

@@ -1,0 +1,13 @@
+Dec 16 18:24:24 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "by_username" on "Member"
+Dec 16 18:25:32 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "by_username" on "Member"
+Dec 16 18:26:28 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "by_username" on "Member"
+Dec 16 18:27:22 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "by_username" on "Member"
+Dec 16 21:48:23 symfony [err] {Doctrine_Export_Exception} SQLSTATE[HY000]: General error: 1005 Can't create table 'Piwam.#sql-c8f_3' (errno: 121). Failing Query: "ALTER TABLE piwam_due_type ADD CONSTRAINT piwam_due_type_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL". Failing Query: ALTER TABLE piwam_due_type ADD CONSTRAINT piwam_due_type_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL
+Jan 11 16:25:40 symfony [err] {Doctrine_Export_Exception} SQLSTATE[HY000]: General error: 1005 Can't create table 'Piwam.#sql-ac8_5' (errno: 121). Failing Query: "ALTER TABLE piwam_due_type ADD CONSTRAINT piwam_due_type_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL". Failing Query: ALTER TABLE piwam_due_type ADD CONSTRAINT piwam_due_type_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL
+Jan 18 18:50:06 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
+Jan 18 18:50:18 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
+Jan 18 18:52:05 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
+Jan 18 18:52:13 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
+Jan 18 18:52:34 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
+Jan 18 18:52:44 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
+Jan 18 19:04:25 symfony [err] {sfConfigurationException} The route "quotation" does not exist.

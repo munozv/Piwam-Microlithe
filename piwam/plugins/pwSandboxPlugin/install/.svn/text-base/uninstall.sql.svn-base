@@ -1,0 +1,1 @@
+DROP TABLE `piwampg_debt` ;

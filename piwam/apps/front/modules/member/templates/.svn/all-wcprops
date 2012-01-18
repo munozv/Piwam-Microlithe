@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1153/trunk/apps/front/modules/member/templates
+END
+endregistrationSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/endregistrationSuccess.php
+END
+newfirstSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/newfirstSuccess.php
+END
+_memberRow.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/966/trunk/apps/front/modules/member/templates/_memberRow.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1146/trunk/apps/front/modules/member/templates/indexSuccess.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1101/trunk/apps/front/modules/member/templates/_form.php
+END
+mapSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/mapSuccess.php
+END
+aclError.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/aclError.php
+END
+showSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1125/trunk/apps/front/modules/member/templates/showSuccess.php
+END
+facesSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/776/trunk/apps/front/modules/member/templates/facesSuccess.php
+END
+_picture.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/776/trunk/apps/front/modules/member/templates/_picture.php
+END
+pendingSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/pendingSuccess.php
+END
+editSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/editSuccess.php
+END
+newSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/newSuccess.php
+END
+_aclForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/764/trunk/apps/front/modules/member/templates/_aclForm.php
+END
+requestsubscriptionSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/requestsubscriptionSuccess.php
+END
+aclSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/719/trunk/apps/front/modules/member/templates/aclSuccess.php
+END
+_searchForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1153/trunk/apps/front/modules/member/templates/_searchForm.php
+END

@@ -1,0 +1,34 @@
+prod:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      persistent: true
+      pooling: true
+      dsn: 'mysql:dbname=Piwam;host=localhost'
+      username: root
+      password: null
+      encoding: utf8
+dev:
+  doctrine:
+    param:
+      classname: DebugPDO
+test:
+  doctrine:
+    param:
+      classname: DebugPDO
+      persistent: true
+      pooling: true
+      dsn: 'mysql:dbname=Piwam;host=localhost'
+      username: root
+      password: null
+      encoding: utf8
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      persistent: true
+      pooling: true
+      dsn: 'mysql:host=localhost;dbname=Piwam'
+      username: root
+      password: null
+      encoding: utf8

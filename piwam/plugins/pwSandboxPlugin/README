@@ -1,0 +1,35 @@
+
+pwSandboxPlugin
+=====================
+
+This is a sandbox plugin to discover and test Piwam plugins behaviour.
+
+I tried to comment this plugin as well as possible, I hope you'll enjoy
+reading these comments !
+
+
+Behaviour of this plugin
+------------------------
+
+This plugin adds a new feature : we can add a new debt that a member as to pay.
+It uses 2 entities provided by the Piwam's core :
+
+  * Member : member who has to pay the amount
+  * Income : amount of money that the Member will pay to the association
+
+
+How to test the result ?
+------------------------
+
+You can try the pwSandboxPlugin by going to the following URL :
+http://your-piwam/front_dev.php/pwSandbox
+
+The plugin is currently available only for local installation through the
+front_dev controller.
+
+
+See also
+--------
+
+Plugin documentation on official symfony's website :
+http://www.symfony-project.org/jobeet/1_4/Doctrine/en/20

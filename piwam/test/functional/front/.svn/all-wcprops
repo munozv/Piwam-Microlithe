@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1101/trunk/test/functional/front
+END
+incomeActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/823/trunk/test/functional/front/incomeActionsTest.php
+END
+associationActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/823/trunk/test/functional/front/associationActionsTest.php
+END
+dueActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/823/trunk/test/functional/front/dueActionsTest.php
+END
+duetypeActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/823/trunk/test/functional/front/duetypeActionsTest.php
+END
+mailingActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/105/trunk/test/functional/front/mailingActionsTest.php
+END
+exportActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/105/trunk/test/functional/front/exportActionsTest.php
+END
+updateActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/233/trunk/test/functional/front/updateActionsTest.php
+END
+statusActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/823/trunk/test/functional/front/statusActionsTest.php
+END
+errorActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/105/trunk/test/functional/front/errorActionsTest.php
+END
+config_memberActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1101/trunk/test/functional/front/config_memberActionsTest.php
+END
+activityActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/802/trunk/test/functional/front/activityActionsTest.php
+END
+accountActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/802/trunk/test/functional/front/accountActionsTest.php
+END
+installActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/230/trunk/test/functional/front/installActionsTest.php
+END
+memberActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/802/trunk/test/functional/front/memberActionsTest.php
+END
+expenseActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/823/trunk/test/functional/front/expenseActionsTest.php
+END

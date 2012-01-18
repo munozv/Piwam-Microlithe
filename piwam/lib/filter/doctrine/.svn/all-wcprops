@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/552/trunk/lib/filter/doctrine
+END
+AccountFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/AccountFormFilter.class.php
+END
+ActivityFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/ActivityFormFilter.class.php
+END
+AclActionFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/AclActionFormFilter.class.php
+END
+BaseFormFilterDoctrine.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/BaseFormFilterDoctrine.class.php
+END
+ConfigValueFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/ConfigValueFormFilter.class.php
+END
+ConfigCategoryFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/ConfigCategoryFormFilter.class.php
+END
+AclModuleFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/AclModuleFormFilter.class.php
+END
+ExpenseFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/ExpenseFormFilter.class.php
+END
+MemberFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/MemberFormFilter.class.php
+END
+DataFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/DataFormFilter.class.php
+END
+IncomeFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/IncomeFormFilter.class.php
+END
+ConfigVariableFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/ConfigVariableFormFilter.class.php
+END
+AssociationFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/AssociationFormFilter.class.php
+END
+DueFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/DueFormFilter.class.php
+END
+DueTypeFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/DueTypeFormFilter.class.php
+END
+StatusFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/StatusFormFilter.class.php
+END
+AclCredentialFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/552/trunk/lib/filter/doctrine/AclCredentialFormFilter.class.php
+END

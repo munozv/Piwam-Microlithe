@@ -1,0 +1,98 @@
+#datepicker {
+    background:
+        url('/sfExtraWidgetsPlugin/img/datepicker/vista/calendar_background.png')
+        ;
+    padding-top: 15px;
+    width: 198px;
+    height: 144px;
+}
+
+#datepicker td {
+    font-size: 10px;
+    color: #000;
+}
+
+#datepicker .title-container .arrow-right,#datepicker .title-container .arrow-left
+    {
+    cursor: pointer;
+    width: 20px;
+}
+
+#datepicker .title-container .arrow-right {
+    background: url('/sfExtraWidgetsPlugin/img/datepicker/vista/arrowright.gif')
+        no-repeat center center;
+}
+
+#datepicker .title-container .arrow-right:hover {
+    background:
+        url('/sfExtraWidgetsPlugin/img/datepicker/vista/arrowright_hover.gif')
+        no-repeat center center;
+}
+
+#datepicker .title-container .arrow-left {
+    background: url('/sfExtraWidgetsPlugin/img/datepicker/vista/arrowleft.gif')
+        no-repeat center center;
+}
+
+#datepicker .title-container .arrow-left:hover {
+    background:
+        url('/sfExtraWidgetsPlugin/img/datepicker/vista/arrowleft_hover.gif')
+        no-repeat center center;
+}
+
+#datepicker .title-container {
+    width: 160px;
+    margin-bottom: 5px;
+}
+
+#datepicker .title-container .title {
+    width: 120px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#datepicker .weekdays-container {
+    margin-bottom: 3px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#datepicker .weekdays-container td {
+    width: 23px;
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 3px;
+}
+
+#datepicker .days-container td {
+    width: 18px;
+    height: 15px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+#datepicker .days-container td:hover {
+    background: url('/sfExtraWidgetsPlugin/img/datepicker/vista/day_hover.gif');
+    color: #0066CC;
+    cursor: pointer;
+}
+
+#datepicker .days-container td.selected {
+    background: url('/sfExtraWidgetsPlugin/img/datepicker/vista/day_selected.gif');
+    color: #0066CC;
+}
+
+#datepicker .days-container td.selected:hover {
+    background:
+        url('/sfExtraWidgetsPlugin/img/datepicker/vista/day_selected_hover.gif')
+        ;
+    cursor: pointer;
+}
+
+#datepicker .days-container td.inactive {
+    color: #bbb;
+}
+
+#datepicker .days-container td.inactive:hover {
+    background: url('/sfExtraWidgetsPlugin/img/datepicker/vista/day_hover.gif');
+    cursor: pointer;
+}

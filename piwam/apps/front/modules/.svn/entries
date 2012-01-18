@@ -1,0 +1,79 @@
+10
+
+dir
+1524
+https://piwam.googlecode.com/svn/trunk/apps/front/modules
+https://piwam.googlecode.com/svn
+
+
+
+2010-03-09T21:14:15.999148Z
+1153
+adrien.mogenet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+70dfc3ba-f61f-11dd-a295-0b7b0935bf94
+
+duetype
+dir
+
+mailing
+dir
+
+export
+dir
+
+update
+dir
+
+status
+dir
+
+admin
+dir
+
+error
+dir
+
+account
+dir
+
+activity
+dir
+
+config_member
+dir
+
+install
+dir
+
+expense
+dir
+
+member
+dir
+
+login
+dir
+
+income
+dir
+
+association
+dir
+
+due
+dir
+

@@ -1,0 +1,288 @@
+
+/*****************************************************************************
+ *
+ * Classical styles for links and images
+ *
+ ****************************************************************************/
+
+a img,:link img,:visited img {
+  border: none;
+}
+
+/* Explicit cursor for links without href attribute */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:Visited {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Links on complete cell */
+a.block {
+  display: block;
+  color: black;
+}
+
+a.block:Hover {
+  text-decoration: none;
+}
+
+#content li {
+  list-style: none;
+}
+
+/*****************************************************************************
+ *
+ * TITLES
+ *
+ ****************************************************************************/
+
+/* Global title, shown on each page */
+h1 {
+  background-color: #1472B4;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* Page title */
+h2 {
+  color: #329126;
+}
+
+h2 a:Hover {
+  text-decoration: none;
+}
+
+/* subtitle which may be on a page */
+h3 {
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/*****************************************************************************
+ *
+ * PAGE BLOCKS
+ * -----------
+ *
+ * Represents the global layout of different blocks
+ *
+ ****************************************************************************/
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Helvertica, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background-color: #005674;
+  background-image: url(diag.gif);
+  background-attachment: fixed;
+}
+
+/* global block embedding the others */
+#container {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+  padding: 2px 10px 10px 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* content block */
+#content {
+  margin-top: 25px;
+  margin-left: 250px;
+}
+
+/* login box on top of the menu */
+#user_box {
+  background-color: #C3F1F7;
+  width: 170px;
+  margin-left: 10px;
+  padding: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#user_box p {
+  margin-top: 2px;
+  font-size: 14px;
+}
+#user_box .username {
+  font-family: courier;
+  color: #444;
+}
+#user_box a, #user_box a:visited {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #666;
+  font-weight: lighter;
+  display: block;
+  background-color: #A7CEDF;
+  padding: 2px 2px 4px 5px;
+  margin: 0 0 5px 0;
+}
+#user_box a:Hover {
+  background-color: #7BBAEC;
+  color: white;
+}
+
+/* Common trick to display the content div correctly */
+.clear {
+  clear: both;
+  visibility: hidden;
+}
+
+
+/*****************************************************************************
+**
+** DIFFERENTS ELEMENTS
+**
+*****************************************************************************/
+
+/* The horizontal Search bar on top of lists */
+div#searchBar {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 0px;
+  -moz-border-radius: 8px 8px 0px 0px;
+}
+
+div#searchBar_toggle
+{
+  background-color: #cfdfff;
+  margin-bottom: 10px;
+  padding: 1px 0px 1px 7px;
+  -moz-border-radius: 0px 0px 8px 8px;
+}
+
+div#searchBar_toggle a
+{
+  color: #343434;
+}
+
+/* list of error messages */
+.error_list {
+  list-style: none;
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* error item in list of error messages */
+.error_list li {
+  list-style: none;
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  color: red;
+}
+
+/* members who have to pay their due */
+.hasToPayDue {
+  background-color: #E6E0D1;
+}
+
+/* flash box giving error messages */
+.error {
+  background-color: #ffeeee;
+  color: red;
+  padding: 7px;
+  margin: 0px 0px 20px 0px;
+}
+
+/* flash box giving notice messages */
+p.notice {
+  background-color: #80FA46;
+  padding: 9px;
+  border: 1px dotted #777;
+  font-weight: bold;
+}
+
+/* flash box giving informations */
+.info {
+  background-color: #dedede;
+  padding: 20px;
+}
+
+.info ul {
+  list-style: none;
+}
+
+/* for the mailing feature > preview of content */
+.mailPreview {
+  padding: 15px;
+  background-color: #efefff;
+  border: 1px dotted #ccc;
+}
+
+
+/*****************************************************************************
+**
+** TESTS RESULTS (WHEN CHECKING CONFIGURATION...)
+**
+*****************************************************************************/
+
+.test_error,.test_warning,.test_success,.test_help {
+  padding: 10px;
+  width: 80%;
+  margin: 3px;
+  border: 1px dotted #333;
+}
+
+.test_error {
+  background-color: #F1C5C5;
+}
+
+.test_warning {
+  background-color: #FFE28E;
+}
+
+.test_success {
+  background-color: #B0FF98;
+}
+
+.test_help {
+
+}
+
+/* For the list we don't want to display item bullet '*/
+ul.no-style {
+  list-style: none;
+}
+
+
+/*****************************************************************************
+**
+** USER PICTURES IN PICTURE DIRECTORY
+**
+*****************************************************************************/
+
+div.user_picture {
+  background-color: #e3e3ee;
+  width: auto;
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+div.user_picture .name {
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 3px;
+  color: #888;
+}

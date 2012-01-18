@@ -1,0 +1,114 @@
+
+    LICENCE
+    -------
+    Ce programme est fourni sous licence MIT.  Vous pouvez trouver la licence
+    complète dans le fichier /doc/LICENCE
+
+
+    PROBLEMES CONNUS
+    ----------------
+
+        A- Je n'arrive pas à accéder à Piwam
+        
+            - vérifiez que votre serveur Apache est lancé
+            - vérifiez que Piwam est placé dans  un repertoire pris en compte
+              par Apache
+              
+
+        B- J'obtiens un message d'erreur quand je vais à la page d'accueil
+        
+            - vérifiez que le répertoire 'cache' existe et est inscriptible
+            - vérifiez que le répertoire 'log' exist et est inscriptible
+            - en cas de doute, lancez la commande suivante :
+            
+                > mkdir log cache && chmod 777 log cache
+                
+            - si vous ne pouvez pas lancer de lignes de commande, vous pouvez
+              configure ces deux répertoires via votre client FTP.
+            - si vous venez de mettre à jour, accédez à
+            
+                http://piwam.domaine.com/update
+                
+              vous pourrez alors lancer les mises à jour nécessaires.
+                
+                
+        C- Je  viens  de  mettre à jour  Piwam  et même  la page d'accueil ne
+           fonctionne plus !
+           
+            - voir le point "B"
+            
+            
+        D- J'ai installé Piwam par SVN, et j'ai un message d'erreur de fichier
+           introuvable
+           
+            - vérifiez  qu'une version de symfony 1.2 est  présente sur votre
+              machine. Si ce n'est pas le cas, vous pouvez  récupérer symfony
+              sur http://www.symfony-project.com.  Ensuite, éditez le fichier
+              config/ProjectConfiguration.class.php  et modifiez  la première
+              ligne d'inclusion du fichier 'sfCoreAutoload'.
+        
+        
+        E- La carte de géo-localisation des membres ne s'affiche pas
+        
+            - ouvrez le fichier /apps/front/config/settings.yml  et remplacez
+              la clé existante par la votre. (Voir la documentation pour plus
+              d'informations)
+        
+        
+        F- Je n'arrive pas à accéder à /web/install (erreur 404)
+        
+            - vérifiez que le mod_rewrite d'Apache est activé
+            - si celui-ci est activé, vérifiez que le fichier ".htaccess" est
+              pris en compte.  Remplacez son contenu par la seule instruction
+              "deny  from  all".  Si  vous  n'obtenez  pas une erreur "Access
+              denied",  c'est que les fichiers  .htaccess ne sont pas pris en
+              compte  (problème du  à  certaines  configurations  par  défaut
+              d'Apache).   Pour  remédier  au  problème,  éditez  le  fichier
+              httpd.conf.   Dans les  zones  <directory...>  correspondantes, 
+              modifiez    les    instructions    "AllowOverride   None"   par
+              "AllowOverride All",  ou rajoutez simplement  cette instruction 
+              si celle-ci n'est pas présente. Relancez Apache et ré-essayez.
+              
+              Discussion en ligne :
+              http://groups.google.fr/group/piwam/browse_thread/thread/bdd6e5a73504f0c2
+        
+        
+        G- J'obtiens une erreur 500 en essayant d'accéder à Piwam
+            
+            - Si  vous utilisez  un  Virtual Host,  vérifiez que  celui-ci est
+              correctement configuré, et que le bloc de configuration propre à
+              PHP ne pose pas de problème (essayez de le retirer si besoin).
+            - Vérifiez que les fichiers  ".htaccess" sont correctement suppor-
+              tés par votre serveur.
+           
+           
+        H- Je n'arrive pas à mettre une photo pour un membre   
+          
+          	- Vous devez rendre le répertoire  /web/uploads  inscriptible afin
+          	  que les images  puissent être  mises  en ligne. En supposant que
+          	  Piwam  est  installé  dans   `/var/www`,   tapez  les  commandes 
+          	  suivantes :
+          	  
+          	   > cd /var/www/piwam
+          	   > chmod 777 web/uploads
+              
+              
+              
+    CORRIGÉS DEPUIS PIWAM 1.1.1
+    ---------------------------
+    
+        A- Je ne peux pas enregistrer le premier membre lorsque je crée mon
+           association
+           
+            - Soucis résolu
+            
+            
+        B- J'obtiens une erreur lorsque je tente d'accéder au bilan
+        
+            - Soucis résolu
+              
+        
+        
+    -------------------------------------------------------------------------
+    | (c) 2009                                                              |
+    -------------------------------------------------------------------------

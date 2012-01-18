@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+/**
+ * Following styles will be applied to the `overlay` frames
+ * displayed by jquery-tools
+*/
+
+.modal {
+  background-color:#fff;
+  display: none;
+  width: 350px;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #333;
+  opacity: 1.0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+.modal h2 {
+  margin: 0px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  font-size: 20px;
+  padding-bottom: 10px;
+}

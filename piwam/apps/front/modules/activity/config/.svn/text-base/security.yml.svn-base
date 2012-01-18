@@ -1,0 +1,17 @@
+index:
+  credentials:  list_activity
+  
+new:
+  credentials:  add_activity
+
+create:
+  credentials:  add_activity
+  
+edit:
+  credentials:  edit_activity
+  
+delete:
+  credentials:  del_activity
+  
+show:
+  credentials:  show_activity

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1062/trunk/apps/front/modules/due/templates
+END
+showSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1027/trunk/apps/front/modules/due/templates/showSuccess.php
+END
+editSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/719/trunk/apps/front/modules/due/templates/editSuccess.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/764/trunk/apps/front/modules/due/templates/indexSuccess.php
+END
+newSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/719/trunk/apps/front/modules/due/templates/newSuccess.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1062/trunk/apps/front/modules/due/templates/_form.php
+END
+_dueRow.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/719/trunk/apps/front/modules/due/templates/_dueRow.php
+END

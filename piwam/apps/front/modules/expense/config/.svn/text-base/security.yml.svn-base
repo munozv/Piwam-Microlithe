@@ -1,0 +1,14 @@
+index:
+  credentials: list_expense
+  
+create:
+  credentials: add_expense
+
+new:
+  credentials: add_expense
+  
+edit:
+  credentials: edit_expense
+  
+delete:
+  credentials: del_expense

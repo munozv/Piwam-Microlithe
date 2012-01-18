@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/28377/plugins/sfEasyGMapPlugin/branches/v3/lib
+END
+GMapDirection.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/28377/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapDirection.class.php
+END
+GMapEvent.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/28377/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapEvent.class.php
+END
+GMapMarker.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/28377/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapMarker.class.php
+END
+GMapClientTestCache.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/21818/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapClientTestCache.class.php
+END
+GMapInfoWindow.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/28377/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapInfoWindow.class.php
+END
+GMapMarkerImage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/21818/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapMarkerImage.class.php
+END
+GMapCoord.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/21818/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapCoord.class.php
+END
+GMapIcon.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapIcon.class.php
+END
+GMapBounds.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/21818/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapBounds.class.php
+END
+GMapDirectionWaypoint.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/24197/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapDirectionWaypoint.class.php
+END
+GMapClient.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/28377/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapClient.class.php
+END
+GMap.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/27062/plugins/sfEasyGMapPlugin/branches/v3/lib/GMap.class.php
+END
+GMapGeocodedAddress.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/28377/plugins/sfEasyGMapPlugin/branches/v3/lib/GMapGeocodedAddress.class.php
+END

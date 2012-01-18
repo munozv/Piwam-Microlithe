@@ -1,0 +1,136 @@
+
+	=========================================================================
+	|                                                                       |
+	|     ########  ########    ###    ########  ##     ## ########         |
+	|     ##     ## ##         ## ##   ##     ## ###   ### ##               |
+	|     ##     ## ##        ##   ##  ##     ## #### #### ##               |
+	|     ########  ######   ##     ## ##     ## ## ### ## ######           |
+	|     ##   ##   ##       ######### ##     ## ##     ## ##               |
+	|     ##    ##  ##       ##     ## ##     ## ##     ## ##               |
+	|     ##     ## ######## ##     ## ########  ##     ## ########         |
+	|                                                                       |
+	|                                                                       |
+	=========================================================================
+
+
+	LICENCE
+	-------
+	This program is provided under MIT licence.  You  can find this  complete
+	licence in /doc/LICENCE file
+
+
+  FRENCH VERSION
+  --------------
+  If you speak  - or understand -  French langage  you can read  the online
+  French version : http://code.google.com/p/piwam/wiki/InstallerPiwam
+
+
+	1) Required Configuration
+	-------------------------
+	
+		PHP >= 5.2.4
+      mb_string module
+      php_openssl
+      php_smtp
+			memory_limit: 32M
+			GD or Imagemagick (optional : for resizing pictures)
+		MySQL
+		Apache
+    mod_rewrite
+
+
+	2) How To Set Up Piwam
+	----------------------
+							
+		A- Setting up a Virtual Host
+				
+			If  you  are  using  Piwam  on  your  webserver,  it is  strongly
+			recommended  to  configure  a  VirtualHost access.  For  example, 
+			"http://piwam.your-domain.com"  must refers to /path/to/piwam/web
+			directory.
+			
+			Here  is a sample of  Virtual Host configuration that you  should
+			put in your apache/conf/httpd.conf:
+			
+			-----------------------------------------------------------------
+			<VirtualHost *:80>
+				ServerName piwam.my-domain.com
+				DocumentRoot "/home/foobar/piwam/web"
+				DirectoryIndex index.php
+			  	<Directory "/home/foobar/piwam/web">
+			    	AllowOverride All
+			    	Allow from All
+			    	
+              # Forcer la configuration PHP pour Piwam
+              # Retirez ce bloc s'il provoque une erreur 500
+              # sur votre serveur
+              <IfModule mod_php5.c>
+                      php_value magic_quotes_gpc                0
+                      php_value register_globals                0
+                      php_value session.auto_start              0
+                      php_value mbstring.http_input             pass
+                      php_value mbstring.http_output            pass
+                      php_value mbstring.encoding_translation   0
+              </IfModule>
+
+			  	</Directory>
+			</VirtualHost>
+			-----------------------------------------------------------------
+			
+			If  you just want to try Piwam,  or if Piwam is just installed on
+			your  personnal  computer and not reachable by Internet,  you can
+			skip Virtual Host configuration.
+			
+			
+		B- Configure files and directories
+			
+      Let say piwam has been installed in /var/www/piwam directory.  We
+      have to make some files and folders writable :
+
+      -----------------------------------------------------------------
+      > cd /var/www/piwam
+      > chmod 777 cache log config/databases.yml web/uploads/*
+      -----------------------------------------------------------------
+
+      If you forget this step, you will get an error message.
+
+
+		C- How To Access To Piwam
+		
+			Launch your browser  -  try to chose Firefox or Google Chrome ;-) 
+			If  a  Virtual Host  entry has been set up,  type  the configured 
+			address  (ie: http://piwam.your-domain.com).
+			Otherwise,  you  can  access  to  Piwam   through   address  like
+			http://your-server.com/piwam/web
+			
+			
+		D- For everyone, Installing from the web interface :
+		
+			Now  you have to  check that your configuration is OK  and finish
+			setting up some stuffs. Go to http://piwam.your-domain.com/install
+			and follow the instructions
+		
+		
+	
+	3) Troubleshooting
+	------------------
+	
+		If you get troubles... you can :
+			1- Check that you followed README instructions
+			2- Check that your Apache/MySQL servers are working properly
+			3- Launch /web/check_configuration.php
+			4- Subscribe and write to http://groups.google.com/group/piwam
+			5- Report a bug (http://code.google.com/p/piwam/issues/entry)	
+		
+		
+    4) See also
+    -----------
+		
+		* How to deploy Symfony application :
+		  http://www.symfony-project.org/jobeet/1_2/Propel/en/23
+		
+		
+	-------------------------------------------------------------------------
+	| (c) 2009																|
+	-------------------------------------------------------------------------
+	

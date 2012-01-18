@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/1146/trunk/apps/front/config
+END
+factories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/802/trunk/apps/front/config/factories.yml
+END
+settings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/877/trunk/apps/front/config/settings.yml
+END
+app.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/141/trunk/apps/front/config/app.yml
+END
+cache.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/341/trunk/apps/front/config/cache.yml
+END
+security.yml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/341/trunk/apps/front/config/security.yml
+END
+routing.yml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1146/trunk/apps/front/config/routing.yml
+END
+autoload.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1027/trunk/apps/front/config/autoload.yml
+END
+filters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1027/trunk/apps/front/config/filters.yml
+END
+frontConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/877/trunk/apps/front/config/frontConfiguration.class.php
+END
+view.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/764/trunk/apps/front/config/view.yml
+END

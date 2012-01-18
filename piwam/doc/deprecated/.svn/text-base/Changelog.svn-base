@@ -1,0 +1,1585 @@
+r178 - october, 9, 2009
+    * member : actions > validate() > user who is validating the pending
+      subscription is stored in 'updated by' field
+
+
+r177 - october, 9, 2009
+    * association : templates > loginSuccess.php : display message if login or 
+      password is invalid
+    * association : actions > set flash message if login failed
+    
+
+r176 - october, 9, 2009
+    * StatutPeer : getCriteriaEnabledForAssociation() ordered by name (trick to
+      display 'active member' status first)
+    
+
+r175 - october, 9, 2009
+    * main.css : style for visited links
+
+
+r175 - october, 9, 2009
+    * r172.sql : cotisation.mis_a_jour_par is not mandatory and can be null
+    * schema.yml is up to date
+    * propel:build-model
+    
+
+r174 - october, 9, 2009
+    * MembrePeer.php : doSelectByUsernameAndPassword() > check only active
+      members
+    
+
+r172 - october, 9, 2009
+    * Membre.php : getters to format name, last name and city
+    
+
+r171 - october, 9, 2009
+    * Membre.php : delete() > pseudo and passwords are set to null
+    
+
+r170 - october, 9, 2009
+    * MembrePeer : doSelectWithEmailForAssociation() selects only active members
+    
+
+r169 - october, 9, 2009
+    * MembreForm : fileValidator set a limit of 500 ko
+    
+
+r167 - october, 8, 2009
+    * MembrePeer.php : doSelectForAssociation() retrieve only active members
+    * fixes a bug in user's picture directory which listed disabled members
+    
+
+r166 - october, 8, 2009
+    * /data/updates/1.1.1-to-1.1.2 : r166.sql > makes membre.pseudo field case
+      insensitive
+    * piwam-install.sql is up date
+    
+
+r165 - october, 8, 2009
+    * membre : actions > executeCreatepending > clever determination of
+      associationId
+    * CompteForm : takes associationId as parameter
+    * compte : actions > give associationId as parameter to the form
+    
+
+r164 - october, 8, 2009
+    * membre : actions > executeAcl > fixes a bug if no credentials has been set
+    * membre : actions > _processForm > redirect to ACL form after creation of
+      a new member
+      
+
+r163 - october, 8, 2009
+    * membre : actions > fixes a bug in executeMap
+    
+
+r162 - october, 8, 2009
+    * membre : security.yml > edit credentials is required to valide a pending
+      subscription
+      
+
+r161 - october, 8, 2009
+    * MembrePeer : doSelectOrderBy() > useless associationId computation has 
+      been removed
+    * membre : actions > index > retrieve pending subscriptions
+    * membre : templates > index > pending subscriptions are displayed
+    * membre : actions > new action executeValidate
+
+
+r160 - october, 8, 2009
+    * association : templates > loginSuccess.php > explicit message
+    * MembrePeer : doSelectPending() method
+    
+
+r159 - october, 8, 2009
+    * myUser.class.php : new method getTemporaryAssociationId()
+    * membre : actions > executeFirstcreate > give the temporary associationId
+    
+
+r158 - october, 8, 2009
+    * StatutPeer::getCriteriaEnabled() is now getCriteriaEnabledForAssociation()
+    * MembreForm.class.php is up date
+    * membre : actions > asociationId is given to each form
+    
+
+r157 - october, 8, 2009
+    * membre : templates > pendingSuccess.php > explicit message
+    * StatutPeer::getCriteriaForEnabled() takes associationId as parameter
+
+
+r156 - october, 8, 2009
+    * membre : actions > new action requestSubscription
+    * membre : templates > loginSuccess > link to request a member subscription
+    * membre : templates > _form has been refactored
+    * schema.yml : membre.actif is now an integer and not a boolean
+    * model has been rebuilt
+    
+
+r155 - october, 7, 2009
+    * StringToolsTest : new test for generatePassword method
+    
+
+r154 - october, 7, 2009
+    * membre : security.yml > edit and show credentials have been documented
+    * /apps/front/lib/form/ForgottenPasswordForm : new class
+    * association : actions > new action Forgottenpassword
+    * association : templates > loginSuccess.php > link if forgotten password
+    * StringTools : new method generatePassword()
+    * /lib/misc/MailerFactory.class.php : new class to generate swift object
+    * association : actions > executeMailing > use new mailer factory class
+    * membre : actions > index > redirect to show if we don't have access to
+      index
+    
+
+r153 - october, 7, 2009
+    * membre : security.yml > removed credential auto-checking for edit and show
+    * membre : actions > edit and show actions are available for the user
+    * membrePeer.php : new const IS_PENDING
+    * association : actions > login > redirect to user profile if he can't list
+      the members (default homepage)
+
+
+r152 - october, 3, 2009
+    * /web/css : new 'browse' button
+    
+
+r151 - october, 3, 2009
+    * membre : templates > _form > custom 'browse' button
+
+
+r150 - october, 3, 2009
+    * association : actions > logout > redirect to homepage
+    * association : templates > loginSuccess.php > new welcome message
+
+
+r149 - october, 3, 2009
+    * activite : templates > indexSuccess.php > delete link is displayed, 
+      warning message is up date
+    
+
+r148 - october, 3, 2009
+    * membre : templates > showSuccess.php > email is crypted thanks to mail
+      helper
+    * membre : templates > indexSuccess.php > email is crypted thanks to mail
+      helper
+
+
+r147 - october, 31, 2009
+    * compte : actions > default values are set when required
+    * compte : templates > showSuccess.php > display a message if no update has
+      been done yet
+    * compteForm : initialize 'mis_a_jour_par' only if object already exists
+    
+
+r146 - october, 31, 2009
+    * activite : actions > index, show > uses the new myUser method
+    * activite : actions > default values are set only when required (new and
+      edit)
+
+
+r145 - october, 31, 2009
+    * README and README-FR are up to date
+    * CotisationTypeForm : mis_a_jour_par is used only when updating
+    * cotisationtype : actions > code refactoring to use new myUser methods
+    * /data/updates/r145.sql : 'cotisationtype.mis_a_jour_par' can be null
+    * piwam-install.sql is up to date
+    * cotisationtype : templates > showSuccess.php has been removed because
+      unused
+    * cotisationtype : actions > executeShow() has been removed because
+      unused
+    
+
+r144 - october, 30, 2009
+	* cotisation : actions > code refactoring to use new myUser methods
+	* CotisationForm : default values are set within the action
+	* CotisationForm : field 'mis_a_jour_par' is set only when updating
+	* cotisationActionsTests : new tests
+
+
+r143 - october, 30, 2009
+	* sfGuardTestFunctional : new method to create a foreign account
+	* compteActionsTest : complete tests
+
+
+r142 - october, 29, 2009
+	* compte : actions > code refactoring to use new myUser methods
+	* compteActionsTest.php : new tests
+	* loginActionsTest.php has been removed (module doesn't longer exist)
+	* AssociationForm.class.php : field 'enregistre_par' has been removed to
+	  avoid bugs due to session behaviour
+	* sfGuardTestFunctional : signout() method
+	* activite : actions > new > field 'mis_a_jour_par' is not set for creation
+	* myUser : getUserId() > fixed awesome bug... (association id was returned)
+	* MembreHelper : format_membre > code is more beautiful !
+	* activite : templates > showSuccess > a special message is displayed if
+	  activity has not been edited yet
+	  
+
+r141 - october, 27, 2009
+	* membre : templates > _picture > input is a Membre object, and 'alt'
+	  attribute has been set for the picture
+	* myUser.class.php : getAssociationId() and getUserId()
+	* activite : actions > code refactoring to use new myUser methods
+	* symfony configure:author Adrien Mogenet
+	* activite : templates > _form.php > error message is displayed after the
+	  input field
+	* activiteActionsTest.php : basic scenarios
+	* association : actions > code refactoring to use new myUser methods
+	* associationActionsTest.php : code beautifier ;-)
+	
+
+r140 - october, 27, 2009
+	* ProjectConfiguration.class.php > checks that the file exists or display
+	  a friendly error message
+	* login : module has been removed (currently empty so useless)
+	* association : actions > _canRegisterAnotherAssociation > redirect to
+	  install and not to /install
+	* install : templates > configDatabaseSuccess.php > error icon is displayed
+	* new plugin has been set up : sfImageTransformPlugin	  
+	* membre : actions > processForm > make thumbnails when uploading 
+	  user's picture
+	* layout.php : new menu item "faces"
+	* membre : new action "faces"
+	* MembrePeer : new constant PICTURE_DIR
+	* Membre : new method getPictureURI
+	* Membre : new partial _picture
+	* main.css : custom style for "_picture" partial
+	* main.css : comments have been translated to english
+	* README, README-FR and TROUBLESHOOTING-FR are up to date
+	
+	
+r139 - october, 26, 2009
+	* svn:ignore /web/uploads/trombinoscope/*	
+
+
+r138 - october, 26, 2009
+    * schema.yml : membre > new field 'picture'
+    * membre : templates > _form > field 'picture' has been added
+    * propel:build-model
+    * /data/updates/sql/1.1.1-to-1.1.2/r138.sql
+    * piwam-install.sql > new field membre.picture
+    * MembreForm.class.php : new 'picture' field and validator, with custom
+      French error messages
+    * membre : templates > showSuccess.php > display picture if any
+    
+
+r137 - october, 26, 2009
+    * association : actions > new > can't access to the form if this is
+      forbidden
+      
+
+r136 - october, 26, 2009
+    * membre : templates > _aclForm.php > fixed missing </a> tag
+    * apps/front/app.yml : new setting to use Piwam for only one association
+    * association : actions > login > set a new variable 'displayRegisterLink'
+    * association : actions > login > redirect to /install if Propel error
+
+
+r135 - october, 26, 2009
+    * install : actions > _isInstallerd() > checks that tables have been created
+    * install : templates > indexError.php > error message has been completed    
+    
+    
+r134 - october, 20, 2009
+    * Edited wiki page through web user interface.
+    
+    
+r133 - october, 20, 2009 (Grd Scarabe)
+    * Création d'une page de réflexion sur la comptabilité
+    
+
+r132 - october, 19, 2009
+    * /apps/front/lib/helper/WebsiteHelper.php : new helper with function 
+      short_website_url to display short URL
+    * association : actions > index > display list of enabled associations
+    * association : templates > index > display list of enabled associations
+
+
+r131 - october, 19, 2009
+    * MembreForm : configure() > 'unique' error message has been set for the
+      'pseudo' field by a sfPropelUniqueValidator 
+    
+
+r130 - october, 15, 2009
+    * Statut.php : delete() > statut is disabled if there is no longer active
+      Membre
+    * Statut.php : countActiveMembres() > new method, counting only active
+      members 
+    * statut : templates > indexSuccess.php > we show active members who belong
+      to the Statut
+
+
+r129 - october, 15, 2009
+    * membre : actions > executeMap > fixes issue with Google Map API key (old
+      name was used)
+    
+
+r128 - october, 15, 2009
+    * Fixes issue #7 : missing ALT attirbut for images
+
+
+r127 - october, 15, 2009
+    * membre : actions > executeMap > Google Map API key is directly given to
+      the view
+      
+
+r126 - october, 15, 2009
+    * membre : actions > executeMap() > associationId is given to the view
+    * membre : templates > mapSuccess.php > get the API key for the current 
+      association
+    * association : templates > loginSuccess.php > version of piwam in welcome
+      message is up to date
+
+
+r125 - october, 14, 2009
+    * README-FR : VirtualHost example has been updated
+    * TROUBLESHOOTING-FR : has been updated to reference some possible 500 
+      errors
+    * THANKS : has been updated
+    
+
+r124 - october, 14, 2009
+    * membre : templates > _form.php : javascript helper has been replaced by
+      JavascriptBase helper, fixes bug 29
+    * membre : templates > showSuccess.php : javascript helper has been replaced
+      by JavascriptBase helper, fixes bug 29
+    
+
+r123 - october, 13, 2009
+    * Compte.php : fetch() calls have been replaced by fetchAll(), fixes 
+      issue 28
+    * association : actions > mailing > smtp module is not required anymore to
+      send emails through smtp servers, but openssl module is required to use
+      GMail
+
+
+r122 - october, 13, 2009 (Grd Scarabe)
+    * Wiki page 'installerPiwam' has been updated 
+
+
+r121 - october, 12, 2009
+    * install : actions > _checkConfiguration() > We can install Piwam even if
+      memory_limit is not greater or equal to 128M
+    * install : actions > _checkConfiguration() > Apache modules are not tested
+      if apache_get_modules function is not available
+    * install : templates > error partials have been enhanced to be more 
+      readable
+      
+
+r120 - october, 12, 2009
+    * update : actions > _checkSQLFilesSince() > updates are performed within
+      SQL transactions
+    * DBTools.class.php : executeSQLFile() > we check that query is not empty
+      before launching it
+            
+
+r119 - october, 8, 2009
+    * Piwam 1.1.1
+    
+
+r118 - october, 8, 2009
+    * install : actions > we check if Piwam is already installed
+    * install : templates > indexError.php > new file
+
+
+r117 - october, 8, 2009
+    * /doc/UPDATE-FR : new file
+    * /data/updates/1.1-to-1.1.1 : new folder
+    * /data/updates/1.1-to-1.1.1/r117.sql : new file
+    * /config/databases.yml : added to svn:ignore
+    * /apps/front/config/settings.yml : Google Map Key has been removed (put
+      into the database)
+    * layout.php : new menu entry (install and update)
+
+
+r116 - october, 8, 2009
+    * README-FR has been updated
+    * TROUBLESHOOTING-FR has been updated
+    * mailing module has been removed because empty
+    * databases.yml : fixed wrong encoding value for 'all'
+    * Association : actions > executeMailing() > missing attributes 
+      $associationId has been added when calling 'Configurator::get()'
+    * /doc/piwam-install.sql : collation and charset for piwam_data has been
+      set explicitely
+
+
+r115 - october, 6, 2009
+    * Edited 'installerPiwam' wiki page through web user interface.
+
+
+r114 - october, 6, 2009
+    * Edited 'installerPiwam' wiki page through web user interface.
+
+
+r113 - october, 1, 2009
+    * Piwam 1.1
+
+
+r112 - september, 16, 2009
+    * update : actions > executePerform > if it works we clear the cache
+    * /web/cache_error.php : new file, user friendly error message when cache
+      folder is not writable
+    * /web/index.php : cache_error.php is displayed if we catch a
+      sfCacheException
+    * /apps/front/config/error/error_html.php : user friendly error message is
+      displayed if an exception occurs
+
+
+r111 - september, 16, 2009
+    * Piwam 1.1 RC2
+
+
+r110 - september, 16, 2009
+    * /doc/piwam-install.sql : piwam_data > dbversion has been updated
+
+
+r109 - september, 15, 2009
+    * Piwam 1.1 RC1
+
+
+r108 - september, 15, 2009
+    * TROUBLESHOOTING-FR : a few words about /update and about Google API key
+    * README-FR : a part has been added about Google API key
+    * association : loginSuccess.php > warning message has been replaced by a
+      welcome message
+
+
+r107 - september, 15, 2009
+    * form.css : custom .button class
+    * schema.yml : prefix "piwam_" has been added to all the tables
+    * symfony propel:build-model
+    * /data/updates/1.1beta2-to-1.1/r107.sql : we rename all the tables
+    * /doc/piwam-install.sql : up to date
+    * issue #23 has been fixed
+
+
+r106 - september, 15, 2009
+    * /test/unit/DateToolsTest.php : new file implementing tests for DateTools
+    * /test/unit/ParamsToolsTest.php : new file implementing tests for
+      ParamsTools class
+    * /test/unit/StringToolsTest.php : new file implementing tests for
+      StringTools class
+    
+
+r105 - september, 13, 2009
+    * /test/bootstrap/unit.php : creation of a sfContext
+    * /test/unit/ConfiguratorTest.php : new file implementing tests for
+      Configurator class
+    * /lib/misc/Configuration.class.php : $associationId is now given as
+      parameter to avoid use of sfContext in this class
+    * ConfigForm.class.php : code has been refactored to give $associationId
+    * association : actions > code has been refactored to give $associationId
+    * MembrePeer.php : doSelectOrderBy > code has been refactored to provide 
+      $associationId to Configurator
+    * AssociationPeer.php : new method retrieveByName($name)
+    * All the files : tabs have been replaced by spaces
+    
+
+r104 - september, 13, 2009
+    * /doc/TROUBLESHOOTING-FR : new file, indexing known issues
+    * /doc/README-FR refers to TROUBLESHOOTING-FR in case of issue
+    * membre : indexSuccess.php > legend block has been redesigned
+    * cotisationtype : indexSuccess.php > validity entry in the header of table
+      is now specified as months and not in years
+    * CotisationTypeForm.class.php : default value of 'valide' has been set to
+      12 months
+    * form.css : formLinkButton size has been adjusted (a little bit smaller)
+
+
+r103 - september, 12, 2009
+    * /web/install.php : has been removed to avoid loop issue
+    * /lib/vendor/phoogle/phoogle.php : we prevent error when using function
+      file_get_contents with Yahoo API
+    * /lib/misc/DbTools.class.php : checkMySQLConnection() method has been set
+      as public static instead of being private
+    * /doc/README : up to date
+    * /doc/README-FR : up to date
+
+
+r102 - september, 12, 2009
+    * update : new template 'performError.php'
+    * PiwamDataPeer : new retrieveByKey($key) method
+    * PiwamDataPeer : fixes bug in set() method
+    * install : actions > methods _executeSQLFile and _checkMySQLConnection have
+      been replaced by the DbTools call
+
+
+r101 - september, 12, 2009
+    * updates/1.1beta2-to-1.1/r100.sql : fixes syntax error
+
+
+r100 - september, 12, 2009
+    * install : config/cache.yml > new file disabling the cache for this module
+    * update : new module
+    * update : index > check existing SQL files to execute
+    * /lib/misc/DbTools.class.php : new class
+    * main.css : custom a:Visited color has been removed
+    * updates/1.1.0beta2-to-1.1 : r100.sql > new credential entries (edit and
+      update Piwam)
+    * /doc/piwam-install.sql is up date
+    * update : security.yml > new file
+
+
+r99 - september, 11, 2009
+    * schema.yml : new PiwamData private table
+    * schema.yml : CASCADE deletion for config_ and acl_ tables
+    * symfony propel-build-all
+    * Configurator.class.php : get > if the variable has not been set in the
+      database, the default value is returned if it has been given as parameter
+    * error.html.php : error page has been customized
+
+
+r98 - september, 11, 2009
+    * /web/favicon.ico : new favicon file
+    * layout.php : reference to favicon.ico has been updated
+    * membre : templates > index > legend to show the meaning of "red"
+      background
+    * /apps/front/config/factories.yml : logger class has been set up
+    * /apps/front/config/settings.yml : logging is enabled for prod env
+    
+
+r97 - september, 11, 2009
+    * cotisation : _form.php > fixes bug #22 (AJAX behaviour when installation
+      without virtualhost)
+    
+
+r96 - september, 11, 2009
+    * /web/index.php : exception message if error occured
+    * /apps/front/config/error/error.html.php : new file. Custom exception page
+    * cotisationtype : actions > edit > fixed bug > test if we are allowed to
+      edit the entry
+    * updates/1.1.0beta2-to-1.1 : r96.sql > Changing years of validity by months
+      of validity
+    * /lib/misc/DateTools.class.php : new class file
+    * Membre.php : isAjourCotisation() is up to date
+    * cotisationtype : _form.php > label of field 'validity' is up to date (year
+      is now months)
+    
+
+r95 - august, 14, 2009
+	* test_data.yml : reference to object 'private_user' have been updated
+	* associationActionsTest.php : refactored code and 1 test has been commented
+	  to allow tests to be launched more than one time
+
+
+r94 - august, 14, 2009
+	* piwam-install.sql : error in constraint name 'acl_action_FK_1' has been
+	  fixed
+	* /data/updates/1.1.0beta-to-1.1/r92.sql : error in constraint name 
+	  'acl_action_FK_1' has been fixed
+
+
+r93 - august, 14, 2009
+	* piwam-install.sql : explicit DB names have been removed
+	* /data/updates/1.1.0beta-to-1.1/*.sql : explicit DB names have been removed
+	
+
+r92 - august, 3, 2009
+	* /data/updates/1.1.0beta-to-1.1/r92.sql : CASCADE behaviour added for some
+	  tables
+	* piwam-install.sql is up to date
+	* test_data.yml : new fixtures for 'Activite' table
+	* test_data.yml : fixtures for 'Compte' table are set as enabled
+	* test_data.yml : fixtures for a second private association
+	* recetteActionsTest.php : tests implemented
+	
+
+r91 - august, 3, 2009
+	* Edited wiki page through web user interface.
+	
+
+r90 - august, 3, 2009
+	* Edited wiki page through web user interface
+	
+
+r89 - august, 2, 2009
+	* test_data.yml : fixtures for all the tables
+	* piwam-install.sql is up to date
+	* README is up to date : information about Virtual Host configuration
+	* install : actions > hide error if user provides wrong username/password
+	* README-FR : new file with French version of documentation
+
+
+r88 - august, 2, 2009
+	* fixtures.yml has been renamed as test_data.yml
+	* test_data.yml : filled for being ready for tests
+	* test/bootstrap/functional.php : load fixtures
+	* associationActionsTest.php : new tests (creation of association)
+	* membre : actions > processForm > when registering the first user, ACL
+	  are given before redirecting to success page
+	* updates/1.1.0beta-to-1.1/r88.sql : CASCADE for on delete action has been
+	  set to acl_credential table
+	
+
+r87 - august, 2, 2009
+	* statut : delete > we can't delete if there are Membres who belong to
+	  the statut
+	* statut : delete > physical deletion
+	* statut : index > display error message if we try to delete a used item
+	* Statut.php : countMembers has been removed to use the original
+	  countMembres instead
+	  
+
+r86 - august, 2, 2009
+	* Statut.php : countMembers() method
+	* statut : index > display number of members who belong to each statut
+	* statut : index > icon and link to go to the details
+	* statut : show > template has been enhanced
+	
+	
+r85 - july, 21, 2009
+	* Edited wiki page through web user interface.
+	
+
+r84 - july, 21, 2009
+	* assocation : mailing > sendMail line has been uncommented
+	* install : configDatabase > display flash message if user give wrong
+	  mysql settings
+	* install : new action 'end' which displays information once configuration
+	  is complete
+	* install : config/security.yml > access is granted for action 'end'
+	* install : launch SQL file to create tables and insert data
+
+
+r83 - july, 20, 2009
+	* lib/misc/FileModifier.class.php : new class file
+	* install : actions > checkConfiguration > new tests has been added. the
+	  config/databases.yml file has to be writable
+	* install : configDatabase action has been implemented
+
+
+r82 - july, 19, 2009
+    * install : configDatabase > new action
+    * apps/front/lib/DatabaseConfigForm.class.php : new form class
+    * install : templates > template to display DatabaseConfig form
+
+
+r81 - july, 19, 2009
+    * DepensePeer : doSelectForAssociation() now returns a sfPropelPager
+    * depense : index > paging system
+    * DepensePeer.php : doSelectForAssociationId() > order by DATE DESC
+    * RecettePeer.php : doSelectForAssociationId() > order by DATE DESC
+    * recette : index > paging system
+    * recette : actions > delete > check if user has required credentials
+    * actions > delete > check if user has required credentials
+    * membre : actions > delete > French message if failure
+    * membre : actions > delete > check if user has required credentials
+    * compte : actions > delete > check if user has required credentials
+    * compte : actions > delete > check if user has  required credentials
+    * activite : actions > delete > check if user has  required credentials
+    * activite : actions > edit > check if user has  required credentials
+    * Cotisation.php : new getAssociationId() method
+    * cotisation : actions > delete > check if user has  required credentials
+    * cotisation_type : actions > delete > check if user has  required 
+      credentials
+
+
+r80 - july, 19, 2009
+    * association  : actions > mailing > get variables from Configurator class
+	  and not from YAML file
+    * apps/front/config/settings.yml : useless variables have been removed
+
+
+r79 - july, 18, 2009
+    * install : new module
+    * install : index > display list of tests that succeed of failed
+    * install : templates > isCacheFolderWritable partial
+    * install : templates > isLogFolderWritable partial
+    * install : templates > isPhpOpenSSLLoaded partial
+    * install : templates > isPhpSmtpLoaded partial
+    * install : templates > isMemoryLimitHighEnough partial
+    * install : templates > isApacheModRewriteenabled partial
+    * install : templates > checkConfigSuccess.php
+    * install : actions > new action 'checkConfiguration' has been implemented
+	
+
+r78 - july, 18, 2009
+    * apps/front/lib/ConfigForm.class.php : default values are set
+    * Association : config > save settings
+    * layout.php : new menu entry 'preferences' to configure Piwam
+    * Association : mailingSuccess.php > cleaned code which displays flash
+    * data/updates/1.1.0beta-to-1.1/r78.sql : label for field "edit 
+      association" has been extended to "edit and configure association" 
+
+
+r77 - july, 13, 2009
+    * data/updates : updates.sql > fixed error, operation 'ADD' was used instead
+      of 'CHANGE' for updating 'montant' fields
+    * Configurator.class.php : we now can give a 'custom default value' if no
+	  custom value has been set in the database
+    * MembrePeer.php : use of Configurator instead of YAML class for the number
+	  of users to display on each page
+	
+
+r76 - june, 9, 2009
+    * /apps/front/lib/form/ConfigForm.class.php : new form class
+    * ConfigVariablePeer : doSelectByCategorieCode($code) method
+    * Association : actions > new executeConfig() action
+    * Association : new views "configSuccess.php" and "_configForm.php"
+
+
+r75 - june, 8, 2009
+    * /lib/misc/Configurator.class.php : the aim of this class is to deal with
+      configuration variables
+    * ConfigVariablePeer : retrieveByCode($code) method
+    * ConfigValuePeer : retrieveByCode($code, $association_id) method
+    
+
+r74 - june, 8, 2009
+    * THANKS : new contributors
+    * /data/updates/1.1.0beta-1.1.0 has been renamed has 1.1.0-beta-to-1.1
+    * Activite : showSuccess.php > removed empty line before "TOTAL" line
+    * Membre : actions > edit > check if user has the 'edit_acl' credential
+    * Membre : editSuccess.php > show ACL management form only if we have
+      'edit_acl' credential
+    * SQL data : new entry "edit_acl" in "acl_action" table
+    * Membre : actions > executeAcl > check if user has the 'edit_acl' 
+      credential
+    * Membre : editSuccess.php > edit icon after 'Droits' title
+    * schema.yml : new table config_categorie, config_variable, config_value
+    * symfony propel:build-model
+    * /updates/1.1.0beta-to-1.1/r73.sql : new SQL content
+    * /updates/1.1.0beta-to-1.1/updates.sql : file up to date
+    * /doc/piwam-install.sql : file is up to date
+    
+    
+r73 - june, 8, 2009
+    * Created wiki page through web user interface.
+
+
+r72 - june, 7, 2009
+    * Membre : actions > don't redirect to credentials form if we just edit
+      an existing Membre
+    * /lib/misc/ParamsTools.class.php : new class to manage parameters (array,
+      sfParameterHolder...)
+    * DepensePeer.php : new buildCriteria() method
+    * DepensePeer.php : new getAmountOfDettesForActivite($activiteId) method
+    * RecettePeer.php : new getAmountOfCreancesForActivite($activiteId) method
+    * bilanSuccess.php : <tfoot> content has been moved to <tbody> to be XHTML
+      compliant
+    * main.css : new style for "tableauDonnees tbody tr:Hover"
+    * main.css : compteNegatif, comptePositif and cotisationNonAjour classes
+      have been updated (lighter background).
+
+
+r71 - june, 7, 2009
+    * Created 'Roadmap' wiki page through web user interface
+
+
+r70 - june, 6, 2009
+    * phoogle.php : code has been clean a little bit. New private method
+      _isValidPoint(), and we check that a point is valid before adding it on
+      the map
+    
+
+r69 - june, 6, 2009
+    * phoogle.php : test if we're trying to add null GPoint
+    * CotisationType : _form > tooltip which warns user about updating amount
+      has been removed because of the new field "cotisation.montant"
+    * Cotisation : indexSuccess.php > show the amount for each Cotisation
+    * FileExporter.class.php : chtinux's patch has been applied 
+    
+
+r68 - june, 6, 2009
+    * /doc/piwam-install.sql is up to date
+    * README : mod_rewrite was added as required Apache module
+    * README : link to online French version
+    * layout.php : Google Map JS is not include anymore in the global layout
+    * Membre : mapSuccess.php > include Google Map JS
+    * Recette : showSuccess.php > display if "Recette.percue == 0"
+    * Depense : showSuccess.php > display if "Depense.payee == 0"
+
+
+r67 - june, 6, 2009
+    * Recette : index > don't show date if "Recette.percue == 0"
+    * Depense : index > don't show date if "Depense.payee == 0"
+    * Cotisation : actions > processForm() > Redirect again to the form if we
+      are registering new Cotisation (in order to record several Cotisation in 
+      "one time" without going back and then coming back to the form. Redirect 
+      to index action if we are editing an existing Cotisation
+
+
+r66 - june, 6, 2009
+    * Membre : actions > processForm > we redirect to membre/acl after 
+      registering a new Membre if an username and password have been set
+    * schema.yml : recette > new field 'percue'
+    * schema.yml : depense : new field 'payee'
+    * symfony propel:build-model
+    * /data/updates : new folder which will store data when updating Piwam
+      version
+    * /data/updates/1.1.0beta-1.1.0 : folder to update from the public beta to
+      the final 1.1.0 version
+    * symfony propel:build-forms
+    * ActivitePeer : getCriteriaForAssociationId() > select only enabled items
+    * ComptePeer : getCriteriaForAssociationId() > select only enabled items
+    * Activite.php : getTotalDepenses() > SUM only on enabled items
+    * Activite.php : getTotalRecettes() > SUM only on enabled items
+    * Compte.php : getTotalDepenses() > SUM only on enabled items
+    * Compte.php : getTotalRecettes() > SUM only on enabled items
+    * DepensePeer : getAmountOfDettes() method
+    * RecettePeer : getAmountOfCreances() method
+    * bilanSuccess.php : new table for "dettes" and "creances"
+    * bilanSuccess.php : code has been lightly refactored. Ternary operator has
+      been used to make CSS class selection more human-readable
+    * bilanSuccess.php : empty lines before TOTAL have been removed
+
+
+r65 - june, 5, 2009
+    * Membre : aclSuccess.php > temporary content when accessing to this page
+    * Membre : security.yml > 'acl' crendial has been removed for the moment
+
+
+r64 - june, 5, 2009
+    * lib/test : new folder storing classes which are useful when testing
+    * lib/test/sfGuardTestFunctional.class.php : new class overriding the basic
+      sfTestFunctional class
+    * associationActionsTest.php : tests have been implemented
+    * membreActionsTest.php : first tests have been implemented
+    * Membre : actions > ACL > test if we the user to edit belongs to the
+      current user's association
+    * Membre : security.yml > new 'acl' credential is required to access to
+      'acl' action
+
+
+r63 - june, 2, 2009
+    * Membre : actions > executeAcl() has been cleaned
+    * Membre : showSuccess.php > Domtab is also used to display user information
+      in several tabs
+
+
+r62 - june, 2, 2009
+    * settings.yml : secure_module and secure_action have been customized to
+      redirect user to a custom page if he doesn't have required credentials
+    * Membre : action > processForm > we give all the credentials to the first
+      user
+    * web/js/domtab/domtab.js : new file, Domtab library to generate HTML tabs
+    * web/css/domtab.css : associated stylesheet
+    * Membre : actions > edit action directly embeds AclForm
+    
+
+r61 - june, 2, 2009
+    * AclCredentialPeer : doSelectForMembreId() method
+    * Membre.php : resetAcl() method and addCredential($code) method
+    * AclCredentialPeer : doDeleteForMembreId() method
+    * schema.yml : acl_credential got a new "acl_action_id" field
+    * symfony propel:build-model
+    * Membre : new template aclError.php which is displayed if no Member is
+      specified for edit
+    * AclActionPeer : retrieveByCode($code) method
+    * AclCredential : getCode() method
+    * AclCredentialForm.class.php : new automaticCheck() method
+    * no_mail.png image
+    * Membre : index > icon 'no_mail' is displayed without link if user has no
+      email address
+    * security.yml files have been added in each module
+    * myUser.class.php : setCredentials() method
+    
+
+r60 - june, 1, 2009
+    * Association : mailing > error is displayed if the user doesn't have the
+      smtp module
+    * MembrePeer : doSelectWithEmailForAssociation() > fixed issue with
+      Criteria::ISNOTNULL
+    * schema.yml : model is up to date to manage credentials
+    * symfony propel:build-model
+    * fixtures.yml : filled with ACL modules and actions
+    * AclActionPeer : doSelectForModuleId() new method
+    * AclCredentialForm : new class
+    * Membre : aclSuccess.php > new file
+    * Membre : new action "acl"
+    
+
+r59 - june, 1, 2009
+    * Association/Credentials action has moved to "Error" module
+    * Association : credentialsError.php template has moved to "Error" module
+    * All references to 'association/credentials' action has been changed into
+      'error/credentials'
+    * Activite : showSuccess.php > new column to display the Compte and Time
+      icons got an ALT attribute
+    * Compte : showSuccess.php > enhanced appearance
+    * Association : mailing > try/catch Connection Exception if the message
+      can't be sent
+    * Association : mailingSuccess.php > html_entity_decode() is used to display
+      contents correctly
+    
+
+r58 - may, 21, 2009
+	* MembreHelper.php : fixed bug in format_membre() due to sfOutputDecorator
+	  class wrapping the real Membre object
+	* Activite : showSuccess.php > use the Membre object and not the id to
+	  display date about user who registered / updated the current Activite
+	* /web/images/flags : new folder with flags of available countries
+	* Membre : showSuccess.php : display the flags of the member's country
+	
+
+r57 - may, 21, 2009
+	* settings.yml : default value of 'users_by_page' has been set to 20
+	* Activite : showSuccess.php > enhanced appearance
+	* Activite : actions > new function compare_money_entries();
+	* DepensePeer : new method doSelectForActiviteId()
+	* RecettePeer : new method doSelectForActiviteId()  
+	* Activite : new feature > we can see the list of Depense / Recette for a
+	  specific Activite
+	
+
+r56 - may, 21, 2009
+	* /lib/validator/sfValidatorCustomUnique.php : new file
+	* StatutForm.class.php : validation is done using new CustomUnique validator
+	* CompteForm.class.php : validation is done using new CustomUnique validator
+	* ActiviteForm.class.php : validation is done using new CustomUnique
+	  validator
+	* Fixed issue #13 (Duplicate entries)
+	* Fixed issue #12 (Duplicate entries)
+	* ActiviteForm.class.php : setting of default value for field 
+	  'mis_a_jour_par' has been removed (useless because already present in
+	  action class)
+	
+
+r55 - may, 17, 2009
+    * CotisationPeer.php : doSeletSumForAccountId() > fixed bug in computation.
+      Uses the new amount field in Cotisation table, and GROUP BY clause has
+      been added
+
+
+r54 - may, 17, 2009
+    * /lib/validator/sfValidatorAmount.class.php : new file. This validates
+      amount with French decimal separator (comma)
+    * DepenseForm.class.php : now uses our new amount validator
+    * RecetteForm.class.php : now uses our new amount validator
+    * CotisationForm.class.php : now uses our new amount validator
+    * Cotisation : actions > we show the form to add - again - a new Cotisation
+      and we display a notice message after user clicking on submit button
+    * Cotisation : _form > new 'Liste' button to go back to the list
+    * CotisationPeer.php : computation of SUM is up to date
+
+
+r53 - may, 15, 2009
+    * Recette : indexSucces.php > images got 'alt' attributes
+    * Depense : indexSucces.php > images got 'alt' attributes
+    * CotisationType : indexSucces.php > images got 'alt' attributes
+    * Cotisation : indexSucces.php > images got 'alt' attributes
+    * Compte : indexSucces.php > images got 'alt' attributes
+    * Activite : indexSucces.php > images got 'alt' attributes
+    * Membre : indexSucces.php > images got 'alt' attributes
+    * Statut : indexSucces.php > images got 'alt' attributes
+    * layout.php : stupid mistake has been corrected in Javascript markup
+    * RecetteForm.class.php : Integer validator changed to Number validator for
+      amount field
+    * DepenseForm.class.php : Integer validator changed to Number validator for
+      amount field
+    * CotisationForm.class.php : Integer validator changed to Number validator 
+      for amount field
+     
+
+r52 - may, 15, 2009
+    * Missing files when commiting revision 51
+
+
+r51 - may, 15, 2009
+    * CotisationForm.class.php : add empty choice to force user to select a
+      value (which will be updated thanks to  AJAX updater)
+    * CotisationType : actions > executeAjaxgetamountfor() gets the amount and
+      not the ID
+    * => Issue #5 has been really done !
+
+
+r50 - may, 15, 2009
+    * /config/schema.yml : Cotisation got a new field 'montant'
+    * symfony propel:build-model
+    * /doc/piwam-install.sql : updated
+    * symfony propel:build-forms
+    * Membre : actions > processForm() > fixed error due to wrong variable
+      ($user instad of $membre)
+    * Membre : actions > executeEndregistration() > we do not try to retrieve
+      user's data anymore (these data weren't used)
+    * view.yml : prototype.js enabled to avoid JS warning
+    * layout.php : jQuery's noConflict mode enabled
+    * Cotisation : _form > AJAX behaviour to update the amount according to
+      the type of Cotisation
+    * => Issue #5 has been done
+
+
+r49 - may, 14, 2009
+    * /doc/piwam-install.sql : DECIMAL amounts are now in 10,2 format
+    * Association : new action 'crendentials' to deal with credentials
+    * Association : new template 'credentialsError.php'
+    * Membre : actions > executeShow > fixed bug #15. checks that you have the
+      right to watch the user profile
+    * Depense : actions > executeShow > fixed bug #15. checks that you have the
+      right to watch the information
+    * Recette : actions > executeShow > fixed bug #17. checks that you have the
+      right to watch the information
+    * Compte : actions > executeShow > fixed bug #17. checks that you have the
+      right to watch the information
+    * CotisationType : actions > executeShow > fixed bug #16. checks that you
+      have the right to watch the information
+    * Statut : actions > executeShow > fixed bug #16. checks that you have the
+      right to watch the information
+    * Cotisation : actions > executeShow > checks that you have the right to 
+      watch the information
+    
+
+r48 - may, 14, 2009
+    * CotisationTypeForm.class.php : Fixed bug #11. Integer can't be negative
+    * Association : bilanSuccess.php > fixed bug #8. Tfoot has been removed to
+      ensure respect of XHTML
+    * DepenseForm.class.php : fixed bug #4. Amount can't be negative
+    * RecetteForm.class.php : fixed bug #4. Amount can't be negative
+
+
+r47 - may, 13, 2009
+    * CotisationPeer.php : doSeletSumForAssociationId > fixed bug #3. new GROUP
+      BY clause to make SQL query valid with SUM computation
+    * /apps/front/config/settings.yml : fixed bug #2. 'escaping_strategy' has 
+      been set to 'on' with method 'entities' to avoid user typing HTML content
+      in form elements
+      
+
+r46 - may, 13, 2009
+    * Membre : actions > we list the first page by default (we displayed the
+      20th page because of a stupid bug)
+    * /web/css/pagination.css : new pager style to improve the appearance
+    * Membre : indexSuccess.php > new argument is given to _pager slot. This is
+      a 'params' argument in order to provider custom parameters. In this view
+      we put the 'order by' parameter to keep ordering column in different pages
+    * _pager.php : we process the new 'params' argument
+
+
+r45 - may, 11, 2009
+    * Created wiki page through web user interface.
+
+
+r44 - may, 10, 2009
+    * Created wiki page through web user interface.
+
+
+r43 - may, 10, 2009
+    * Version 1.1.0 beta
+
+
+r42 - may, 10, 2009
+	* Association.php : initialize() > setAssociationId is called BEFORE
+	  setReference in order to fix FK constraints issues
+	  
+
+r41 - may, 10, 2009
+	* Association : bilanSuccess.php : the blank line before 'total' line got
+	  light grey color
+	* /doc/index.html : updated
+	* loginSuccess.php : we notice that that it's a beta version
+	* layout.php : links to 'report bug' form has been added in the menu
+	* README : new part 'troubleshooting'
+	
+
+r40 - may, 10, 2009
+	* CotisationPeer : new method doSeletSumForAccountId($id)
+	* Association : bilan > takes care of Cotisation objects when computing
+	  total amounts
+	* CotisationPeer : new method doSeletSumForAssociationId($id)
+	* Association : action > bilan > action class gives the $totalCotisations to
+	  the view
+	* Activite.php : each method returns 0 instead of null
+
+
+r39 - may, 10, 2009
+	* /lib/misc\StringTools.class.php : new file
+	* StringTools.class.php : new method to7bits()
+	* Membre : actions > map > fixed bug when putting a string with accents
+	* Membre : actions > mp > default zoom level has been set to 12 to see
+	  the whole France map
+	* Depense : actions > new action 'export'
+	* Recette : actions > new action 'export'
+
+
+r38 - may, 10, 2009
+	* Cotisation : _form.php > 'delete' link has been translated to French
+	* Cotisation : indexSuccess.php > link to 'delete' action is now displayed 
+	* Compte : indexSuccess.php > link to 'delete' action is now displayed
+	* Compte.php : delete() method has been overidden
+	* Compte : actions > 'mis_a_jour_par' field gets the correct default value
+	* Compte : _form.php : correct style of 'delete' link is applied
+	* Statut : _form.php : correct style of 'delete' link is applied (and link
+	  has been translated to French)
+	* /web/images/tooltip_icon.gif : cropped to solve a very little align issue
+	* DepenseForm.class.php : image of calendar is displayed even if no virtual
+	  host has been set up
+	* RecetteForm.class.php : image of calendar is displayed even if no virtual
+	  host has been set up
+	* MembreForm.class.php : image of calendar is displayed even if no virtual
+	  host has been set up
+	* CotisationForm.class.php : image of calendar is displayed even if no
+	  virtual host has been set up
+
+
+r37 - may, 10, 2009
+	* README : PHP 'memory_limit' parameter is specified as requirement
+	* /doc/THANKS : new file with list of contributors
+	* Membre : fixed bug in toString() method due to accents in string given to
+	  mb_convert_case() function > encoding has been explicitely defined as UTF8
+	* CotisationForm.class.php : French date format
+	* DepenseForm.class.php : French date format
+	* RecetteForm.class.php : French date format
+	* MembreForm.class.php : French date format 
+	* /web/js/jquery-ui/js/jquery-ui-1.7.1-custom.min.js : dates have been
+	  translated to French
+	
+
+r36 - may, 8, 2009
+	* MembreForm.class.php : Critical bug has been fixed (issue of foreign key
+	  constraint with 'mis_a_jour_par' field
+	
+
+r35 - may, 7, 2009
+	* /apps/front/config/view.yml : fixed mistake about mispelling of js file
+	  'effect.js'
+	* MembreForm.class.php : fixed bug with field 'mis_a_jour_par' when 
+	  registering the first member of the association
+	* MembreForm.php : overrident setPseudo() method which now stores NULL value
+	  if we give it an empty string
+	* Association : loginSuccess.php > message to warn the user that it's a
+	  temporary Alpha version 
+	  
+
+r34 - may, 6, 2009
+	* Version 1.1.0 alpha3 tagged
+
+
+r33 - may, 6, 2009
+	* /apps/front/lib/helper/PluralHelper.php : new file containing helper
+	  function which is an easy way to display singular/plural nouns
+	* Association : actions > mailing : fixed issue between singular/plural
+	  in notince sentence (for succeed/failed sent messages)
+	* Compte : actions > we set the default value of 'mis_a_jour_par' field
+	* Cotisation : actions > we set the default value of 'mis_a_jour_par' field
+	* CotisationType : actions > we set the default value of 'mis_a_jour_par'
+	  field
+	* CotisationType : indexSuccess.php : new column 'action' which allows to
+	  edit a configuration
+	* Depense : actions > we set the default value of 'mis_a_jour_par' field
+	* Recette : actions > we set the default value of 'mis_a_jour_par' field
+	* Statut : actions > we set the default value of 'mis_a_jour_par' field
+	* MembreForm.class.php : 'pseudo' field has been set as non mandatory if
+	  this is not the "first member registration"
+	* symfony propel:build-model
+	* MembreForm.class.php : new property '_firstRegistration' which indicates
+	  if we are registering the first Membre or not	
+	* MembreForm.class.php : we set 'password' and 'pseudo' fields as mandatory
+	  only if this is the registration of the first Membre
+	* MembreForm.class.php : new method isFirstRegistration()
+	* /doc/piwam-install.sql : up to date (membre.pseudo and membre.password can
+	  be set to NULL)
+	* MembreForm.class.php : new private method _setCssClasses()
+
+
+r32 - may, 6, 2009
+    * README updated, according to configuration changes in release 30
+    * Membre : actions > fixed bug when creating a new Membre. The bug said that
+      'mis_a_jour_par' field was required (due to a missing value)
+    * MembreForm.class.php : fixed bug when selecting the list of Statut
+    * Association : actions > fixed bug. We don't initialize the Association
+      each time we edit it
+    * Activite : actions > fixed bug due to missing 'mis_a_jour' value
+    * Association : actions > bilans > total amounts have been formatted as
+      currencies
+    * CompteForm.class.php : field 'reference' now gets a "normal" fields (it
+      was a short field before)
+
+
+r32 - may, 6, 2009
+    * Created wiki page through web user interface.
+
+
+r30 - may, 5, 2009
+    * /web/front_dev.php : Error text has been translated in French
+    * /web/check_configuration.php : new file
+    * /config/ProjectConfiguration.class.php : this file has been made as simple
+      as possible (just one include). Switch/case structure has been removed
+    * layout.php : 'export' link is now reaching a page which allows the user to
+      export different data
+    * databases.yml : Editable area is clearly described
+    * /config/ProjectConfiguration.class.php : let the user to set his own /logs
+      and /cache folders (commented lines by default)
+    * new module 'error' to set different error messages and views
+    * Error : new action 'error 404'
+
+
+r29 - may, 3, 2009
+	* /doc/LICENCE : new file
+	* README updated
+	* /doc/html/index.html : new file - user documentation
+	* /doc/html/style.css : Stylesheet for user guide
+	* layout.php : little space has been added at the end of the menu
+
+
+r28 - may, 3, 2009
+	* Edited wiki page through web user interface.
+
+
+r27 - may, 3, 2009
+	* Version 1.1.0-alpha2 tagged 
+	
+
+r26 - may, 2, 2009
+	* web/js/boxover.js : new script to display tooltips
+	* apps/front/config/view.yml : new boxover JS file added
+	* apps/front/lib/helper/TooltipHelper.php : new tooltip_tag(...) helper
+	* Compte : _form > use of tooltip_helper
+	* DepenseForm.class.php : form elements are displayed with correct CSS class
+	* RecetteForm.class.php : form elements are displayed with correct CSS class
+	* Schema.yml : compte.enregistre_par and compte.mis_a_jour par have been set
+	  to required=false
+	* CotisationForm.class.php : the code about association-related elements has
+	  been rewritten
+	* DepenseForm.class.php : the code about association-related elements has
+	  been rewritten
+	* RecetteForm.class.php : the code about association-related elements has
+	  been rewritten
+	* symfony propel:build-all performed
+	* doc/piwam-install.sql has been updated
+	* Compte : getTotal() > fixed bug when computing account balance
+	* Activite : getTotal() > fixed bug when computing account balance
+	* web/css/main.css : color is lighter for negative accounts
+
+
+r25 - april, 30, 2009
+	* config/settings.yml : new configuration variable 'mailing > address' to
+	  set the sender's address
+	* Association : actions > mailng > dead code removed (loop to send to all
+	  the Membre)
+	* Association : actions > mailing > we use the new configuration variable
+	  "address"
+	* MembrePeer.php : new method doSelectWithEmailForAssociation($id)
+	* Compte.php : setReference($v) has been ovreriden to force upper case
+	* Association.php : initialize() > we also register a new Compte related to
+	  the new Association : CAISSE_MONNAIE
+	
+
+r24 - april, 30, 2009
+	* doc/README : "How To Set Up Piwam" part added
+	* doc/piwam-install.sql file added. This file will act as a "reference" file
+
+
+r23 - april, 30, 2009
+	* ActivitePeer.php : new method getCriteriaForAssociation($id)
+	* CotisationForm.class.php : fixed bug when selecting Compte, Membre and
+	  CotisationType for select lists
+	* DepenseForm.class.php : fixed bug when selecting Compte and Activite
+	* RecetteForm.class.php : fixed bug when selecting Compte and Acitivte
+	* ActivitePeer.php : new method getCriteriaForAssociation($id)
+	* RecettePeer.php :  new method getCriteriaForAssociation($id)
+	* DepensePeer.php :  new method getCriteriaForAssociation($id)
+	* CotisationFOrm.class.php : sfValidatorDate() added for date field
+
+
+r22 - april, 30, 2009
+	* Preference files (.buildpath and .project) have been removed
+	
+
+r21 - april, 28, 2009
+	* Version 1.1.0 alpha1 tagged
+	
+
+r20 - april, 27, 2009
+	* lib/validator/sfPasswordStrengthValidator.class.php : new file
+	* Membre : method setPassword() has been overrided
+	* Layout.php : Link 'export data' links to 'membre/export' action
+	* Layout.php : get the gmap key directly from YML configuration variable
+	  and not from PHP constant
+	* frontConfiguration.class.php : constant GMAP_KEY has been removed
+	* Cotisation : indexSuccess.php > if no cotisation type has been set up,
+	  we only display a link to register a new type
+	* CotisationType : actions > If `first` attribute has been set, we want
+	  to create our first type. We will set a default value in label field
+	* CotisationTypePeer.php : new method doesOneTypeExist(associationId)
+	* MembreForm.class.php : if this is not the registration of the first user 
+	  who is setting up a new Association, password can be empty (and the user 
+	  won't be able to log in). Otherwise, user MUST give a passsword
+	* Phoogle.php : '@' has been put on line 200 before accessing array to avoid
+	  displaying warning for wrong offset
+
+
+r19 - april, 26, 2009
+	* lib/misc/FileExporter.class.php : class implemented
+	* Membre : actions > new action 'export'
+	* Association : actions > new action 'export'
+	* Layout.php : link to 'export' action has been set
+	* ActiviteForm.class.php : widget 'libelle' get a right class
+	* Activite : actions > if edit or creation not failed, we redirect to index
+	* MembreForm.class.php : the field 'pays' has been customized with list of
+	  countries provided by Symfony
+	* MembreForm.class.php : field 'date_inscription' is represented by a
+	  rich date input
+	* Depense : appearance of form has been redesigned
+	* Recette : appearance of form has been redesigned
+	* Depense : view of 'show' action has been designed
+	* Recette : view of 'show' action has been designed
+	* MailingForm.class.php : new widget 'recipients' to generate autocompleted
+      list of recipients but this widget is not displayed
+
+
+r18 - april, 21, 2009
+	* Membre.php : new method getInfoForGmap()
+	* MailingForm.class.php : status bar of rich editor is hidden
+	* Association : actions > mailing > Fixed bug when sending message
+	* Association : mailing > display a preview of the message when message
+	  has been sent. Reports successful and failed messages.
+
+
+r17 - april, 21, 2009
+	* Association : actions > we delete all temporary data in session before
+	  starting the registration of a new Association
+	* Membre : actions > encrypt password before saving
+	* MembreForm.class.php : the default values for mis_a_jour_par value is
+	  defined in action
+	* Membre : MAP action defined
+	* lib/vendor/phoogle/phoogle.php : new library file created
+	* settings.yml : new parameter "googlemap_key"
+	* MembrePeer.php : new method doSelectForAssociation($id)
+	* Membre.php : getCompleteAddress() method implemented
+	
+	
+r16 - april, 20, 2009
+	* web/js/jquery-ui-1.7.1 : 'demos' folder removed
+	* web/js/jquery-ui-1.7.1 : 'docs' folder removed
+	* web/js/jquery-ui-1.7.1 : 'css' folder removed (it was put in css folder)
+	* Cotisation : appearance redone
+	* CotisationTypeForm.class.php : all required updates have been done
+	* frontConfiguration.class.php : define error messages for required/invalid
+	  fields
+	* CotisationType : actions > redirect to listing after form submit
+	* MailingForm.class.php : rich editor configured
+	* Association > actions > mailing > throw error messages if formulaire has
+	  not been filled correctly
+	* AssociationForm.class.php : website is validated by ValidatorUrl
+	* Schema.yml : Membre.pseudo is set as an unique field
+	* Association : new method initialize()
+	* Schema.yml : Statut.mis_a_jour_par and Statut.enregistre_par can be set
+	  to NULL (if this is a value that was set automatically)
+	* Association : creation > the step of creation is now done by 2 steps
+	  We first create the association and then the first Membre
+	* MyUser.class.php : new method setTemporaryAssociationId($id)
+	* Membre : actions > new action 'newfirst' to register the first Membre of
+	  an Association
+	* Membre : config/security.yml created to authorize access to action
+	  newfirst
+	* Membre : new view newfirstSuccess.php
+	* Membre : actions > new action 'executeEndregistration'
+	* Membre : actions > new action 'firstcreate' to register the first Membre
+	* MyUser.class.php : new removeTemporaryData() method
+	* MyUser.class.php : new getTemporaryUserInfo() method
+	* MyUser.class.php : new setTemporaryUserInfo($membre) method()
+	* Activite : enregistre_par field is not mandatory (if it has been set
+	  automatically)
+	* Activite : mis_a_jour_par field is not mandatory (if it has been set
+	  automatically)
+	* Membre : mis_a_jour_par and enregistre_par fields are not mandatory
+	* Project : occurences of sfUser::getAttribute('user_id') have been
+	  completed with default value 'null' and corresponding namespace 'user'
+
+
+r15 - april, 19, 2009
+	* js/prototype/test : add to svn:ignore
+	* Association : login > new link to "create account" action on the login
+	  page
+	* Association : creation > appearance redone
+	* CotisationTypePeer.php : doSelectEnabled() method is set as static
+	* Association : creation > credentials set to allows non-user to register
+	  a new association and also a new account
+	* apps/front/modules/association/config/security.yml : new folder and file
+	  created
+	* MembreForm.class.php : email and website are validated by appropriated
+	  validators.
+	* lib/misc/FileExporter.class.php : new file
+	* Association : new > nested membre form to register a new member
+	* Plugin sfExtraWidgetsPlugin installed
+	* Plugin sfFormExtraPlugin installed
+	* web/js/tiny_mce : tiny_mce library has been added
+	* myUser.class.php : login > attributes related to the user are set into the
+	  'user' namespace
+	* myUser.class.php : logout > attributes are removed
+	* Whole project : occurences of user::getAttribute('field') are completed
+	  with appropriate namespace
+	* web/js/jquery-ui-1.7.1 : jquery library added
+	* new image 'calendar'
+	* web/css/form.css : styles for form elements
+	* MembreForm.class.php : password field is now password type
+	* MembreForm.class.php : link to 'cancel' action is set to go to list of
+	  Membre  (and not the list of associations)
+
+
+r14 - april, 10, 2009
+	* apps/front/config/settings.yml : new part `mailing`
+	* Association : mailing > actions > switch/case structure to use the mail
+	  method according to configuration file
+	* Association : mailing > actions > we display a flash notification after
+	  sending email
+	* mailingForm.class.php : content widget has been renamed as mail_content to
+	  avoid duplicate HTML id
+	* Membre : list > width of 'actions' column is fix
+	* layout.php : new menu entry `association`
+	* apps/front/templates/_pager.css : new partial created to manage paginated
+	  lists
+	* web/css/pagination.css : new file created. Styles associates to pager
+	* lib/model/StatutPeer.php : doSelectEnabled() takes care of association id
+	* lib/model/CotisationPeer.php : doSelectJoinMembre() method implemented
+	* lib/model/CotisationTypePeer.php : doSelectEnabled() method
+	* Cotisation > actions > select only enabled Objects and for the current
+	  association
+	* CotisationType > actions > select only enabled Objects and for the current
+	  association
+	* lib/model/Activite.php : doSelectForOverview() has been renamed as
+	  doSelectEnabled()
+	* Activite : actions > list > select enabled activite for the association
+	  of the current user
+	* lib/model/RecettePeer.php : doSelectForAssociation(associationId) created
+	* Association : edit > appearance redone
+	* lib/form/AssociationForm.class.php : widget 'description' is not a text
+	  field anymore but it's now a textarea
+	* Membre : show > link on email address
+	* New icons ok/ko, time, add
+	* apps/front/lib/helper/MembreHelper.php : new helper file to display
+	  boolean values
+	* Membre : show > we display his Cotisation
+	* Membre : show > subscribtion date is formatted
+	* Layout.php : link to association/edit is updated (id was forgotten)
+
+
+r13 - april, 9, 2009
+	* lib/vendor/swift : folder has been recreated with svn:externals property
+
+
+r12 - april, 9, 2009
+	* lib/vendor/swift : folder removed
+
+
+r11 - april, 8, 2009
+	* lib/vendor/swift : folder created to embed swift plugin
+	
+
+r10 - april, 8, 2009
+	* lib/model/Activite.php : new method getTotalDepenses()
+	* lib/model/Activite.php : new method getTotalRecettes()
+	* lib/model/Activite.php : new method getTotal();
+	* Association : bilan > list by Activite
+	* lib/model/ActivitePeer.php : new method doSelectForOverview()
+	* Association : bilan > list > width of each column is correctly set
+	* Association : new action "mailing"
+	* apps/front/lib/mailingForm.class.php : new class which represents the
+	  mailing form
+	* lib/vendor/Swift : new svn:externals property to checkout SwiftMail
+
+
+r9 - april, 6, 2009
+	* MembreForm.class.php : enregistre_par hidden field is enabled only if we
+	  create a new record and not if we edit it
+	* StatutForm.class.php : new hidden references (association_id...) have been
+	  added
+	* Cotisation : actions > redirect to index after form submit
+	* Cotisation : list > direct to link to 'edit' action when click on edit
+	  icon
+	* lib/model/Membre.php : __toString() method returns object string formatted
+	  with mb_convert_case() function
+	* myUser.class.php : login() method set culture to fr_FR by default for
+	  the user
+	* Activite : appearance redone
+	* CompteForm.class.php : hidden references have been added
+	* RecetteForm.class.php : hidden references have been added
+	* DepenseForm.class.php : hidden references have been added
+	* Recette : actions > redirect to index once form has been submit
+	* Depense : actions > redirect to index once form has been submit
+	* Bilan : module deleted
+	* Association : new action 'bilan'
+	* Membre : list > it's possible to sort according to several criteria
+	* frontConfiguration.class.php : 2 new constants ENABLED / DISABLED
+	* lib/model/Compte.php : new method getTotalDepenses()
+	* lib/model/Compte.php : new method getTotalRecettes()
+	* lib/model/Compte.php : new method getTotal()
+	* Association : bilan > Compte are listed with green or red background
+	  assuming their total amount
+	  
+
+r8 - april, 5, 2009
+	* apps/front/config/security.yml : is_secure set to on
+	* apps/front/config/settings.yml : location of login action
+	* New module 'association' which manage Association model and embed login
+	  and logout actions
+	* myUser.class.php : login(Membre) method
+	* myUser.class.php : logout() method
+	* MembrePeer.php : doSelectByUsernameAndPassword(username, password) method
+	* lib/model/Membre.php : fixed bug due to method whose name has changed in
+	  previous releases
+	* apps/front/templates/layout.php : link to logout action has been updated
+	  menu list
+	* apps/front/templates/layout.php : name of the current association is set
+	  as the name of the page
+	* lib/model/MembrePeer.php : doSelectOrderBy() now take the current associa-
+	  tion id as first parameter
+	* Membre : create view > new fields have been added to get a valid form
+	* lib/form/MembreForm.php : new fields association_id, mis_a_jour_par and
+	  enregistre_par have been added as hidden fields
+	* Membre : actions.class.php > processForm() method > redirects to index
+	  if submit form is valid
+	* apps/front/config/settings.yml : default culture is set to fr_FR
+	* apps/front/lib/helper/MembreHelper.php : new helper format_membre()
+	
+
+r6 - april, 5, 2009
+	* config/ProjetConfiguration.class.php : add switch/case pattern to become
+	  able to manage several configurations
+	* config/schema.yml : onDelete clauses are set to 'cascade'
+	* config/schema.yml : new model 'association'
+	* config/schema.yml : foreign key 'association_id' has been added when
+	  required
+	* config/schema.yml : new foreign keys 'enregitre_par' and 'mis_a_jour_par'
+	  which reference users who created and updated the records. These foreign
+	  keys have been added for each entitiy.
+	* config/schema.yml : field names in camelCase have been renamed with
+	  underscores
+	* Model files have been regenerated
+	* Forms files have been regenerated
+	* Filters files have been regenerated
+	* data/fixtures/fixture.yml : new file with fixture records
+	* *Form.class.php : remove created_at and updated_at fields
+	* Cotisation : appearance redone
+
+
+r5 - march, 31, 2009
+    * Compte : appearance redone
+    * lib/model/Compte.php : __toString() implemented
+    * lib/model/Activite.php : __toString() implemented
+    * Depense : appearance redone
+    * Recette : appearance redone
+    * config/schema.yml : explicit id are set with default behaviour
+    * Model files have been regenerated
+    * Compte : redirect to index after submitting the edit form
+
+
+r4 - february, 27, 2009
+    * Membre : appearance redone
+    * MembreForm : set the current date as default for field 'dateinscription'
+    * New TODO file
+    * Model : Membre > new disable() method
+    * Model : Membre > delete() method has been overridden to call disable()
+    * Statut : CRUD regenerated, enhanced appearance
+    * Model : Statut > new disable() method
+    * Model : Statut > delete() method call the disable() method
+    * Cotisation : CRUD regenerated
+    * CotisationType : CRUD regenerated
+    * Compte : CRUD regenerated
+    * Activite : CRUD regenerated
+    * Recette : CRUD regenerated
+    * Depense : CRUD regenerated
+
+
+r3 - february, 27, 2009:
+    * symfony propel:build-forms
+    * Model : Statut > new method __toString()
+    * Membre : CRUD actions generated
+
+
+r2 - february, 26, 2009:
+    * Core has been generated
+    * Members module : listing of members
+    * MembrePeer : doSelectOrderBy() method implemented
+    * CotisationPeer : getDerniereDuMembre() method
+    * Membre : isAjourCotisation() method

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/unit
+END
+GMapCoordTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/unit/GMapCoordTest.php
+END
+GMapBoundsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/unit/GMapBoundsTest.php
+END
+GMapOptionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/unit/GMapOptionsTest.php
+END
+GMapClientTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/unit/GMapClientTest.php
+END
+GMapGeocodedAddressTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/unit/GMapGeocodedAddressTest.php
+END
+GMapTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/unit/GMapTest.php
+END

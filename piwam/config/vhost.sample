@@ -1,0 +1,21 @@
+    # Be sure to only have this line once in your configuration
+    NameVirtualHost 127.0.0.1:80
+
+    # This is the configuration for piwam
+    Listen 127.0.0.1:80
+
+    <VirtualHost 127.0.0.1:80>
+      ServerName piwam.localhost
+      DocumentRoot "/Users/adrien/Development/WWW/piwam-beta-0.2/web"
+      DirectoryIndex index.php
+      <Directory "/Users/adrien/Development/WWW/piwam-beta-0.2/web">
+        AllowOverride All
+        Allow from All
+      </Directory>
+
+      Alias /sf "/Users/adrien/Development/Symfony/1.2/data/web/sf"
+      <Directory "/Users/adrien/Development/Symfony/1.2/data/web/sf">
+        AllowOverride All
+        Allow from All
+      </Directory>
+    </VirtualHost>

@@ -1,0 +1,5 @@
+index:
+  credentials: config_member
+
+edit:
+  credentials: config_member

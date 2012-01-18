@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Piwam : Guide d'utilisation</title>
+</head>
+<body>
+<div id="content">
+<h1>Piwam: Guide d'utilisation</h1>
+
+
+
+<h2>Pré-requis</h2>
+<p>Cette documentation part du principe que vous possédez une installation
+fonctionnelle de <i>Piwam</i>. Si ce n'est pas le cas, veuillez vous référer à
+la documentation d'installation ou voyez avec la personne qui a mis en place
+l'application.<br />
+Dans la suite de cette documentation l'adresse http://piwam.serveur.org fera
+référence à la page d'accueil de votre <i>Piwam</i>.</p>
+
+
+
+<h2>Création d'une nouvelle association</h2>
+<p>Après une installation vierge, la page d'accueil vous propose de vous
+identifier ou d'enregistrer une nouvelle association. Comme vous ne pouvez pas
+encore vous identifier, cliquez sur "enregistrer une nouvelle association".</p>
+<p>L'enregistrement d'une nouvelle association se passe en 2 étapes :</p>
+<ol>
+    <li>Enregistrement des informations relatives à l'<strong>association</strong></li>
+    <li>Enregistrement des informations relatives à l'<strong>utilisateur</strong>
+    qui est en train d'enregistrer la nouvelle association (vous).</li>
+</ol>
+<p>Un minimum d'information est nécessaire : nom de l'association, votre nom
+et prénom, votre adresse e-mail, votre statut dans l'association, un nom
+d'utilisateur et un mot de passe. Les autres informations sont optionelles, et
+pouront être renseignées ultérieurement.</p>
+
+
+
+<h2>Identification</h2>
+<p>Vous êtes maintenant en mesure de vous identifier afin d'accéder aux
+différentes fonctionnalités de <i>Piwam</i>. Rentrez votre nom d'utilisateur et
+votre mot de passe indiqués précédemment.</p>
+<p class="note">Si vous n'arrivez pas à vous identifier, veuillez reporter
+le problème sur <a href="http://code.google.com/p/piwam/issues/entry">le
+site du projet</a>.</p>
+
+
+
+<h2>Gestion des membres</h2>
+<h3>Ajouter un nouveau membre</h3>
+<p>Il suffit de remplir les informations du formulaire. Les champs
+obligatoires sont le nom, le prénom, le statut au sein de l'association et la
+date d'inscription.</p>
+<p>Un identifiant et un mot de passe sont requis pour le premier membre
+seulement (vous ?). Si le mot de passe est laissé vide, le membre ne pourra pas
+accéder à <i>Piwam</i>.</p>
+
+<h3>Modifier les informations d'un membre</h3>
+<p>Dans la rubrique <strong>gestion des membres</strong>, il y a une petie
+icône représentant un stylo : <img src="images/edit.png" />. Cliquez dessus.
+Vous obtiendrez alors le même formulaire que lors de l'ajout d'un nouveau
+membre. Vous pouvez modifier toutes les informations.</p>
+
+<h3>Restrictions</h3>
+<p>Tout le monde ne peut pas modifier le statut ou l'exemption de cotisation
+d'un membre. Des droits sont en effet requis :</p>
+<ul>
+  <li>Pour éditer un statut, il faut avoir le droit d'ajouter un statut</li>
+  <li>Pour éditer l'exemption, il faut avoir le droit d'enregistrer de nouvelles
+    cotisations</li>
+</ul>
+
+<h2>Gestion des statuts</h2>
+<p>Par défaut, <i>Piwam</i> créé automatiquement les statuts <i>classiques</i>
+qu'on retrouve dans la plupart des asociations :</p>
+<ul>
+    <li>Président</li>
+    <li>Trésorier</li>
+    <li>Secrétaire</li>
+    <li>Membre d'honneur</li>
+    <li>Membre actif</li>
+</ul>
+<p>Cette liste de statuts est utilisé lorsque vous souhaitez enregistrer un
+nouveau membre. Vous pouvez bien entendu en créer de nouveaux aisément, si vous
+souhaitez pas exemple un statut de <i>vice président</i>.</p>
+
+<h2>Les cotisations</h2>
+
+<h3 id="type-cotisation">Les types de cotisations</h3>
+<p>Lors de l'installation de <i>Piwam</i>, il y a une information qui reste
+manquante : le montant des cotisations. C'est ici que vous allez pouvoir les
+configurer. <i>Piwam</i> vous laisse la possibilité de gérer plusieurs <i>types</i>
+de cotisation. Plusieurs raisons à cela :</p>
+<ul>
+    <li>Dissocier les cotisations des personnes physiques de celles des
+    personnes morales</li>
+    <li>Enregistrer une nouvelle configuration de cotisation chaque année,
+    par exemple si le montant évolue.</li>
+</ul>
+
+<h3>Gestion des cotisations</h3>
+<p>Vous ne pouvez enregistrer une cotisation seulement si vous avez
+configuré au moins un <a href="#compte">compte</a> et un <a
+    href="#type-cotisation">type de cotisation.</a></p>
+
+
+
+
+<h2 id="compte">Gestion des comptes</h2>
+<p>Lors de l'installation de <i>Piwam</i>, un "compte" est automatiquement
+ajouté, il s'agit d'une <i>caisse de monnaie</i>.<br />
+Vous pouvez bien entendu enregistre de nouveaux comptes, par exemple vos comptes
+bancaires, vos comptes <i>Paypal</i> &trade;, etc...</p>
+<h3>À quoi sert le champ "référence" ?</h3>
+<p>Le libellé complet du champ peut être très long, par exemple :</p>
+<pre>	> Compte UDF numéro 3278-3287-4398-001389987</pre>
+<p>La référence est une version <b>courte</b> et <b>personnalisée</b> du
+libellé, pour éviter d'afficher la version longue dans les champs de selection
+du compte pendant l'enregistrement d'une dépense, ou dans les bilans.<br />
+Pour le compte en exemple précédent, une référence possible pourrait être :</p>
+<pre>	> UDF_ASSOC</pre>
+<p>Ce qui facilitera ainsi grandement la lecture dans les autres écrans de
+l'application.</p>
+
+
+<h2>Gestion des activités</h2>
+
+<h3>Qu'est-ce qu'une activité ?</h3>
+<p>Une activité peut représenter un évênement particulier, une activité
+récurrente ou tout autre chose vous permettant de segmenter la vie de votre
+association.</p>
+<p>Les activités apparaîtront dans le <strong>bilan</strong> qui permettra
+ainsi de déterminer quelles activités ont rapporté de l'argent à l'association.
+</p>
+
+
+
+<h2>Gestion des dépenses et recettes</h2>
+<p>Les 2 rubriques sont parfaitement symétriques. L'une permet très
+logiquement d'enregistrer les dépenses effectuées par l'association, tandis que
+l'autre va permettre d'enregistrer les entrées d'argent.</p>
+
+
+
+<h2>Questions / réponses</h2>
+<dl>
+    <dt>Sous quelle licence est diffusé <i>Piwam</i> ?</dt>
+    <dd><i>Piwam</i> est distribué sous licence MIT. Vous retrouverez cette
+    licence dans le repertoire /doc/LICENCE, ou <a
+        href="http://opensource.org/licenses/mit-license.php">en ligne</a>. <i>Piwam</i>
+    est un logiciel libre.</dd>
+
+    <dt>Comment demander une nouvelle fonctionnalité ?</dt>
+    <dd>Vous pouvez <a href="http://groups.google.fr/group/piwam">nous
+    contacter</a> en vous inscrivant au groupe officiel <i>Piwam</i>, ou vous rendre
+    sur l'<a href="http://piwam.googlecode.com">espace Google Code</a> du projet
+    et remplir <a href="http://code.google.com/p/piwam/issues/entry">le
+    formulaire</a>.</dd>
+</dl>
+
+</div>
+</body>
+</html>

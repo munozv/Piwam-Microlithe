@@ -1,0 +1,160 @@
+
+	=========================================================================
+	|                                                                       |
+	|     ########  ########    ###    ########  ##     ## ########         |
+	|     ##     ## ##         ## ##   ##     ## ###   ### ##               |
+	|     ##     ## ##        ##   ##  ##     ## #### #### ##               |
+	|     ########  ######   ##     ## ##     ## ## ### ## ######           |
+	|     ##   ##   ##       ######### ##     ## ##     ## ##               |
+	|     ##    ##  ##       ##     ## ##     ## ##     ## ##               |
+	|     ##     ## ######## ##     ## ########  ##     ## ########         |
+	|                                                                       |
+	|                                                                       |
+	=========================================================================
+
+
+	LICENCE
+	-------
+	Ce programme est  fourni sous licence MIT.  Vous pouvez trouver la licence
+	complète dans le fichier /doc/LICENCE
+
+
+  VERSION EN LIGNE
+  ----------------
+  Vous  pouvez  retrouver la version  en ligne de cette documentation sur le
+  du projet : http://code.google.com/p/piwam/wiki/InstallerPiwam
+
+
+  1) Configuration Requise
+	-------------------------
+
+    PHP >= 5.2.4
+      mb_string
+      php_smtp (pour l'envoi d'e-mails via un serveur smtp)
+      php_openssl (pour envoyer des e-mails via un canal sécurisé)
+      memory_limit: 32M
+      GD ou ImageMagick (optionnel : pour gérer le trombinoscope)
+    MySQL
+    Apache
+      mod_rewrite
+
+
+	2) Comment Installer Piwam
+	--------------------------
+
+		A- Récupérez Piwam
+
+			Première étape, récupérez une version de Piwam fonctionnelle !
+			C'est normalement chose faite si vous lisez ce document.
+
+		B- Préparation des fichiers et répertoires
+
+			Par la suite, nous supposerons que Piwam est installé dans le ré-
+			pertoire /var/www.
+			Il y a un certain nombre de dossiers  à rendre inscriptibles pour
+			que Piwam fonctionne correctement :
+
+      -------------------------------------------------------------
+      > cd /var/www/piwam
+      > chmod 777 cache log web/uploads/* config/databases.yml
+      -------------------------------------------------------------
+
+      Si   vous   oubliez  cette  étape,  vous  obtiendrez  un  message
+      d'erreur.
+
+		D- Configurer un Virtual Host
+
+			Si vous utilisez  Piwam  sur votre serveur web,  il est fortement
+			recommandé  de configurer un accès par VirtualHost.  Par exemple,
+			"http://piwam.mon-domain.com"  doit faire référence au répertoire
+			/path/to/piwam/web.
+
+			Voici  un exemple de configuration que vous  devriez placer  dans
+			votre fichier apache/conf/httpd.conf:
+
+			-----------------------------------------------------------------
+			<VirtualHost *:80>
+				ServerName piwam.my-domain.com
+				DocumentRoot "/home/foobar/piwam/web"
+				DirectoryIndex index.php
+			  	<Directory "/home/foobar/piwam/web">
+			    	AllowOverride All
+			    	Allow from All
+
+            # Forcer la configuration PHP pour Piwam
+            # Retirez ce bloc s'il provoque une erreur 500
+            # sur votre serveur
+            <IfModule mod_php5.c>
+              php_value magic_quotes_gpc                0
+              php_value register_globals                0
+              php_value session.auto_start              0
+              php_value mbstring.http_input             pass
+              php_value mbstring.http_output            pass
+              php_value mbstring.encoding_translation   0
+            </IfModule>
+
+			  	</Directory>
+			</VirtualHost>
+			-----------------------------------------------------------------
+
+			Si  vous souhaitez  juste essayer Piwam,  ou si Piwam est installé
+			sur  votre  ordinateur personnel  est  n'est pas  accessible  par
+			Internet,  vous   pouvez  sans  soucis   ne  pas   configurer  de
+			VirtualHost.
+
+		E- Accéder à Piwam
+
+			Lancez  votre navigateur Internet - essayez de choisir Firefox ou
+			Google Chrome ;-)   Si un  VirtualHost a été  configuré,  allez à
+			l'adresse configuré (ici: http://piwam.mon-domain.com).
+			Autrement,  vous  pouvez  accéder  à Piwam  directement  par  une
+			adresse telle que http://your-server.com/piwam/web
+
+		F- Finir l'installation depuis l'interface web
+
+			Maintenant  que vous savez comment accéder à Piwam,  il est temps
+			de  vérifier votre configuration  et  de finir  quelques réglages.
+			Allez  à  l'adresse http://piwam.mon-domain.com/install et suivez
+			les instructions.
+			Cette partie se déroule en 2 étapes :
+
+			1- Piwam vérifie votre configuration.  Est-ce que les modules PHP
+			   nécessaires  sont bien activés, est-ce que les répertoires qui
+			   doivent être inscriptibles le sont bien, etc.
+			2- Configuration de  l'accès à  votre base de  données MySQL. Une
+			   vérification  des  paramètres  est  effectuée  et  un  message
+			   d'erreur apparaîtra si ceux-ci sont incorrects.
+
+		G- Configurer Piwam
+
+			Vous pouvez maintenant créer votre association,  vous identifier,
+			puis sans le menu, choisissez  "préférences Piwam"  et configurez
+			Piwam.
+
+
+	3) En cas de problème...
+	------------------------
+
+		Si vous rencontrez des soucis, vous pouvez :
+			1- Vérifier que vous avez correctement suivi ce README
+			2- Consulter le fichier TROUBLESHOOTING-FR
+			3- Vérifier que vos serveurs Apache/MySQL fonctionnent normalement
+			4- Lancer /web/check_configuration.php
+			5- Vous abonner et écrire à http://groups.google.com/group/piwam
+			6- Rapporter un bug à http://code.google.com/p/piwam/issues/entry
+
+
+    4) À voir aussi
+    ---------------
+
+		* Comment déployer une application Symfony :
+		  http://www.symfony-project.org/jobeet/1_2/Propel/en/23
+
+		* Version en ligne de cette documentation :
+		  http://code.google.com/p/piwam/wiki/InstallerPiwam
+
+
+	-------------------------------------------------------------------------
+	| (c) 2009																|
+	-------------------------------------------------------------------------
+

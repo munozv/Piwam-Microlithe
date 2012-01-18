@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/1114/trunk/test/unit
+END
+DateToolsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1062/trunk/test/unit/DateToolsTest.php
+END
+ConfiguratorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/591/trunk/test/unit/ConfiguratorTest.php
+END
+ParamsToolsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/106/trunk/test/unit/ParamsToolsTest.php
+END
+StringToolsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1114/trunk/test/unit/StringToolsTest.php
+END

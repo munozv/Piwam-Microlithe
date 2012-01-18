@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/28051/branches/1.3/test/unit/widget/i18n
+END
+sfWidgetFormI18nSelectCurrencyTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/22880/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nSelectCurrencyTest.php
+END
+sfWidgetFormI18nDateTimeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/19531/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nDateTimeTest.php
+END
+sfWidgetFormI18nDateTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/19531/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nDateTest.php
+END
+sfWidgetFormI18nChoiceCountryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/28051/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nChoiceCountryTest.php
+END
+sfWidgetFormI18nChoiceLanguageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/23810/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nChoiceLanguageTest.php
+END
+sfWidgetFormI18nTimeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/19531/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nTimeTest.php
+END
+sfWidgetFormI18nSelectCountryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/19531/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nSelectCountryTest.php
+END
+sfWidgetFormI18nSelectLanguageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/19531/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nSelectLanguageTest.php
+END
+sfWidgetFormI18nChoiceCurrencyTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/28051/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nChoiceCurrencyTest.php
+END
+sfWidgetFormI18nChoiceTimezoneTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/23810/branches/1.3/test/unit/widget/i18n/sfWidgetFormI18nChoiceTimezoneTest.php
+END

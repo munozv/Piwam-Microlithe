@@ -1,0 +1,57 @@
+/*
+ * These styles allow to display fake tabs to split page
+ * in different part
+ */
+
+ul.domtabs {
+    display: block;
+    list-style: none;
+    margin: 0;
+}
+
+ul.domtabs li {
+    display: block;
+    float: left;
+    padding: 10px;
+    background-color: #eee;
+    margin: 2px;
+}
+
+ul.domtabs  li a,ul.domtabs li a:Hover {
+    color: #555;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/*
+ * Réadapte le style de titre pour supprimer le trop de marge
+ * au dessus
+ */
+.domtab h2 {
+    margin-top: 0px;
+}
+
+/*
+ * Style appliqué au div embarquant le contenu
+ */
+.domtab div {
+    width: 90%;
+    background-color: #fefefe;
+    border: 1px solid #dedeff;
+    padding: 20px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+/*
+ * Onglet actuellement sélectionné
+ */
+.domtab li.active {
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #99E2FF;
+}
+
+.domtab li.active a {
+    color: #1A4461;
+}

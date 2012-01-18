@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1101/trunk/lib/form/doctrine/base
+END
+BaseMemberForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/552/trunk/lib/form/doctrine/base/BaseMemberForm.class.php
+END
+BaseExpenseForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseExpenseForm.class.php
+END
+BaseMemberExtraValueForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1062/trunk/lib/form/doctrine/base/BaseMemberExtraValueForm.class.php
+END
+BaseDataForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseDataForm.class.php
+END
+BaseIncomeForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseIncomeForm.class.php
+END
+BaseConfigVariableForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/552/trunk/lib/form/doctrine/base/BaseConfigVariableForm.class.php
+END
+BaseAssociationForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/802/trunk/lib/form/doctrine/base/BaseAssociationForm.class.php
+END
+BaseDueForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseDueForm.class.php
+END
+BaseDueTypeForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseDueTypeForm.class.php
+END
+BaseStatusForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseStatusForm.class.php
+END
+BaseAclCredentialForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/552/trunk/lib/form/doctrine/base/BaseAclCredentialForm.class.php
+END
+BaseActivityForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/552/trunk/lib/form/doctrine/base/BaseActivityForm.class.php
+END
+BaseAccountForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/552/trunk/lib/form/doctrine/base/BaseAccountForm.class.php
+END
+BaseAclActionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseAclActionForm.class.php
+END
+BaseConfigValueForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/552/trunk/lib/form/doctrine/base/BaseConfigValueForm.class.php
+END
+BaseMemberExtraRowForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1101/trunk/lib/form/doctrine/base/BaseMemberExtraRowForm.class.php
+END
+BaseConfigCategoryForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/552/trunk/lib/form/doctrine/base/BaseConfigCategoryForm.class.php
+END
+BaseAclModuleForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/591/trunk/lib/form/doctrine/base/BaseAclModuleForm.class.php
+END

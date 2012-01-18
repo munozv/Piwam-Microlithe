@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/552/trunk/test/bootstrap
+END
+unit.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/552/trunk/test/bootstrap/unit.php
+END
+functional.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/552/trunk/test/bootstrap/functional.php
+END

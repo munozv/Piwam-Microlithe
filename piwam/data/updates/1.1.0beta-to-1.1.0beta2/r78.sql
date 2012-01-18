@@ -1,0 +1,1 @@
+UPDATE `acl_action` SET `libelle` = 'Éditer et configurer l''association' WHERE `acl_action`.`id` =1 LIMIT 1 ;

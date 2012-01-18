@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/140/trunk/plugins/sfImageTransformPlugin/lib/adapters
+END
+sfImageTransformImageMagickAdapter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/140/trunk/plugins/sfImageTransformPlugin/lib/adapters/sfImageTransformImageMagickAdapter.class.php
+END
+sfImageTransformAdapterAbstract.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/140/trunk/plugins/sfImageTransformPlugin/lib/adapters/sfImageTransformAdapterAbstract.class.php
+END
+sfImageTransformGDAdapter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/140/trunk/plugins/sfImageTransformPlugin/lib/adapters/sfImageTransformGDAdapter.class.php
+END

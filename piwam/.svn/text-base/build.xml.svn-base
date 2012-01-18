@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Piwam" default="build" basedir=".">
+
+  <property name="SRC_CSS_DIR" value="web/css" description="CSS source folder" />
+  <property name="DST_CSS_DIR" value="web/css" description="Output folder for CSS files" />
+  <property name="YUI" value="build/yuicompressor-2.4.2.jar" description="YUICompressor" />
+  <property name="OUTPUT_CSS_FILE" value="${DST_CSS_DIR}/style.css" />
+  <property name="OUTPUT_CSS_MIN"  value="${DST_CSS_DIR}/style.min.css" />
+
+  <target name="init" description="Create build folder and subfolders if required">
+    <mkdir dir="build"/>
+    <mkdir dir="build/doc"/>
+    <mkdir dir="build/logs"/>
+    <mkdir dir="build/phpcb"/>
+  </target>
+
+  <target name="clearcache" description="Clear symfony cache">
+    <exec executable="${basedir}/symfony">
+      <arg line=" cc" />
+    </exec>
+  </target>
+
+  <target name="doc" description="Generate documentation with Doxygen">
+    <exec executable="doxygen">
+      <arg line=" doc/Doxyfile" />
+    </exec>
+  </target>
+
+  <target name="up" description="Update to the last revision">
+    <exec executable="svn" dir="${basedir}">
+      <arg line="up" />
+    </exec>
+  </target>
+
+  <target name="phpcpd" description="Search duplicate code">
+    <exec dir="${basedir}" executable="phpcpd" failonerror="false">
+      <arg line="--log-pmd ${basedir}/build/logs/pmd-cpd.xml
+        --exclude ${basedir}/lib/vendor
+        --exclude ${basedir}/cache
+        --exclude ${basedir}/log
+        --exclude ${basedir}/plugins
+        ${basedir}" />
+    </exec>
+  </target>
+
+  <target name="pdepend" description="Create dependance report">
+    <exec dir="${basedir}" executable="pdepend" failonerror="false">
+      <arg line="--jdepend-xml=${basedir}/build/logs/jdepend.xml 
+        --ignore=${basedir}/lib/vendor
+        ${basedir}" />
+    </exec>
+  </target>
+
+  <target name="lint" description="Check PHP syntax">
+    <apply executable="php" failonerror="true">
+      <arg value="-l" />
+      <fileset dir=".">
+        <include name="**/*.php" />
+        <exclude name="lib/vendor/**/*.php" />
+      </fileset>
+    </apply>
+  </target>
+
+  <target name="phpcs" description="Track code violations">
+    <exec executable="phpcs" output="${basedir}/build/logs/checkstyle.xml" dir="${basedir}">
+      <arg line=" --report=checkstyle
+        --ignore=${basedir}/lib/vendor,${basedir}/test,${basedir}/cache,${basedir}/log,${basedir}/data,${basedir}/doc,${basedir}/web
+        --standard=Symfony
+        ${basedir}" />
+    </exec>
+  </target>
+
+  <target name="test" description="Launch all the test suites">
+    <exec executable="${basedir}/symfony">
+      <arg line=" test:all
+        --xml=${basedir}/build/logs/tests.xml" />
+    </exec>
+  </target>
+
+  <target name="css" description="Concatenate CSS source files">
+    <echo message="Building ${OUTPUT_CSS_FILE}" />
+    <concat destfile="${OUTPUT_CSS_FILE}">
+      <fileset dir="${SRC_CSS_DIR}" includes="*.css" />
+    </concat>
+    <echo message="${OUTPUT_CSS_FILE} built." />
+  </target>
+
+  <target name="css.min" depends="css" description="Minimize CSS files">
+    <echo message="Building ${OUTPUT_CSS_MIN}" />
+    <apply executable="java" parallel="false" verbose="true" dest="${DST_CSS_DIR}">
+      <fileset dir="${DST_CSS_DIR}">
+        <include name="style.css" />
+      </fileset>
+      <arg line="-jar" />
+      <arg path="${YUI}" />
+      <arg value="--charset" />
+      <arg value="ANSI" />
+      <arg value="-o" />
+      <targetfile />
+      <mapper type="glob" from="style.css" to="style.min.css" />
+    </apply>
+    <echo message="${OUTPUT_CSS_MIN} built." />
+  </target>
+
+  <target name="phpcb" description="Generate Code Browser">
+    <exec executable="phpcb" dir="${basedir}">
+    <arg line="--log build/logs/
+      --source ${basedir}
+      --output build/phpcb/" />
+    </exec>
+  </target>
+
+  <target name="clean" description="Delete generated CSS files">
+    <delete file="${DST_CSS_DIR}/style.css" />
+    <delete file="${DST_CSS_DIR}/style.min.css" />
+  </target>
+
+  <target name="build" depends="init,clearcache,up,phpcs,phpcpd,pdepend,test" />
+</project>

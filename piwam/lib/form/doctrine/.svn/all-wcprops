@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/1184/trunk/lib/form/doctrine
+END
+ConfigValueForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/552/trunk/lib/form/doctrine/ConfigValueForm.class.php
+END
+BaseFormDoctrine.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/552/trunk/lib/form/doctrine/BaseFormDoctrine.class.php
+END
+MemberExtraRowForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1146/trunk/lib/form/doctrine/MemberExtraRowForm.class.php
+END
+ConfigCategoryForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/552/trunk/lib/form/doctrine/ConfigCategoryForm.class.php
+END
+AclModuleForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/591/trunk/lib/form/doctrine/AclModuleForm.class.php
+END
+ExpenseForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/877/trunk/lib/form/doctrine/ExpenseForm.class.php
+END
+MemberForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1114/trunk/lib/form/doctrine/MemberForm.class.php
+END
+MemberExtraValueForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1062/trunk/lib/form/doctrine/MemberExtraValueForm.class.php
+END
+DataForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/591/trunk/lib/form/doctrine/DataForm.class.php
+END
+IncomeForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/877/trunk/lib/form/doctrine/IncomeForm.class.php
+END
+ConfigVariableForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/552/trunk/lib/form/doctrine/ConfigVariableForm.class.php
+END
+AssociationForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/823/trunk/lib/form/doctrine/AssociationForm.class.php
+END
+DueForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1184/trunk/lib/form/doctrine/DueForm.class.php
+END
+DueTypeForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/552/trunk/lib/form/doctrine/DueTypeForm.class.php
+END
+StatusForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/764/trunk/lib/form/doctrine/StatusForm.class.php
+END
+AclCredentialForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/552/trunk/lib/form/doctrine/AclCredentialForm.class.php
+END
+AccountForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/719/trunk/lib/form/doctrine/AccountForm.class.php
+END
+ActivityForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/591/trunk/lib/form/doctrine/ActivityForm.class.php
+END
+AclActionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/591/trunk/lib/form/doctrine/AclActionForm.class.php
+END

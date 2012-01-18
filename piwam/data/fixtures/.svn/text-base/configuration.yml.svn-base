@@ -1,0 +1,85 @@
+ConfigCategory:
+  ConfigCategory_affichage:
+    label: Affichage
+    code: affichage
+  ConfigCategory_mailing:
+    label: Mailing
+    code: mailing
+  ConfigCategory_services:
+    label: Services
+    code: services
+ConfigVariable:
+  ConfigVariable_1:
+    code: address
+    ConfigCategory: ConfigCategory_mailing
+    label: 'Adresse expéditeur'
+    description: 'Les emails envoyés apparaîtront comme expédiés avec cette adresse.'
+    type: EMAIL
+    default_value: info@piwam.org
+  ConfigVariable_2:
+    code: method
+    ConfigCategory: ConfigCategory_mailing
+    label: Méthode
+    description: 'Méthode avec laquelle seront envoyés les e-mails'
+    type: '{mail,smtp,gmail,sendmail}'
+    default_value: mail
+  ConfigVariable_3:
+    code: gmail_username
+    ConfigCategory: ConfigCategory_mailing
+    label: 'Gmail: Identifiant'
+    description: 'Adresse GMail dans le cadre d''un envoi avec GMail'
+    type: EMAIL
+    default_value: ''
+  ConfigVariable_4:
+    code: gmail_password
+    ConfigCategory: ConfigCategory_mailing
+    label: 'GMail: Password'
+    description: 'Mot de passe pour envoyer les mails via GMail'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_5:
+    code: smtp_server
+    ConfigCategory: ConfigCategory_mailing
+    label: 'SMTP: Serveur'
+    description: 'Serveur SMTP utilisé pour l''envoi de mails'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_6:
+    code: smtp_username
+    ConfigCategory: ConfigCategory_mailing
+    label: 'SMTP: Identifiant'
+    description: 'Identifiant pour se connecter au serveur SMTP'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_7:
+    code: smtp_password
+    ConfigCategory: ConfigCategory_mailing
+    label: 'SMTP: Mot de passe'
+    description: 'Mot de passe utilisé pour se connecter au serveur SMTP.'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_8:
+    code: sendmail_path
+    ConfigCategory: ConfigCategory_mailing
+    label: Sendmail
+    description: 'Accès au binaire Sendmail'
+    type: VARCHAR
+    default_value: /usr/bin/sendmail
+  ConfigVariable_9:
+    code: users_by_page
+    ConfigCategory: ConfigCategory_affichage
+    label: 'Membres par page'
+    description: 'Nombre de membres à afficher par page dans le listing.'
+    type: INTEGER
+    default_value: '20'
+  ConfigVariable_10:
+    code: googlemap_key
+    ConfigCategory: ConfigCategory_services
+    label: 'Clé Google Map'
+    description: 'Clé utilisée pour accéder à Google Map. Générez la votre sur http://code.google.com/intl/fr-FR/apis/maps/signup.html.'
+    type: VARCHAR
+    default_value: ABQIAAAAL8IvKFhg9nRCwpMHeoYEKhQu6C5tfcTOznQAfibWXRksA7VQJxQAvTbET15fVW6RQnHsk3BmZqGKLw
+Data:
+  Data_1:
+    config_key: dbversion
+    value: '1034'

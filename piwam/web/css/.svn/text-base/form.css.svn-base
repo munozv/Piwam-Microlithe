@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+/* ------------------------- forms and subforms ------------------------- */
+
+/* used for embed forms */
+.subform {
+
+}
+
+.subform table th {
+  text-align: left;
+  font-weight: normal;
+  background-color: #eeeeff;
+  padding: 10px;
+  color: #666;
+}
+
+
+/* --------------------------- general inputs --------------------------- */
+
+/* Default style apply to each input field */
+input {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background-color: #fff;
+}
+
+/* Properties applied to form input elements who got this class */
+.formInputLarge {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background-color: #fff;
+  width: 350px;
+}
+
+/* Elements de taille normale */
+.formInputNormal {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background-color: #fff;
+  width: 200px;
+}
+
+/* Very large size */
+.formInputXtraLarge {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background-color: #fff;
+  width: 98%;
+}
+
+/* Short elements */
+.formInputShort {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background-color: #fff;
+  width: 80px;
+}
+
+
+/* -------------------------- custom input file -------------------------- */
+
+.SI-FILES-STYLIZED label.custom {
+  width: 100px;
+  height: 22px;
+  background: url(browse.png) 0 0 no-repeat;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.SI-FILES-STYLIZED label.custom input.file {
+  position: relative;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}

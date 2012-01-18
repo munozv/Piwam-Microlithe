@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/1114/trunk/lib/misc
+END
+DbTools.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/257/trunk/lib/misc/DbTools.class.php
+END
+StringTools.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1101/trunk/lib/misc/StringTools.class.php
+END
+FileExporter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/105/trunk/lib/misc/FileExporter.class.php
+END
+FileModifier.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/105/trunk/lib/misc/FileModifier.class.php
+END
+DateTools.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1114/trunk/lib/misc/DateTools.class.php
+END
+MailerFactory.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/341/trunk/lib/misc/MailerFactory.class.php
+END
+Configurator.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/552/trunk/lib/misc/Configurator.class.php
+END
+ParamsTools.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/72/trunk/lib/misc/ParamsTools.class.php
+END

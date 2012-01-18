@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1146/trunk/apps/front/templates
+END
+_deleteButton.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/966/trunk/apps/front/templates/_deleteButton.php
+END
+_pager.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/640/trunk/apps/front/templates/_pager.php
+END
+layout.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1146/trunk/apps/front/templates/layout.php
+END
+no_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1027/trunk/apps/front/templates/no_menu.php
+END

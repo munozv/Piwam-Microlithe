@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/105/trunk/apps/front/modules/error/templates
+END
+error404Success.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/105/trunk/apps/front/modules/error/templates/error404Success.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/30/trunk/apps/front/modules/error/templates/indexSuccess.php
+END
+credentialsError.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/105/trunk/apps/front/modules/error/templates/credentialsError.php
+END

@@ -1,0 +1,333 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Piwam : Guide d'utilisation</title>
+    </head>
+    <body>
+<div id="content">
+<h1>Piwam: Guide développeurs</h1>
+
+<h2>Objectif de ce document</h2>
+<p>
+    Ce document s'adresse aux développeurs souhaitant contribuer au projet Piwam :
+</p>
+<ul>
+    <li>Correction de bugs</li>
+    <li>Rajout de fonctionnalités</li>
+    <li>Modification de fonctionnalités</li>
+</ul>
+<p>
+    Si vous souhaitez juste utiliser Piwam au quotidien, vous pouvez donc oublier
+    ce document !
+</p>
+
+<h2>Un peu d'anglais...</h2>
+<p>
+    Piwam est uniquement francophone, mais le code source et la base de données
+    sont entièrement en anglais ! Voici donc un récapitulatif du vocabulaire
+    à connaître, utilisé dans le projet :
+</p>
+<table>
+  <tr>
+    <td><strong>FRANÇAIS</strong></td>
+    <td><strong>ANGLAIS</strong></td>
+  </tr>
+  <tr>
+    <td>Cotisation</td>
+    <td>Due</td>
+  </tr>
+  <tr>
+    <td>Type de cotisation</td>
+    <td>Due type</td>
+  </tr>
+  <tr>
+    <td>Compte</td>
+    <td>Account</td>
+  </tr>
+  <tr>
+    <td>Dépense</td>
+    <td>Expense</td>
+  </tr>
+  <tr>
+    <td>Recette</td>
+    <td>Income</td>
+  </tr>
+  <tr>
+    <td>Dette</td>
+    <td>Debt</td>
+  </tr>
+  <tr>
+    <td>Activité</td>
+    <td>Activity</td>
+  </tr>
+  <tr>
+    <td>Bilan</td>
+    <td>Balance</td>
+  </tr>
+  <tr>
+    <td>Statu<b>t</b></td>
+    <td>Statu<b>s</b></td>
+  </tr>
+  <tr>
+    <td>Membre</td>
+    <td>Member</td>
+  </tr>
+  <tr>
+    <td>Droit</td>
+    <td>Credential</td>
+  </tr>
+</table>
+
+
+<h2>Utilisation du SVN</h2>
+
+<h3>Branches et trunk</h3>
+<p>
+    Tout développement se fait associé à une branche. Le <i>merge</i> entre la
+    dernière révision de la branche de développement actuelle et le <i>trunk</i>
+    est effectué par un administrateur du projet de manière quotidienne.
+</p>
+
+<h3>Messages de commit</h3>
+<p>
+    Il est <strong>obligatoire</strong> d'inscrire un message lors du 
+    <i>commit</i>, en <strong>anglais</strong>. Le message doit être explicit
+    et décrire la modification apportée. Une balise vient préciser le(s) 
+    versions affectées.
+</p>
+<p>Exemple de message pour la version 1.2</p>
+<pre>
+    [1.2] Fixed issue #42 in DueTable : compute() never returns null
+</pre>
+
+<p>Message pour les versions 1.1 et 1.2 :</p>
+<pre>
+    [1.1, 1.2] Removed dead code in associationActions class
+</pre>
+
+
+
+<h2>Arborescence</h2>
+<h3>Nouvelles fonctionnalités : Plugins !</h3>
+<p>
+    Le développement de nouvelles fonctionnalités se fait en suivant le système
+    de <strong>plugins</strong> propre à symfony, toutes les ressources (code,
+    images, documentation...) doivent donc se situer dans le répertoire
+    /plugins/votrePlugin.
+</p>
+<p>
+    Si quelque chose semble impossible à réaliser en se contentant du répertoire
+    plugins, n'hésitez pas à contacter les développeurs de Piwam.
+</p>
+
+<h3>Corrections du coeur</h3>
+<p>
+    Les corrections et modifications du code dans le coeur de Piwam s'appliquent
+    "évidemment"... au coeur.
+</p>
+
+
+
+
+<h2>Concepts généraux</h2>
+<h3>Un outil multi-associations</h3>
+<p>
+  Piwam peut gérer plusieurs associations en même temps. C'est pour cette
+  raison que la plupart des opérations prennent en considération l'ID de
+  l'association du membre authentifié.
+</p>
+<p>
+  Par exemple, lors de l'affiche de la liste des status, on ne souhaite
+  naturellement proposer que les statuts définis pour l'association actuelle.
+  L'ID de l'association du membre authentifié se récupère par le biais de
+  la classe <span class="code">myUser</span>. Au sein d'une action, il donc
+  procéder comme cela :
+</p>
+<pre>
+    /**
+     * Retrieve association ID
+     */
+    public function executeMyAction()
+    {
+      $associationId = $this->getUser()->getAssociationId();
+    }
+</pre>
+<p>
+  Dans un formulaire, si vous souhaitez afficher une <b>liste de sélection</b>
+  (<span class="code">&lt;select&gt;</span>) contenant des données issues
+  d'une base de données, mais seulement pour une association donnée :
+</p>
+<pre>
+    // MyForm.class.php
+
+    public function configure()
+    {
+      $id = 42;
+
+      // List of members...
+      $this->widgetSchema['member_id'] = new sfWidgetFormDoctrineChoice(array(
+                              'model'     => $this->getRelatedModelName('Member'),
+                              'add_empty' => false));
+
+      // But just for our association !
+      $this->widgetSchema['member_id']->setOption('query',
+                              MemberTable::getQueryEnabledForAssociation($id));
+    }
+</pre>
+<p>
+  La méthode <span class="code">getQueryEnabledForAssociation</span> a été
+  implémentée auparavant.
+</p>
+
+
+
+
+<h2>Normes de codage</h2>
+
+<h3>Encodage</h3>
+<p>
+    <strong>Tous</strong> les fichiers utilisent l'encodage 
+    <strong>UTF-8</strong>. Les sauts de ligne utilisent la convention UNIX (\n)
+</p>
+
+<h3>Indentation</h3>
+<p>
+    L'indentation s'effectue par des espaces (et non des tabulations). La taille
+    des tabulations est de <strong>2</strong> espaces dans le code PHP.
+    La taille des tabulations dans les fichiers HTML est de <strong>4</strong>
+    espaces pour maximiser la lisibilité des templates.
+</p>
+
+
+<h3>Commentaires</h3>
+<p>
+    Les fonctions et méthodes disponibles publiquement doivent être commentées
+    en suivant la syntaxe Doxygen
+</p>
+<pre>
+    /**
+     * Append a string to another one
+     *
+     * @param   string  $a
+     * @param   string  $b
+     * @return  string
+     * @author  John Doe
+     */
+    public function concat($a, $b)
+    {
+        return $a . $b;
+    }
+</pre>
+<p>
+    Les méthodes privées peuvent se contenter de commentaires classiques 
+    expliquant l'utilisation et l'utilité de la méthode.
+</p>
+
+<h3>Casse</h3>
+<p>
+    Le nom des <strong>classes</strong> s'écrit en UpperCamelCase, sauf celles 
+    commençant par un préfixe qui s'écriront alors en lowerCamelCase.<br />
+</p>
+<p>
+    Le nom des <strong>méthodes</strong>
+</p>
+<pre>
+    class MyClass extends sfOtherClass
+    {
+        public function myMethod()
+        {
+        }
+    }
+</pre>
+
+<h3>Accolades</h3>
+<p>
+    Pour faciliter les choses, <strong>toutes</strong> les accolades sont placées
+    sur leur propre ligne :
+</p>
+<pre>
+    if (myBool === true)
+    {
+        // do nothing
+    }
+    else
+    {
+        try
+        {
+      
+        }
+        catch (Exception $e)
+        {
+      
+        }
+    }
+</pre>
+
+
+
+<h2>Gestion de l'utilisateur courant</h2>
+<h3>La classe myUser</h3>
+<p>
+    La classe <span class="code">myUser</span> (<span class="code">
+    /apps/front/lib/myUser.class.php</span>) représente la session
+    de l'utilisateur actuelle. Elle permet de récupérer un certain nombre
+    d'informations (id, nom d'utilisateur, association...). Référez-vous à
+    la documentation pour la liste des méthodes disponibles.
+</p>
+
+<p>
+    Au sein d'une action, vous pouvez y accéder de la sorte :
+</p>
+<pre>
+    /**
+     * Never forget to comment your code
+     */
+    public function executeFoo()
+    {
+      $this->getUser()-> ... ;
+    }
+</pre>
+
+
+
+<h2>Gestion des préférences</h2>
+
+
+<h2>Upload de fichiers</h2>
+<h3>Répertoires</h3>
+<p>
+  Le répertoire <span class="code">/web/uploads</span> à la racine du projet est
+  prévu à cet effet. Il est néanmoins fortement déconseillé d'uploader vos
+  fichiers directement dans ce répertoire. Préférez la création d'un
+  sous-répertoire suffixé par plugin. Par exemple :
+</p>
+<pre>
+    /web/uploads/FacturesPlugin
+</pre>
+<p>
+  Ceci afin d'éviter d'éventuels conflits entre différents composants, et bien
+  évidemment pour faciliter le classement et la sauvegarde.
+</p>
+<p>
+  Si vous souhaitez distribuer votre plugin, pensez à vérifier que ce répertoire
+  est accessible en écriture, ou pensez à le mentionner dans votre
+  documentattion.
+</p>
+
+
+<h2>Cas concréts</h2>
+<h3>Activer un plugin</h3>
+<ol>
+  <li>Activer le plugin dans ProjectConfiguration.class.php</li>
+  <li>Activer le plugin dans settings.yml</li>
+  <li>Complétez éventuellement le schema.yml</li>
+  <li>`php symfony doctrine:build-model` va construire les tables</li>
+</ol>
+<h3>Rajouter un champ aux utilisateurs</h3>
+<h3>Gestion de documents</h3>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+index:
+  credentials: list_due
+  
+create:
+  credentials: add_due
+
+new:
+  credentials: add_due
+  
+edit:
+  credentials: edit_due
+  
+delete:
+  credentials: del_due

@@ -1,0 +1,16 @@
+# For this part, we must have a special "common" credential
+
+index:
+  credentials: config_dues
+  
+create:
+  credentials: config_dues
+
+new:
+  credentials: config_dues
+  
+edit:
+  credentials: config_dues
+  
+delete:
+  credentials: config_dues

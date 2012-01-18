@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/29675/branches/1.3/lib/plugins/sfDoctrinePlugin/lib/widget
+END
+sfWidgetFormDoctrineChoiceMany.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/23810/branches/1.3/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoiceMany.class.php
+END
+sfWidgetFormDoctrineSelect.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/23810/branches/1.3/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineSelect.class.php
+END
+sfWidgetFormDoctrineSelectMany.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/23810/branches/1.3/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineSelectMany.class.php
+END
+sfWidgetFormDoctrineChoice.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/29675/branches/1.3/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php
+END

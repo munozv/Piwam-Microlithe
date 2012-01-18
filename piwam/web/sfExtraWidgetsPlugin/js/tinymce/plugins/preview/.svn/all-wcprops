@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/105/trunk/web/sfExtraWidgetsPlugin/js/tinymce/plugins/preview
+END
+editor_plugin.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/plugins/preview/editor_plugin.js
+END
+preview.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/plugins/preview/preview.html
+END
+editor_plugin_src.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/plugins/preview/editor_plugin_src.js
+END
+example.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/105/trunk/web/sfExtraWidgetsPlugin/js/tinymce/plugins/preview/example.html
+END

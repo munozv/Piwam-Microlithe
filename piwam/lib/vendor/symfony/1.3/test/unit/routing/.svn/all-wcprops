@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/27184/branches/1.3/test/unit/routing
+END
+sfPathInfoRoutingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/19531/branches/1.3/test/unit/routing/sfPathInfoRoutingTest.php
+END
+sfObjectRouteCollectionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/23077/branches/1.3/test/unit/routing/sfObjectRouteCollectionTest.php
+END
+sfNoRoutingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/19531/branches/1.3/test/unit/routing/sfNoRoutingTest.php
+END
+sfObjectRouteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/23810/branches/1.3/test/unit/routing/sfObjectRouteTest.php
+END
+sfPatternRoutingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/27184/branches/1.3/test/unit/routing/sfPatternRoutingTest.php
+END
+sfRequestRouteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/23065/branches/1.3/test/unit/routing/sfRequestRouteTest.php
+END
+sfRouteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/24296/branches/1.3/test/unit/routing/sfRouteTest.php
+END

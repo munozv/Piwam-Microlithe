@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1146/trunk/apps/front/lib/form
+END
+SearchUserForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/966/trunk/apps/front/lib/form/SearchUserForm.class.php
+END
+ConfigForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/552/trunk/apps/front/lib/form/ConfigForm.class.php
+END
+MemberExtraRowsForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1146/trunk/apps/front/lib/form/MemberExtraRowsForm.class.php
+END
+LoginForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1027/trunk/apps/front/lib/form/LoginForm.class.php
+END
+ForgottenPasswordForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/341/trunk/apps/front/lib/form/ForgottenPasswordForm.class.php
+END
+DatabaseConfigForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/341/trunk/apps/front/lib/form/DatabaseConfigForm.class.php
+END
+MailingForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1101/trunk/apps/front/lib/form/MailingForm.class.php
+END

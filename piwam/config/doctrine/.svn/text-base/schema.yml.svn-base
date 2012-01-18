@@ -1,0 +1,319 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+  
+
+AclAction:
+  connection: doctrine
+  tableName: piwam_acl_action
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    acl_module_id:  { type: integer(4) }
+    label:          { type: string(255), notnull: true }
+    code:           { type: string(100), notnull: true }
+  relations:
+    AclModule:      { local: acl_module_id, foreign: id, type: one, onDelete: CASCADE }
+
+
+
+AclCredential:
+  connection: doctrine
+  tableName: piwam_acl_credential
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true } 
+    member_id:      { type: integer(4) }
+    acl_action_id:  { type: integer(4) }
+  relations:
+    AclAction:      { local: acl_action_id, foreign: id, type: one, onDelete: CASCADE }
+    Member:         { local: member_id, foreign: id, type: one, onDelete: CASCADE }
+
+
+
+AclModule:
+  connection: doctrine
+  tableName: piwam_acl_module
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    label:          { type: string(255), notnull: true }
+
+
+
+Activity:
+  connection: doctrine
+  tableName: piwam_activity
+  actAs: { Timestampable: ~ }
+  columns:
+    id:     		     { type: integer(4), primary: true, autoincrement: true }
+    label:           { type: string(255), notnull: true }
+    state:      	   { type: integer(1), default: '1' }
+    association_id:  { type: integer(4), notnull: true }
+    created_by:      { type: integer(4) }
+    updated_by:      { type: integer(4) }
+  relations:
+    Association:     { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }
+    Expenses:        { class: Expense, local: id, foreign: activity_id, type: many }
+    Incomes:         { class: Income, local: id, foreign: activity_id, type: many }
+
+
+    
+Association:
+  connection: doctrine
+  tableName: piwam_association
+  actAs: { Timestampable: ~ }
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    name:           { type: string(120), notnull: true }
+    description:    { type: string(255) }
+    website:        { type: string(255) }
+    created_by:     { type: integer(4) }
+    updated_by:     { type: integer(4) }
+  relations:
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }
+    Activity:        { local: id, foreign: association_id, type: many }
+    Accounts:        { class: Account, local: id, foreign: association_id, type: many }
+    ConfigValue:     { local: id, foreign: association_id, type: many }
+    Expenses:        { class: Expense, local: id, foreign: association_id, type: many }
+    Incomes:         { class: Income, local: id, foreign: association_id, type: many }
+    Status:          { local: id, foreign: association_id, type: many, onDelete: CASCADE }
+    Members:         { class: Member, local: id, foreign: association_id, type: many }
+
+
+    
+Account:
+  connection: doctrine
+  tableName: piwam_account
+  actAs: { Timestampable: ~ }
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    label:          { type: string(255), notnull: true }
+    association_id: { type: integer(4), notnull: true }
+    reference:      { type: string(64), notnull: true }
+    state:          { type: integer(1), default: '1' }
+    created_by:     { type: integer(4) }
+    updated_by:     { type: integer(4) }
+  relations:
+    Association:    { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }
+    Due:            { local: id, foreign: account_id, type: many }
+    Expense:        { local: id, foreign: account_id, type: many }
+    Income:         { local: id, foreign: account_id, type: many }
+      
+      
+ConfigCategory:
+  connection: doctrine
+  tableName: piwam_config_category
+  columns:
+    code:           { type: string(25), primary: true, autoincrement: false }
+    label:          { type: string(255), notnull: true }
+  relations:
+    ConfigVariable: { local: code, foreign: category_code, type: many }
+    
+    
+ConfigValue:
+  connection: doctrine
+  tableName: piwam_config_value
+  columns:
+    config_variable_id: { type: integer(4), primary: true }
+    association_id:  { type: integer(4), primary: true }
+    custom_value:    { type: string(255), notnull: true }
+  relations:
+    ConfigVariable:  { local: config_variable_id, foreign: id, type: one, onDelete: CASCADE }
+    Association:     { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    
+    
+ConfigVariable:
+  connection: doctrine
+  tableName: piwam_config_variable
+  columns:
+    id:              { type: integer(4), primary: true, autoincrement: true }
+    code:            { type: string(25), notnull: true }
+    category_code:   { type: string(25), notnull: true }
+    label:           { type: string(255), notnull: true }
+    description:     { type: string() }
+    type:            { type: string(255), notnull: true }
+    default_value:   { type: string(255),  notnull: true }
+  relations:
+    ConfigCategory:  { local: category_code, foreign: code, type: one, onDelete: CASCADE }
+    ConfigValue:     { local: id, foreign: config_variable_id, type: many }
+    
+    
+Due:
+  connection: doctrine
+  tableName: piwam_due
+  actAs: { Timestampable: ~ }
+  columns:
+    id:              { type: integer(4), primary: true, autoincrement: true }
+    account_id:      { type: integer(4), notnull: true }
+    due_type_id:     { type: integer(4), notnull: true }
+    member_id:       { type: integer(4), notnull: true }
+    date:            { type: date(25), notnull: true }
+    amount:          { type: 'decimal(10, 2)', notnull: true }
+    created_by:      { type: integer(4) }
+    updated_by:      { type: integer(4) }
+  relations:
+    Account:         { local: account_id, foreign: id, type: one, onDelete: CASCADE }
+    DueType:         { local: due_type_id, foreign: id, type: one, onDelete: CASCADE }
+    Member:          { local: member_id, foreign: id, type: one, onDelete: CASCADE }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }
+    
+    
+DueType:
+  connection: doctrine
+  tableName: piwam_due_type
+  actAs: { Timestampable: ~ }
+  columns:
+    id:              { type: integer(4), primary: true, autoincrement: true }
+    label:           { type: string(255), notnull: true }
+    association_id:  { type: integer(4), notnull: true }
+    period:          { type: integer(4), notnull: true }
+    amount:          { type: 'decimal(10, 2)', notnull: true }
+    state:           { type: integer(1), default: '1' }
+    created_by:      { type: integer(4) }
+    updated_by:      { type: integer(4) }
+  relations:
+    Association:     { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }
+    
+    
+Data:
+  connection: doctrine
+  tableName: piwam_data
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    config_key:     { type: string(255), notnull: true }
+    value:          { type: string(255), notnull: true }
+    
+    
+    
+Expense:
+  connection: doctrine
+  tableName: piwam_expense
+  actAs: { Timestampable: ~ }
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    label:          { type: string(255), notnull: true }
+    amount:         { type: 'decimal(10, 2)', notnull: true, autoincrement: false }
+    association_id: { type: integer(4), notnull: true }
+    account_id:     { type: integer(4), notnull: true }
+    activity_id:    { type: integer(4), notnull: true }
+    date:           { type: date(25), notnull: true }
+    paid:           { type: boolean, default: true }
+    created_by:     { type: integer(4) }
+    updated_by:     { type: integer(4) }
+  relations:
+    Association:    { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    Account:        { local: account_id, foreign: id, type: one, onDelete: CASCADE }
+    Activity:       { local: activity_id, foreign: id, type: one, onDelete: CASCADE }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }
+    
+    
+Member:
+  connection: doctrine
+  tableName: piwam_member
+  actAs: { Timestampable: ~ }
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    lastname:       { type: string(255), notnull: true }
+    firstname:      { type: string(255), notnull: true }
+    username:       { type: string(255), default: null }
+    password:       { type: string(255) }
+    status_id:      { type: integer(4), notnull: true }
+    subscription_date: { type: date(25), notnull: true }
+    due_exempt:     { type: boolean, notnull: true }
+    street:         { type: string(255) }
+    zipcode:        { type: string(8) }
+    city:           { type: string(255) }
+    country:        { type: string(8) }
+    picture:        { type: string(255) }
+    email:          { type: string(255) }
+    website:        { type: string(255) }
+    phone_home:     { type: string(16) }
+    phone_mobile:   { type: string(16) }
+    state:          { type: integer(1), default: '1', notnull: true }
+    association_id: { type: integer(4), notnull: true }
+    created_by:     { type: integer(4) }
+    updated_by:     { type: integer(4) }
+  relations:
+    Association:     { class: Association, local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    Status:          { local: status_id, foreign: id, type: one, onDelete: CASCADE }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }      
+
+
+MemberExtraRow:
+  connection: doctrine
+  tableName: piwam_member_extra_row
+  columns:
+    id:             { type: integer(4), primary: true, autoincrement: true }
+    association_id: { type: integer(4), notnull: true }
+    label:          { type: string(255), notnull: true }
+    description:    { type: string() }
+    type:           { type: string(255), notnull: true }
+    default_value:  { type: string(255), notnull: true }
+    slug:           { type: string(255), notnull: true }
+    parameters:     { type: string(255) }
+    required:       { type: boolean, default: false }
+  relations:
+    Association:    { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+
+
+MemberExtraValue:
+  connection: doctrine
+  tableName: piwam_member_extra_value
+  actAs: { Timestampable: ~ }
+  columns:
+    row_id:         { type: integer(4), primary: true }
+    member_id:      { type: integer(4), primary: true }
+    value:          { type: string(255), notnull: true }
+  relations:
+    Row:            { class: MemberExtraRow, local: row_id, foreign: id, type: one, onDelete: CASCADE }
+    Member:         { local: member_id, foreign: id, type: one, onDelete: CASCADE }
+
+    
+Income:
+  connection: doctrine
+  tableName: piwam_income
+  actAs: { Timestampable: ~ }
+  columns:
+    id:             { type: integer(4), primary: true,   autoincrement: true }
+    label:          { type: string(255), notnull: true }
+    association_id: { type: integer(4), notnull: true }
+    amount:         { type: 'decimal(10, 2)', notnull: true }
+    account_id:     { type: integer(4), notnull: true }
+    activity_id:    { type: integer(4), notnull: true }
+    date:           { type: date(25), notnull: true }
+    received:       { type: boolean, default: true }
+    created_by:     { type: integer(4) }
+    updated_by:     { type: integer(4) }
+  relations:
+    Association:    { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    Account:        { local: account_id, foreign: id, type: one, onDelete: CASCADE }
+    Activity:       { local: activity_id, foreign: id, type: one, onDelete: CASCADE }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }
+    
+    
+    
+Status:
+  connection: doctrine
+  tableName: piwam_status
+  actAs: { Timestampable: ~ }
+  columns:
+    id:           { type: integer(4), primary: true, autoincrement: true }
+    label:        { type: string(255), notnull: true }
+    association_id: { type: integer(4), notnull: true }
+    state:        { type: integer(1), default: '1' }
+    created_by:   { type: integer(4) }
+    updated_by:   { type: integer(4) }
+  relations:
+    Association:  { local: association_id, foreign: id, type: one, onDelete: CASCADE }
+    Members:      { class: Member, local: id, foreign: status_id, type: many }
+    CreatedByMember: { class: Member, local: created_by, foreign: id, type: one, onDelete: SET NULL }
+    UpdatedByMember: { class: Member, local: updated_by, foreign: id, type: one, onDelete: SET NULL }

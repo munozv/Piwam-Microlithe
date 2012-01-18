@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/32414/branches/1.3/lib/autoload
+END
+sfCoreAutoload.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/32414/branches/1.3/lib/autoload/sfCoreAutoload.class.php
+END
+sfSimpleAutoload.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/23205/branches/1.3/lib/autoload/sfSimpleAutoload.class.php
+END
+sfAutoload.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/23205/branches/1.3/lib/autoload/sfAutoload.class.php
+END
+sfAutoloadAgain.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/22248/branches/1.3/lib/autoload/sfAutoloadAgain.class.php
+END

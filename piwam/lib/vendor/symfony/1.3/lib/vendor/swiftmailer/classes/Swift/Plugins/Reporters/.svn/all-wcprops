@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/21985/branches/1.3/lib/vendor/swiftmailer/classes/Swift/Plugins/Reporters
+END
+HitReporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/21985/branches/1.3/lib/vendor/swiftmailer/classes/Swift/Plugins/Reporters/HitReporter.php
+END
+HtmlReporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/21985/branches/1.3/lib/vendor/swiftmailer/classes/Swift/Plugins/Reporters/HtmlReporter.php
+END

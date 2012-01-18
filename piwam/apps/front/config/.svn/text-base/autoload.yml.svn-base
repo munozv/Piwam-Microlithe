@@ -1,0 +1,5 @@
+autoload:
+  phoogle_lib:
+    name:      phoogle_lib
+    path:      %SF_LIB_DIR%/vendor/phoogle
+    recursive: on    

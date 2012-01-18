@@ -1,0 +1,57 @@
+
+  * Route for config_member/edit
+  * Ensure that we can delete all the table without constraint issue
+      => to allow re-installation
+
+  * Set Piwam's version in YML file
+
+	Model Updates :
+		enregistre_par	=> created_by
+		mis_a_jour_par	=> updated_by
+		libelle			    => label
+		membre          => member
+		activite        => activity
+		depense         => expense
+		recette         => income
+		nom             => name
+		site_web        => website
+		compte          => account
+		cotisation      => due
+		statut          => status
+		actif           => state
+		configCategorie => configCategory
+		montant         => amount
+		(dueType).valide => period
+		payée           => paid
+		percue          => received
+		
+		member:
+		nom             => lastname
+		prenom          => firstname
+		pseudo          => username
+		rue             => street
+		cp              => zipcode
+		ville           => city
+		pays            => country
+
+  * Add version tables (triggers)
+  * Mailing : store sent messages
+  * Make beautiful search bar
+  * Check that user picture is removed when user is deleted
+  * Install : _generateConfigFile : make better replacements (thanks to pseudo
+      constant like #DB_HOST
+  * Write tests for short_website_url
+	* Issue when deleting compte :
+		-> recette / depense still exist
+		- ... but don't appear in bilan !
+	* Update mis_a_jour_par after deleting objects
+	* Create cookie when log in
+	* Activite : add description field
+	* Association > config > allow user to set a port and encryption settings
+	* Membre/Ajaxlist : select only membre for current association
+	* Provide bilan by year
+	* PDF output for bilan
+	* Export should be put in each module
+	* Association > mailing > find a way to store error messages
+	* Add a compte > delete it > try to recreate one > error "existing record"
+	x Membre : registration > set 'email' as mandatory for the first user

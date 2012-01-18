@@ -1,0 +1,21 @@
+
+# Developer Document
+--------------------
+When sharing a new version, think about...
+
+# SVN
+-----
+
+    1) Merge current branch with trunk once you're sure your work is working
+    
+       > svn merge -r x:HEAD branches/1.2 trunk
+
+
+# SQL
+-----
+
+    1) Be sure that SQL files do not refers to a specific db name. IE, check
+       that no table are written as `piwam`.`piwam_table`.
+       
+    2) Be sure that /piwam/install.sql is up to date
+        * piwam_data.dbversion = CURRENT_VERSION

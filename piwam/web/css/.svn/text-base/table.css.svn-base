@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+/*
+ * CSS styles for tables
+ *
+*/
+
+
+/* ---------------------- special rows styles -------------------------- */
+
+/* for accounts with positive balance */
+.positive {
+  background-color: #C2FCC3;
+}
+
+/* for accounts with negative balance */
+.negative {
+  background-color: #EECEBE;
+}
+
+
+
+/* ------------------------- listing tables ---------------------------- */
+
+table.datalist {
+  width: 100%;
+  border: 1px solid #8EA19B;
+  border-spacing: 1px;
+  background-color: #fff;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Header of listing tables */
+table.datalist thead th
+{
+  padding: 5px;
+  font-weight: lighter;
+}
+
+table.datalist thead tr {
+  color: #E8FAFA;
+  background: url(thead_bg.jpg) repeat-x;
+}
+
+/* Links in header of listing tables */
+table.datalist thead tr a {
+  color: white;
+  text-decoration: none;
+  padding: 0 13px 0 0;
+  background: transparent url(orderby.png) no-repeat scroll right center;
+}
+table.datalist thead tr a:Hover {
+  text-decoration: none;
+}
+
+/* column 'actions' with icons */
+table.datalist thead th.actions {
+  width: 60px;
+}
+
+table.datalist tbody tr:Hover {
+  background-color: #E8FD98;
+}
+
+table.datalist tbody td {
+  font-family: verdana, sans-serif;
+  font-size: 11px;
+  color: #162027;
+  padding-left: 5px;
+}
+
+
+/* ------------------------- details tables ---------------------------- */
+
+/* left cell in details tables */
+table.details th {
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px dotted black;
+  background-color: #efefff;
+}
+
+/* right cell */
+table.details td {
+  border-bottom: 1px dotted black;
+  padding: 5px 5px 5px 10px;
+}
+
+table.details tfoot td {
+  padding-top: 10px;
+  border-bottom: 0;
+}
+
+
+
+/* ------------------------- form tables ---------------------------- */
+
+/* left cell in add/edit forms, with label */
+table.formtable tbody th {
+  background-color: #eeeeff;
+  text-align: left;
+  color: #888;
+  padding: 10px;
+}
+
+/* right cell in add/edit forms, with input */
+table.formtable tbody td {
+  padding: 3px;
+}

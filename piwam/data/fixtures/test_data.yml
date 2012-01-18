@@ -1,0 +1,503 @@
+Account:
+  Account_1:
+    label: 'Caisse de monnaie'
+    Association: Association_1
+    reference: CAISSE_MONNAIE
+    state: '1'
+    created_at: '2009-11-28 21:42:16'
+    updated_at: '2009-11-28 21:42:16'
+AclAction:
+  AclAction_1:
+    AclModule: AclModule_1
+    label: 'Éditer et configurer l''association'
+    code: edit_association
+  AclAction_2:
+    AclModule: AclModule_1
+    label: 'Utiliser l''outil de mailing'
+    code: mailing
+  AclAction_3:
+    AclModule: AclModule_1
+    label: 'Utiliser l''outil d''export'
+    code: export
+  AclAction_4:
+    AclModule: AclModule_1
+    label: 'Voir les bilans'
+    code: bilan
+  AclAction_5:
+    AclModule: AclModule_4
+    label: 'Enregistrer une activité'
+    code: add_activite
+  AclAction_6:
+    AclModule: AclModule_4
+    label: 'Éditer une activité'
+    code: edit_activite
+  AclAction_7:
+    AclModule: AclModule_4
+    label: 'Supprimer une activité'
+    code: del_activite
+  AclAction_8:
+    AclModule: AclModule_4
+    label: 'Lister les activités'
+    code: list_activite
+  AclAction_9:
+    AclModule: AclModule_4
+    label: 'Voir les détails d''une activités'
+    code: show_activite
+  AclAction_10:
+    AclModule: AclModule_2
+    label: 'Enregistrer un membre'
+    code: add_membre
+  AclAction_11:
+    AclModule: AclModule_2
+    label: 'Éditer un membre'
+    code: edit_membre
+  AclAction_12:
+    AclModule: AclModule_2
+    label: 'Supprimer un membre'
+    code: del_membre
+  AclAction_13:
+    AclModule: AclModule_2
+    label: 'Lister les membres'
+    code: list_membre
+  AclAction_14:
+    AclModule: AclModule_2
+    label: 'Afficher les détails d''un membre'
+    code: show_membre
+  AclAction_15:
+    AclModule: AclModule_8
+    label: 'Ajouter un statut'
+    code: add_statut
+  AclAction_16:
+    AclModule: AclModule_8
+    label: 'Éditer un statut'
+    code: edit_statut
+  AclAction_17:
+    AclModule: AclModule_8
+    label: 'Supprimer un statut'
+    code: del_statut
+  AclAction_18:
+    AclModule: AclModule_8
+    label: 'Lister les statuts'
+    code: list_statut
+  AclAction_19:
+    AclModule: AclModule_7
+    label: 'Enregistrer une cotisation'
+    code: add_cotisation
+  AclAction_20:
+    AclModule: AclModule_7
+    label: 'Éditer une cotisation'
+    code: edit_cotisation
+  AclAction_21:
+    AclModule: AclModule_7
+    label: 'Supprimer une cotisation'
+    code: del_cotisation
+  AclAction_22:
+    AclModule: AclModule_7
+    label: 'Lister les cotisations'
+    code: list_cotisation
+  AclAction_23:
+    AclModule: AclModule_7
+    label: 'Gérer les types de cotisations'
+    code: config_cotisations
+  AclAction_24:
+    AclModule: AclModule_3
+    label: 'Enregistrer un compte'
+    code: add_compte
+  AclAction_25:
+    AclModule: AclModule_3
+    label: 'Éditer un compte'
+    code: edit_compte
+  AclAction_26:
+    AclModule: AclModule_3
+    label: 'Supprimer un compte'
+    code: del_compte
+  AclAction_27:
+    AclModule: AclModule_3
+    label: 'Lister les comptes'
+    code: list_compte
+  AclAction_28:
+    AclModule: AclModule_6
+    label: 'Enregistrer une recette'
+    code: add_recette
+  AclAction_29:
+    AclModule: AclModule_6
+    label: 'Éditer une recette'
+    code: edit_recette
+  AclAction_30:
+    AclModule: AclModule_6
+    label: 'Supprimer une recette'
+    code: del_recette
+  AclAction_31:
+    AclModule: AclModule_6
+    label: 'Lister les recettes'
+    code: list_recette
+  AclAction_32:
+    AclModule: AclModule_5
+    label: 'Enregistrer une dépense'
+    code: add_depense
+  AclAction_33:
+    AclModule: AclModule_5
+    label: 'Éditer une dépense'
+    code: edit_depense
+  AclAction_34:
+    AclModule: AclModule_5
+    label: 'Supprimer une dépense'
+    code: del_depense
+  AclAction_35:
+    AclModule: AclModule_5
+    label: 'Lister les dépenses'
+    code: list_depense
+  AclAction_36:
+    AclModule: AclModule_2
+    label: 'Gérer les droits'
+    code: edit_acl
+  AclAction_37:
+    AclModule: AclModule_9
+    label: 'Mettre à jour Piwam'
+    code: update_piwam
+  AclAction_38:
+    AclModule: AclModule_9
+    label: 'Éditer les préférences'
+    code: edit_piwam_preferences
+AclCredential:
+  AclCredential_1:
+    Member: Member_1
+    AclAction: AclAction_1
+  AclCredential_2:
+    Member: Member_1
+    AclAction: AclAction_2
+  AclCredential_3:
+    Member: Member_1
+    AclAction: AclAction_3
+  AclCredential_4:
+    Member: Member_1
+    AclAction: AclAction_4
+  AclCredential_5:
+    Member: Member_1
+    AclAction: AclAction_5
+  AclCredential_6:
+    Member: Member_1
+    AclAction: AclAction_6
+  AclCredential_7:
+    Member: Member_1
+    AclAction: AclAction_7
+  AclCredential_8:
+    Member: Member_1
+    AclAction: AclAction_8
+  AclCredential_9:
+    Member: Member_1
+    AclAction: AclAction_9
+  AclCredential_10:
+    Member: Member_1
+    AclAction: AclAction_10
+  AclCredential_11:
+    Member: Member_1
+    AclAction: AclAction_11
+  AclCredential_12:
+    Member: Member_1
+    AclAction: AclAction_12
+  AclCredential_13:
+    Member: Member_1
+    AclAction: AclAction_13
+  AclCredential_14:
+    Member: Member_1
+    AclAction: AclAction_14
+  AclCredential_15:
+    Member: Member_1
+    AclAction: AclAction_15
+  AclCredential_16:
+    Member: Member_1
+    AclAction: AclAction_16
+  AclCredential_17:
+    Member: Member_1
+    AclAction: AclAction_17
+  AclCredential_18:
+    Member: Member_1
+    AclAction: AclAction_18
+  AclCredential_19:
+    Member: Member_1
+    AclAction: AclAction_19
+  AclCredential_20:
+    Member: Member_1
+    AclAction: AclAction_20
+  AclCredential_21:
+    Member: Member_1
+    AclAction: AclAction_21
+  AclCredential_22:
+    Member: Member_1
+    AclAction: AclAction_22
+  AclCredential_23:
+    Member: Member_1
+    AclAction: AclAction_23
+  AclCredential_24:
+    Member: Member_1
+    AclAction: AclAction_24
+  AclCredential_25:
+    Member: Member_1
+    AclAction: AclAction_25
+  AclCredential_26:
+    Member: Member_1
+    AclAction: AclAction_26
+  AclCredential_27:
+    Member: Member_1
+    AclAction: AclAction_27
+  AclCredential_28:
+    Member: Member_1
+    AclAction: AclAction_28
+  AclCredential_29:
+    Member: Member_1
+    AclAction: AclAction_29
+  AclCredential_30:
+    Member: Member_1
+    AclAction: AclAction_30
+  AclCredential_31:
+    Member: Member_1
+    AclAction: AclAction_31
+  AclCredential_32:
+    Member: Member_1
+    AclAction: AclAction_32
+  AclCredential_33:
+    Member: Member_1
+    AclAction: AclAction_33
+  AclCredential_34:
+    Member: Member_1
+    AclAction: AclAction_34
+  AclCredential_35:
+    Member: Member_1
+    AclAction: AclAction_35
+  AclCredential_36:
+    Member: Member_1
+    AclAction: AclAction_36
+  AclCredential_37:
+    Member: Member_1
+    AclAction: AclAction_37
+  AclCredential_38:
+    Member: Member_1
+    AclAction: AclAction_38
+AclModule:
+  AclModule_1:
+    label: Association
+  AclModule_2:
+    label: Membre
+  AclModule_3:
+    label: Compte
+  AclModule_4:
+    label: Activité
+  AclModule_5:
+    label: Dépense
+  AclModule_6:
+    label: Recette
+  AclModule_7:
+    label: Cotisations
+  AclModule_8:
+    label: Statuts
+  AclModule_9:
+    label: Piwam
+Activity:
+  Activity_1:
+    label: 'Fonctionnement général de l''association'
+    state: '1'
+    Association: Association_1
+    created_at: '2009-11-28 21:42:16'
+    updated_at: '2009-11-28 21:42:16'
+Association:
+  Association_1:
+    name: 'The Fakers'
+    description: 'Fake association, for test only'
+    website: 'http://www.the-fakers.com'
+    created_by: null
+    updated_by: null
+    created_at: '2009-11-28 21:42:15'
+    updated_at: '2009-11-28 21:43:25'
+  Association_2:
+    name: 'Private'
+    description: 'Data should be private'
+    website: 'http://private.com'
+    created_by: null
+    updated_by: null
+    created_at: '2009-11-28 21:42:15'
+    updated_at: '2009-11-28 21:43:25'
+ConfigCategory:
+  ConfigCategory_affichage:
+    label: Affichage
+    code: affichage
+  ConfigCategory_mailing:
+    label: Mailing
+    code: mailing
+  ConfigCategory_services:
+    label: Services
+    code: services
+ConfigVariable:
+  ConfigVariable_1:
+    code: address
+    ConfigCategory: ConfigCategory_mailing
+    label: 'Adresse expéditeur'
+    description: 'Les emails envoyés apparaîtront comme expédiés avec cette adresse.'
+    type: EMAIL
+    default_value: info@piwam.org
+  ConfigVariable_2:
+    code: method
+    ConfigCategory: ConfigCategory_mailing
+    label: Méthode
+    description: 'Méthode avec laquelle seront envoyés les e-mails'
+    type: '{mail,smtp,gmail,sendmail}'
+    default_value: mail
+  ConfigVariable_3:
+    code: gmail_username
+    ConfigCategory: ConfigCategory_mailing
+    label: 'Gmail: Identifiant'
+    description: 'Adresse GMail dans le cadre d''un envoi avec GMail'
+    type: EMAIL
+    default_value: ''
+  ConfigVariable_4:
+    code: gmail_password
+    ConfigCategory: ConfigCategory_mailing
+    label: 'GMail: Password'
+    description: 'Mot de passe pour envoyer les mails via GMail'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_5:
+    code: smtp_server
+    ConfigCategory: ConfigCategory_mailing
+    label: 'SMTP: Serveur'
+    description: 'Serveur SMTP utilisé pour l''envoi de mails'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_6:
+    code: smtp_username
+    ConfigCategory: ConfigCategory_mailing
+    label: 'SMTP: Identifiant'
+    description: 'Identifiant pour se connecter au serveur SMTP'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_7:
+    code: smtp_password
+    ConfigCategory: ConfigCategory_mailing
+    label: 'SMTP: Mot de passe'
+    description: 'Mot de passe utilisé pour se connecter au serveur SMTP.'
+    type: VARCHAR
+    default_value: ''
+  ConfigVariable_8:
+    code: sendmail_path
+    ConfigCategory: ConfigCategory_mailing
+    label: Sendmail
+    description: 'Accès au binaire Sendmail'
+    type: VARCHAR
+    default_value: /usr/bin/sendmail
+  ConfigVariable_9:
+    code: users_by_page
+    ConfigCategory: ConfigCategory_affichage
+    label: 'Membres par page'
+    description: 'Nombre de membres à afficher par page dans le listing.'
+    type: INTEGER
+    default_value: '20'
+  ConfigVariable_10:
+    code: googlemap_key
+    ConfigCategory: ConfigCategory_services
+    label: 'Clé Google Map'
+    description: 'Clé utilisée pour accéder à Google Map. Générez la votre sur http://code.google.com/intl/fr-FR/apis/maps/signup.html.'
+    type: VARCHAR
+    default_value: ABQIAAAAL8IvKFhg9nRCwpMHeoYEKhQu6C5tfcTOznQAfibWXRksA7VQJxQAvTbET15fVW6RQnHsk3BmZqGKLw
+Data:
+  Data_1:
+    config_key: dbversion
+    value: '470'
+Member:
+  Member_1:
+    lastname: Lastname
+    firstname: Firstname
+    username: demo
+    password: demo
+    Status: Status_1
+    subscription_date: '2009-11-28'
+    due_exempt: true
+    street: '4th Piwam Street'
+    zipcode: '12345'
+    city: 'Symfony City'
+    country: FR
+    picture: null
+    email: demo@demo.org
+    website: 'http://www.demo.org'
+    phone_home: '0123456789'
+    phone_mobile: '9876543210'
+    state: '1'
+    Association: Association_1
+    created_at: '2009-11-28 21:43:25'
+    updated_at: '2009-11-28 21:43:25'
+  Member_2:
+    lastname: Another
+    firstname: Member
+    username: foobar
+    password: foobar
+    Status: Status_4
+    subscription_date: '2009-11-28'
+    due_exempt: false
+    street: ''
+    zipcode: ''
+    city: ''
+    country: FR
+    picture: null
+    email: ''
+    website: ''
+    phone_home: ''
+    phone_mobile: ''
+    state: '1'
+    Association: Association_1
+    CreatedByMember: Member_1
+    created_at: '2009-11-28 21:49:04'
+    updated_at: '2009-11-28 21:49:04'
+Status:
+  Status_1:
+    label: Président
+    Association: Association_1
+    state: '1'
+    created_by: null
+    created_at: '2009-11-28 21:42:16'
+    updated_at: '2009-11-28 21:42:16'
+  Status_2:
+    label: Trésorier
+    Association: Association_1
+    state: '1'
+    created_by: null
+    created_at: '2009-11-28 21:42:16'
+    updated_at: '2009-11-28 21:42:16'
+  Status_3:
+    label: Secrétaire
+    Association: Association_1
+    state: '1'
+    created_by: null
+    created_at: '2009-11-28 21:42:16'
+    updated_at: '2009-11-28 21:42:16'
+  Status_4:
+    label: 'Membre actif'
+    Association: Association_1
+    state: '1'
+    created_by: null
+    created_at: '2009-11-28 21:42:16'
+    updated_at: '2009-11-28 21:42:16'
+  Status_5:
+    label: 'Membre d''honneur'
+    Association: Association_1
+    state: '1'
+    created_by: null
+    created_at: '2009-11-28 21:42:16'
+    updated_at: '2009-11-28 21:42:16'
+Due:
+  Due_1:
+    Account: Account_1
+    DueType: DueType_1
+    Member: Member_1
+    date: '2009-11-28'
+    amount: '10.00'
+    CreatedByMember: Member_1
+    created_at: '2009-11-28 21:49:40'
+    updated_at: '2009-11-28 21:49:40'
+DueType:
+  DueType_1:
+    label: 'Cotisation annuelle 2009'
+    Association: Association_1
+    period: '12'
+    amount: '10.00'
+    state: '1'
+    created_at: '2009-11-28 21:48:33'
+    updated_at: '2009-11-28 21:48:33'

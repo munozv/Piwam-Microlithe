@@ -1,0 +1,14 @@
+index:
+  credentials: list_status
+  
+create:
+  credentials: add_status
+
+new:
+  credentials: add_status
+    
+edit:
+  credentials: edit_status
+  
+delete:
+  credentials: del_status

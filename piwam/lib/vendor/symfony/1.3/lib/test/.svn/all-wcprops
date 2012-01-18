@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/28641/branches/1.3/lib/test
+END
+sfTestFunctionalBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/28641/branches/1.3/lib/test/sfTestFunctionalBase.class.php
+END
+sfTesterRequest.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/27845/branches/1.3/lib/test/sfTesterRequest.class.php
+END
+sfTesterMailer.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/23810/branches/1.3/lib/test/sfTesterMailer.class.php
+END
+sfTestFunctional.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/19411/branches/1.3/lib/test/sfTestFunctional.class.php
+END
+sfTestBrowser.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/23810/branches/1.3/lib/test/sfTestBrowser.class.php
+END
+sfTesterResponse.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/27061/branches/1.3/lib/test/sfTesterResponse.class.php
+END
+sfTesterUser.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/21769/branches/1.3/lib/test/sfTesterUser.class.php
+END
+sfTesterViewCache.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/24615/branches/1.3/lib/test/sfTesterViewCache.class.php
+END
+sfTester.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/14562/branches/1.3/lib/test/sfTester.class.php
+END
+sfTesterForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/24217/branches/1.3/lib/test/sfTesterForm.class.php
+END

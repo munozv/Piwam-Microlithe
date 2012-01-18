@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/utils
+END
+validate.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/utils/validate.js
+END
+mctabs.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/utils/mctabs.js
+END
+editable_selects.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/utils/editable_selects.js
+END
+form_utils.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/15/trunk/web/sfExtraWidgetsPlugin/js/tinymce/utils/form_utils.js
+END

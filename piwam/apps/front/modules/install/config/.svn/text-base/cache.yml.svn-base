@@ -1,0 +1,11 @@
+index:
+  enabled:      false
+    
+checkConfig:
+  enabled:      false
+  
+default:
+  enabled:      false  
+
+all:
+  with_layout:  false

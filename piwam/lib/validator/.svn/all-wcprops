@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/105/trunk/lib/validator
+END
+sfValidatorCustomUnique.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/105/trunk/lib/validator/sfValidatorCustomUnique.php
+END
+sfPasswordStrengthValidator.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/105/trunk/lib/validator/sfPasswordStrengthValidator.class.php
+END
+sfValidatorAmount.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/54/trunk/lib/validator/sfValidatorAmount.class.php
+END

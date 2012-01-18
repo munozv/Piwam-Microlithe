@@ -1,0 +1,49 @@
+10
+
+dir
+1524
+https://piwam.googlecode.com/svn/trunk/lib
+https://piwam.googlecode.com/svn
+
+
+
+2010-03-28T19:50:29.623794Z
+1184
+adrien.mogenet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+70dfc3ba-f61f-11dd-a295-0b7b0935bf94
+
+test
+dir
+
+model
+dir
+
+form
+dir
+
+validator
+dir
+
+filter
+dir
+
+misc
+dir
+
+vendor
+dir
+

@@ -1,0 +1,14 @@
+index:
+  credentials: list_account
+  
+create:
+  credentials: add_account
+  
+new:
+  credentials: add_account
+
+edit:
+  credentials: edit_account
+  
+delete:
+  credentials: del_account

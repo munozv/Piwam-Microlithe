@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+/*
+ * Styles to apply to the main left menu
+ */
+
+/* menu block */
+#menu {
+  position: relative;
+  float: left;
+  width: 200px;
+}
+
+/* section in the menu */
+#menu ul li.mainSection {
+  background-color: #41B200;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 1px solid #555;
+}
+
+/* menu list */
+#menu ul {
+  padding-left: 10px;
+}
+
+/* menu items */
+#menu li {
+  display: block;
+  padding: 2px;
+}
+
+/* links in menu */
+#menu a {
+  text-decoration: none;
+  color: #999;
+}
+
+#menu a:Hover {
+  color: #000;
+}

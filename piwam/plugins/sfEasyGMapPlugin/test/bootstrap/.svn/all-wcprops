@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/bootstrap
+END
+unit.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/bootstrap/unit.php
+END
+functional.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/21521/plugins/sfEasyGMapPlugin/branches/v3/test/bootstrap/functional.php
+END

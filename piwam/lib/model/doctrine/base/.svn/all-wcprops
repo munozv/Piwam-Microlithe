@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1101/trunk/lib/model/doctrine/base
+END
+BaseAclCredential.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseAclCredential.class.php
+END
+BaseActivity.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseActivity.class.php
+END
+BaseAccount.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseAccount.class.php
+END
+BaseAclAction.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseAclAction.class.php
+END
+BaseConfigValue.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseConfigValue.class.php
+END
+BaseConfigCategory.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseConfigCategory.class.php
+END
+BaseMemberExtraRow.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1101/trunk/lib/model/doctrine/base/BaseMemberExtraRow.class.php
+END
+BaseAclModule.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseAclModule.class.php
+END
+BaseMember.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseMember.class.php
+END
+BaseExpense.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseExpense.class.php
+END
+BaseMemberExtraValue.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseMemberExtraValue.class.php
+END
+BaseData.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseData.class.php
+END
+BaseIncome.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseIncome.class.php
+END
+BaseConfigVariable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseConfigVariable.class.php
+END
+BaseAssociation.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseAssociation.class.php
+END
+BaseDue.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseDue.class.php
+END
+BaseDueType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseDueType.class.php
+END
+BaseStatus.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1040/trunk/lib/model/doctrine/base/BaseStatus.class.php
+END

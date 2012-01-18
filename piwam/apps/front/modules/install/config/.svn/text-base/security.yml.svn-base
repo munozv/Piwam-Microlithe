@@ -1,0 +1,11 @@
+index:
+  is_secure:	false
+  
+checkConfig:
+  is_secure:	false
+  
+configDatabase:
+  is_secure:  false
+  
+end:
+  is_secure:	false

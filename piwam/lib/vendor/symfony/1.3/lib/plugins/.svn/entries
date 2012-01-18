@@ -1,0 +1,40 @@
+10
+
+dir
+33162
+http://svn.symfony-project.com/branches/1.3/lib/plugins
+http://svn.symfony-project.com
+
+
+
+2011-03-30T12:47:06.478182Z
+32406
+fabien
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ee427ae8-e902-0410-961c-c3ed070cd9f9
+
+sfDoctrinePlugin
+dir
+
+sfProtoculousPlugin
+dir
+
+sfPropelPlugin
+dir
+
+sfCompat10Plugin
+dir
+
