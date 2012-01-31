@@ -1,0 +1,14 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+
+Debt:
+  tableName:  piwampg_debt
+  actAs:      { Timestampable: ~ }
+  columns:
+    id:          { type: integer(4), primary: true, autoincrement: true }
+    member_id:   { type: integer(4), notnull: true }
+    income_id:   { type: integer(4), notnull: true }
+  relations:
+    Member:      { local: member_id, foreign: id, type: one, onDelete: CASCADE }
+    Income:      { local: income_id, foreign: id, type: one, onDelete: CASCADE }

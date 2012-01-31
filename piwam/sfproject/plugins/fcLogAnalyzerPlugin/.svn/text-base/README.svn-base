@@ -1,0 +1,5 @@
+fcLogAnalyzerPlugin
+===================
+
+The `fcLogAnalyzerPlugin` may be useful to parse symfony logs and display them
+with a nice interface, avoiding `tail -f /path/to/log/xxx.log`.

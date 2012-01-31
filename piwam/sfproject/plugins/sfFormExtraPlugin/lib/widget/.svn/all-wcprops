@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget
+END
+sfWidgetFormPropelJQueryAutocompleter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormPropelJQueryAutocompleter.class.php
+END
+sfWidgetFormTextareaTinyMCE.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormTextareaTinyMCE.class.php
+END
+sfWidgetFormSelectDoubleList.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormSelectDoubleList.class.php
+END
+sfWidgetFormDoctrineChoiceGrouped.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormDoctrineChoiceGrouped.class.php
+END
+sfWidgetFormSelectUSState.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormSelectUSState.class.php
+END
+sfWidgetFormReCaptcha.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormReCaptcha.class.php
+END
+sfWidgetFormJQueryDate.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormJQueryDate.class.php
+END
+sfWidgetFormPropelChoiceGrouped.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormPropelChoiceGrouped.class.php
+END
+sfWidgetFormJQueryAutocompleter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/15/trunk/plugins/sfFormExtraPlugin/lib/widget/sfWidgetFormJQueryAutocompleter.class.php
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/modules/pwSandbox/templates
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/modules/pwSandbox/templates/indexSuccess.php
+END
+newSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/modules/pwSandbox/templates/newSuccess.php
+END

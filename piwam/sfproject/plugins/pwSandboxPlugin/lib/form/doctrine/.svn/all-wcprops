@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/form/doctrine
+END
+PluginDebtForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/form/doctrine/PluginDebtForm.class.php
+END
+DebtForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/877/trunk/plugins/pwSandboxPlugin/lib/form/doctrine/DebtForm.class.php
+END
