@@ -1,0 +1,61 @@
+ksWdCalendarPlugin
+==================
+
+Overview
+--------
+
+The ksWdCalendarPlugin provides an easy way to integrate the [wdCalendar](http://www.web-delicious.com/jquery-plugins-demo/wdCalendar/sample.php) in Symfony
+
+Installation
+------------
+
+* Install the plugin
+
+        symfony plugin:install --stability=alpha ksWdCalendarPlugin
+
+* Rebuild Project
+
+        doctrine:build --all --and-load (Attention this erase all your Database and load what you have in fixtures)
+
+* Generate Wed dir (css , js , ecc..)
+
+        symfony plugin:publish-assets
+
+* Add in apps/{APPLICATION}/config/settings.yml
+
+        1) Add ksWdCalendar module in enabled_modules
+        2)  ks_wd_calendar_plugin:
+              culture_us:
+                label: us
+                fulldaykey: MMddyyyy
+                suffix_file_path: US
+                jsdate: m/d/Y H:i
+
+        So it looks like this:
+        all:
+          .settings:
+            ks_wd_calendar_plugin:
+              culture_us:
+                label: us
+                fulldaykey: MMddyyyy
+                suffix_file_path: US
+                jsdate: m/d/Y H:i
+            enabled_modules: [default, ksWdCalendar]
+
+* Clear the cache
+
+        ./symfony cc
+
+* Connect at module
+
+        Connect at http://project/application_dev.php/ksWdCalendar/
+
+Contact
+-------
+
+* Daniele Palombo ( daniele.palombo [at] gmail [dot] com )
+
+Changelog
+---------
+
+* Version 1.0.0 : initial release

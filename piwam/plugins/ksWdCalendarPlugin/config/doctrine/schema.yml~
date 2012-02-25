@@ -1,0 +1,10 @@
+KsWCEvent:
+  columns:
+    subject: {type: varchar(64), notnull: false}
+    description: {type: string(4000), notnull: false}
+    start_time: {type: timestamp, notnull: false}
+    end_time: {type: timestamp, notnull: false}
+    is_all_day_event: {type: boolean, default: false}
+    color: {type: varchar(10)}
+    recurring_rule: {type: varchar(255)}
+    people: {type string(4000), notnull: false}

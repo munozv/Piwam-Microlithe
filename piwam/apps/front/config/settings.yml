@@ -1,6 +1,13 @@
 all:
   
   .settings:
+    ks_wd_calendar_plugin:
+      culture_us:
+        label: us
+        fulldaykey: MMddyyyy
+        suffix_file_path: US
+        jsdate: m/d/Y H:i
+    enabled_modules: [default, ksWdCalendar]
     # Form security secret (CSRF protection)
     csrf_secret:       		false     # Unique secret to enable CSRF protection or false to disable
 
@@ -37,7 +44,7 @@ dev:
     cache:                  false
     no_script_name:         false
     etag:                   false
-    enabled_modules:        [default, fcLogAnalyzer, pwSandbox]
+    enabled_modules:        [default, fcLogAnalyzer, pwSandbox, ksWdCalendar]
 
 test:
   .settings:
