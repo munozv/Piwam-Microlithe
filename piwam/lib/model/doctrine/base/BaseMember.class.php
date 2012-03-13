@@ -25,6 +25,7 @@ Doctrine_Manager::getInstance()->bindComponent('Member', 'doctrine');
  * @property string $phone_home
  * @property string $phone_mobile
  * @property string $tutor
+ * @property string $activity
  * @property integer $state
  * @property integer $association_id
  * @property integer $created_by
@@ -62,6 +63,7 @@ Doctrine_Manager::getInstance()->bindComponent('Member', 'doctrine');
  * @method string              getPhoneHome()         Returns the current record's "phone_home" value
  * @method string              getPhoneMobile()       Returns the current record's "phone_mobile" value
  * @method string              getTutor()             Returns the current record's "tutor" value
+ * @method string              getActivity()          Returns the current record's "activity" value
  * @method integer             getState()             Returns the current record's "state" value
  * @method integer             getAssociationId()     Returns the current record's "association_id" value
  * @method integer             getCreatedBy()         Returns the current record's "created_by" value
@@ -98,6 +100,7 @@ Doctrine_Manager::getInstance()->bindComponent('Member', 'doctrine');
  * @method Member              setPhoneHome()         Sets the current record's "phone_home" value
  * @method Member              setPhoneMobile()       Sets the current record's "phone_mobile" value
  * @method Member              setTutor()             Sets the current record's "tutor" value
+ * @method Member              setActivity()          Sets the current record's "activity" value
  * @method Member              setState()             Sets the current record's "state" value
  * @method Member              setAssociationId()     Sets the current record's "association_id" value
  * @method Member              setCreatedBy()         Sets the current record's "created_by" value
@@ -204,6 +207,10 @@ abstract class BaseMember extends sfDoctrineRecord
         $this->hasColumn('tutor', 'string', 16, array(
              'type' => 'string',
              'length' => 16,
+             ));
+        $this->hasColumn('activity', 'string', 255, array(
+             'type' => 'string',
+             'length' => 255,
              ));
         $this->hasColumn('state', 'integer', 1, array(
              'type' => 'integer',

@@ -237,6 +237,7 @@ Member:
     phone_home:     { type: string(16) }
     phone_mobile:   { type: string(16) }
     tutor:   	    { type: string(16) }
+    activity:	    { type: string(255) }
     state:          { type: integer(1), default: '1', notnull: true }
     association_id: { type: integer(4), notnull: true }
     created_by:     { type: integer(4) }

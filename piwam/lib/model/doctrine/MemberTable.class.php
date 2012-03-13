@@ -42,6 +42,16 @@ class MemberTable extends Doctrine_Table
    * @param   integer   $id
    * @return  array of Members
    */
+
+  public function doHisto($i)
+  {
+    $q = Doctrine_Query::create()
+      ->select('k.subject')
+      ->from('KsWCEvent k')
+      ->where("k.people = 'babar'");
+    return ($q->execute());
+  }
+
   public static function getEnabledForAssociation($id)
   {
     $q = self::getQueryEnabledForAssociation($id);
@@ -58,10 +68,10 @@ class MemberTable extends Doctrine_Table
   public static function getQueryEnabledForAssociation($id)
   {
     $q = Doctrine_Query::create()
-          ->from('Member m')
-          ->where('m.association_id = ?', $id)
-          ->andWhere('m.state = ?', self::STATE_ENABLED)
-          ->orderBy('m.firstname ASC');
+      ->from('Member m')
+      ->where('m.association_id = ?', $id)
+      ->andWhere('m.state = ?', self::STATE_ENABLED)
+      ->orderBy('m.firstname ASC');
 
     return $q;
   }
@@ -83,33 +93,33 @@ class MemberTable extends Doctrine_Table
   public static function getQuerySearch($params)
   {
     $q = Doctrine_Query::create()
-          ->from('Member m');
+      ->from('Member m');
 
     /*
      * Select only members who belong to a specific association
      */
     if (isset ($params['association_id']))
-    {
-      $q->andWhere('m.association_id = ?', $params['association_id']);
-    }
+      {
+	$q->andWhere('m.association_id = ?', $params['association_id']);
+      }
 
     /*
      * Restrict the research to the enabled/fisabled members
      */
     if (isset ($params['state']))
-    {
-      $q->andWhere('m.state = ?', $params['state']);
-    }
+      {
+	$q->andWhere('m.state = ?', $params['state']);
+      }
 
     /*
      * Widget 'magic' is used to perform a search on several fields :
      * firstname, lastname... and we can add more
      */
     if (isset ($params['magic']) && $params['magic'] != "")
-    {
-      $query = '%' . $params['magic'] . '%';
-      $q->andWhere("concat(concat(m.firstname, ' '), m.lastname) LIKE ?", $query);
-    }
+      {
+	$query = '%' . $params['magic'] . '%';
+	$q->andWhere("concat(concat(m.firstname, ' '), m.lastname) LIKE ?", $query);
+      }
 
     /*
      * Widget 'due_state' can have different values :
@@ -119,49 +129,49 @@ class MemberTable extends Doctrine_Table
      *  - month : Select members whom due will expire in a month
      */
     if (isset ($params['due_state']))
-    {
-      $today = date('Y-m-d');
+      {
+	$today = date('Y-m-d');
 
-      if ($params['due_state'] == 'ok')
-      {
-        $q->leftJoin('m.Due d');
-        $q->leftJoin('d.DueType t');
-        $q->andWhere('m.due_exempt = ?', true);
-        $q->orWhere("ADDDATE(d.date, INTERVAL t.period MONTH) >= ?", $today);
+	if ($params['due_state'] == 'ok')
+	  {
+	    $q->leftJoin('m.Due d');
+	    $q->leftJoin('d.DueType t');
+	    $q->andWhere('m.due_exempt = ?', true);
+	    $q->orWhere("ADDDATE(d.date, INTERVAL t.period MONTH) >= ?", $today);
+	  }
+	if ($params['due_state'] == 'ko')
+	  {
+	    $q->leftJoin('m.Due d');
+	    $q->leftJoin('d.DueType t');
+	    $q->andWhere('m.due_exempt = ?', false);
+	    $q->andWhere("(d.date IS NULL OR ADDDATE(d.date, INTERVAL t.period MONTH) < ?)", $today);
+	  }
+	if ($params['due_state'] == 'month')
+	  {
+	    $q->leftJoin('m.Due d');
+	    $q->leftJoin('d.DueType t');
+	    $q->andWhere('m.due_exempt = ?', false);
+	    $q->andWhere("ADDDATE(d.date, INTERVAL t.period - 1 MONTH) < ?", $today);
+	    $q->andWhere("ADDDATE(d.date, INTERVAL t.period MONTH) >= ?", $today);
+	  }
       }
-      if ($params['due_state'] == 'ko')
-      {
-        $q->leftJoin('m.Due d');
-        $q->leftJoin('d.DueType t');
-        $q->andWhere('m.due_exempt = ?', false);
-        $q->andWhere("(d.date IS NULL OR ADDDATE(d.date, INTERVAL t.period MONTH) < ?)", $today);
-      }
-      if ($params['due_state'] == 'month')
-      {
-        $q->leftJoin('m.Due d');
-        $q->leftJoin('d.DueType t');
-        $q->andWhere('m.due_exempt = ?', false);
-        $q->andWhere("ADDDATE(d.date, INTERVAL t.period - 1 MONTH) < ?", $today);
-        $q->andWhere("ADDDATE(d.date, INTERVAL t.period MONTH) >= ?", $today);
-      }
-    }
 
     /*
      * If a sorting column has been specified, we order the
      * result
      */
     if (isset ($params['order_by']))
-    {
-      $column = $params['order_by'];
-      $sortable_columns = array('lastname', 'firstname', 'username', 'city', 'status_id');
-
-      if (! in_array($column, $sortable_columns))
       {
-        $column = 'lastname';
-      }
+	$column = $params['order_by'];
+	$sortable_columns = array('lastname', 'firstname', 'username', 'city', 'status_id');
 
-      $q->orderBy('m.' . $column . ' ASC');
-    }
+	if (! in_array($column, $sortable_columns))
+	  {
+	    $column = 'lastname';
+	  }
+
+	$q->orderBy('m.' . $column . ' ASC');
+      }
 
     return $q;
   }
@@ -175,10 +185,10 @@ class MemberTable extends Doctrine_Table
   public static function getPendingMembers($association_id)
   {
     $q = Doctrine_Query::create()
-          ->select('m.*')
-          ->from('Member m')
-          ->where('m.association_id = ?', $association_id)
-          ->andWhere('state = ?', self::STATE_PENDING);
+      ->select('m.*')
+      ->from('Member m')
+      ->where('m.association_id = ?', $association_id)
+      ->andWhere('state = ?', self::STATE_PENDING);
 
     return $q->execute();
   }
@@ -196,12 +206,12 @@ class MemberTable extends Doctrine_Table
   public static function getByUsernameAndPassword($username, $password)
   {
     $q = Doctrine_Query::create()
-          ->select('m.id')
-          ->from('Member m')
-          ->where('m.username = ?', $username)
-          ->andWhere('m.password = ?', sha1($password))
-          ->andWhere('m.state = ?', self::STATE_ENABLED)
-          ->limit(1);
+      ->select('m.id')
+      ->from('Member m')
+      ->where('m.username = ?', $username)
+      ->andWhere('m.password = ?', sha1($password))
+      ->andWhere('m.state = ?', self::STATE_ENABLED)
+      ->limit(1);
 
     return $q->fetchOne();
   }
@@ -215,10 +225,10 @@ class MemberTable extends Doctrine_Table
   public static function getByUsername($username)
   {
     $q = Doctrine_Query::create()
-          ->select('m.id')
-          ->from('Member m')
-          ->where('m.username = ?', $username)
-          ->limit(1);
+      ->select('m.id')
+      ->from('Member m')
+      ->where('m.username = ?', $username)
+      ->limit(1);
 
     return $q->fetchOne();
   }
@@ -232,9 +242,9 @@ class MemberTable extends Doctrine_Table
   public static function getById($id)
   {
     $q = Doctrine_Query::create()
-          ->from('Member m')
-          ->where('m.id= ?', $id)
-          ->limit(1);
+      ->from('Member m')
+      ->where('m.id= ?', $id)
+      ->limit(1);
 
     return $q->fetchOne();
   }
@@ -275,16 +285,16 @@ class MemberTable extends Doctrine_Table
     $n = Configurator::get('users_by_page', $params['association_id'], 20);
 
     if (isset($params['by_page']))
-    {
-      if ($params['by_page'] == 'all')
       {
-        $n = 1000; // we set a maximum anyway
+	if ($params['by_page'] == 'all')
+	  {
+	    $n = 1000; // we set a maximum anyway
+	  }
+	elseif (is_integer($params['by_page']))
+	  {
+	    $n = $params['by_page'];
+	  }
       }
-      elseif (is_integer($params['by_page']))
-      {
-        $n = $params['by_page'];
-      }
-    }
 
     $pager = new sfDoctrinePager('Member', $n);
     $pager->setQuery($q);
@@ -303,11 +313,11 @@ class MemberTable extends Doctrine_Table
   public static function getHavingEmailForAssociation($id)
   {
     $q = Doctrine_Query::create()
-          ->from('Member m')
-          ->where('m.association_id = ?', $id)
-          ->andWhere('m.state = ?', self::STATE_ENABLED)
-          ->andWhere('m.email IS NOT NULL')
-          ->andWhere('m.email != ""');
+      ->from('Member m')
+      ->where('m.association_id = ?', $id)
+      ->andWhere('m.state = ?', self::STATE_ENABLED)
+      ->andWhere('m.email IS NOT NULL')
+      ->andWhere('m.email != ""');
 
     return $q->execute();
   }
@@ -320,8 +330,8 @@ class MemberTable extends Doctrine_Table
   public static function doCount()
   {
     $q = Doctrine_Query::create()
-          ->select('m.id')
-          ->from('Member m');
+      ->select('m.id')
+      ->from('Member m');
 
     return $q->count();
   }

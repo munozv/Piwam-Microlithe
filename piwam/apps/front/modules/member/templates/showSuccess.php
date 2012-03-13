@@ -208,6 +208,30 @@
    <h2><a name="t4" id="t4">Historiques Des Activites</a></h2>
    <div>
       <ul>
+	      <?php 
+			 //	      $i = 12;
+			 //	      while ( $i != 60)
+			 //{
+			 //	      $tmp_var = memberTable::doHisto($i)->getSubject();
+	      $nb = 0;
+	      $ks = memberTable::doHisto($i);
+foreach ($ks as $event)
+{
+  echo "Activite " . $nb . ": " . $event->getSubject() .ksWdCalendar::php2JsTime($event->getStartTime(null) , $this->arrayCulture['jsdate']) . "<br/>";
+  $nb++;
+  
+}
+
+
+//		  if (strlen($tmp_var) > 0)
+
+//		    {
+//		      echo $tmp_var;
+//		      echo '<br/>';
+//		    }
+//		  $i = $i +1;
+//		}
+		  ?>
       </ul>
    </div>
 </div>

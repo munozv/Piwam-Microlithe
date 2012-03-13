@@ -11,3 +11,69 @@ Jan 18 18:52:13 symfony [err] {sfConfigurationException} The route "quotation" d
 Jan 18 18:52:34 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
 Jan 18 18:52:44 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
 Jan 18 19:04:25 symfony [err] {sfConfigurationException} The route "quotation" does not exist.
+Feb 29 05:34:47 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Piwam.ks_w_c_event' doesn't exist. Failing Query: "SELECT k.id AS k__id, k.subject AS k__subject, k.description AS k__description, k.start_time AS k__start_time, k.end_time AS k__end_time, k.is_all_day_event AS k__is_all_day_event, k.color AS k__color, k.recurring_rule AS k__recurring_rule, k.people AS k__people FROM ks_w_c_event k"
+Feb 29 05:42:46 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "object" on "KsWCEvent"
+Feb 29 05:42:47 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "object" on "KsWCEvent"
+Feb 29 05:42:47 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "object" on "KsWCEvent"
+Feb 29 05:43:25 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "object" on "KsWCEvent"
+Feb 29 05:43:43 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "object" on "KsWCEvent"
+Feb 29 05:43:43 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "object" on "KsWCEvent"
+Feb 29 05:43:44 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "object" on "KsWCEvent"
+Feb 29 06:00:24 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:00:25 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:00:25 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:00:25 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:00:44 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:00:44 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:00:44 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:01:01 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:01:02 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:04:21 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:04:23 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:04:23 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:04:23 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:04:24 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:04:51 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:05:46 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:08:40 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:08:40 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:08:40 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:09:12 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:10:31 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:10:32 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:10:32 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:10:32 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:11:11 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:11:46 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:12:23 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:12:24 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:12:24 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:12:24 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:13:40 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:13:40 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:13:40 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:13:40 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:13:41 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:14:41 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:14:41 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:14:41 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:14:41 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:14:42 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:15:38 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:16:45 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:16:45 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:16:46 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 06:16:46 symfony [err] {Doctrine_Record_Exception} Couldn't call Doctrine_Core::set(), second argument should be an instance of Doctrine_Collection when setting one-to-many references.
+Feb 29 07:41:24 symfony [err] {sfException} Impossible to parse date "<pre>
+Doctrine_Collection
+data : Array(
+    0 : Object(KsWCEvent)
+    1 : Object(KsWCEvent)
+    2 : Object(KsWCEvent)
+    3 : Object(KsWCEvent)
+)
+</pre>" with format "yyyy-MM-dd HH:mm:ss".
+Feb 29 08:07:43 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'babar' in 'where clause'. Failing Query: "SELECT k.id AS k__id, k.subject AS k__subject FROM ks_w_c_event k WHERE (k.people = babar AND k.id = 0)"
+Feb 29 08:08:12 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'babar' in 'where clause'. Failing Query: "SELECT k.id AS k__id, k.subject AS k__subject FROM ks_w_c_event k WHERE (k.people = babar AND k.id = 0)"
+Feb 29 09:04:50 symfony [err] {sfConfigurationException} The route "ksWdCalendar" does not exist.
+Feb 29 09:23:58 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Piwam.piwam_account' doesn't exist

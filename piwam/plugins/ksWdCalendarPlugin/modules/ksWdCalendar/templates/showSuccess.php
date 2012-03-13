@@ -9,7 +9,7 @@
       <td><?php echo $ks_wc_event->getSubject() ?></td>
     </tr>
     <tr>
-      <th>Dsescription:</th>
+      <th>Description:</th>
       <td><?php echo $ks_wc_event->getDescription() ?></td>
     </tr>
     <tr>
@@ -29,14 +29,9 @@
       <td><?php echo $ks_wc_event->getColor() ?></td>
     </tr>
     <tr>
-      <th>Recurriiing rule:</th>
+      <th>Recurring rule:</th>
       <td><?php echo $ks_wc_event->getRecurringRule() ?></td>
     </tr>
-    <tr>
-      <th>People:</th>
-      <td><?php echo $ks_wc_event->getPeople() ?></td>
-    </tr>
-
   </tbody>
 </table>
 

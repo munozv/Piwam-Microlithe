@@ -19,6 +19,11 @@ class quotationActions extends sfActions
   {
 
   }
+
+  public function executeDo(sfWebRequest $request)
+  {
+
+  }
 }
 
 

@@ -467,3 +467,23 @@ default:
 quotation:
   url:    /quotation
   param:  { module: quotation, action: index }
+
+win:
+  url:    /quotation/test
+  param:  { module: quotation, action: do }
+
+
+# -----------------------------------------------------------------------------
+#     CALENDAR ACTIONS
+# -----------------------------------------------------------------------------
+calendar:
+  url:    /ksWdCalendar
+  param:  { module: ksWdCalendar, action: index }
+
+# -----------------------------------------------------------------------------
+#     BILAN ACTIONS
+# -----------------------------------------------------------------------------
+
+bilan:
+  url:    /bilan
+  param: { module: association, action: bilan }

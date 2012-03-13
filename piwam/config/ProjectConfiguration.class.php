@@ -28,5 +28,6 @@ class ProjectConfiguration extends sfProjectConfiguration
       //$this->enablePlugins('sfDoctrineGuardPlugin');
       $this->enablePlugins('csDoctrineActAsGeolocatablePlugin');
         $this->enablePlugins('pwCorePlugin');
+    $this->enablePlugins('ksWdCalendarPlugin');
   }
 }

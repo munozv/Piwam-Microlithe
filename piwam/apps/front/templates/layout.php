@@ -49,6 +49,7 @@
             <ul>
                 <li class="mainSection">Comptabilit&eacute;</li>
                 <li><?php echo link_to('Gestion des activit&eacute;s', '@activities_list') ?></li>
+                <li><?php echo link_to('Planning des activit&eacute;s', '@calendar') ?></li>
                 <li><?php echo link_to('Gestion des comptes', '@accounts_list') ?></li>
                 <li><?php echo link_to('Gestion des d&eacute;penses', '@expenses_list') ?></li>
                 <li><?php echo link_to('Gestion des recettes', '@incomes_list') ?></li>
@@ -58,6 +59,7 @@
                 <li class="mainSection">Fonctionnalit&eacute;s</li>
                 <li><?php echo link_to('Exporter les donn&eacute;es', '@export') ?></li>
 		<li><?php echo link_to('Devis', '@quotation') ?></li>
+		<li><?php echo link_to('Bilan', '@bilan') ?></li>
 		<li><?php echo link_to('Mailing', '@mailing') ?></li>
 
                 <li><a href="http://code.google.com/p/piwam/issues/entry" target="_blank">Rapporter un bug</a></li>
