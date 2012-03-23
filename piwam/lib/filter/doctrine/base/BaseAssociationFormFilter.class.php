@@ -14,6 +14,11 @@ abstract class BaseAssociationFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'name'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'ville'       => new sfWidgetFormFilterInput(),
+      'adress'      => new sfWidgetFormFilterInput(),
+      'code_postal' => new sfWidgetFormFilterInput(),
+      'mail'        => new sfWidgetFormFilterInput(),
+      'tel'         => new sfWidgetFormFilterInput(),
       'description' => new sfWidgetFormFilterInput(),
       'website'     => new sfWidgetFormFilterInput(),
       'created_by'  => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('CreatedByMember'), 'add_empty' => true)),
@@ -24,6 +29,11 @@ abstract class BaseAssociationFormFilter extends BaseFormFilterDoctrine
 
     $this->setValidators(array(
       'name'        => new sfValidatorPass(array('required' => false)),
+      'ville'       => new sfValidatorPass(array('required' => false)),
+      'adress'      => new sfValidatorPass(array('required' => false)),
+      'code_postal' => new sfValidatorPass(array('required' => false)),
+      'mail'        => new sfValidatorPass(array('required' => false)),
+      'tel'         => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'description' => new sfValidatorPass(array('required' => false)),
       'website'     => new sfValidatorPass(array('required' => false)),
       'created_by'  => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('CreatedByMember'), 'column' => 'id')),
@@ -51,6 +61,11 @@ abstract class BaseAssociationFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'          => 'Number',
       'name'        => 'Text',
+      'ville'       => 'Text',
+      'adress'      => 'Text',
+      'code_postal' => 'Text',
+      'mail'        => 'Text',
+      'tel'         => 'Number',
       'description' => 'Text',
       'website'     => 'Text',
       'created_by'  => 'ForeignKey',

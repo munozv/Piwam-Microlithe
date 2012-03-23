@@ -1,10 +1,9 @@
 <?php include_stylesheets_for_form($form) ?>
 <?php include_javascripts_for_form($form) ?>
 
-<form action="<?php echo url_for('@association_' . ($form->getObject()->isNew() ? 'create' : 'update?id=' . $form->getObject()->getId())) ?>"
-      method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
+<form action="<?php echo url_for('@association_' . ($form->getObject()->isNew() ? 'create' : 'update?id=' . $form->getObject()->getId())) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
 
-    <?php if (!$form->getObject()->isNew()): ?>
+   <?php if (!$form->getObject()->isNew()): ?>
         <input type="hidden" name="sf_method" value="put" />
     <?php endif ?>
 
@@ -36,7 +35,7 @@
     <!-- Form widgets -->
 
     <tbody>
-        <?php if ($form->hasGlobalErrors()): ?>
+       <?php if ($form->hasGlobalErrors()): ?>
         <tr>
             <td colspan="2">
                 <div class="error"><?php $form->renderGlobalErrors() ?></div>
@@ -55,6 +54,29 @@
             <th><?php echo $form['website']->renderLabel() ?> :</th>
             <td><?php echo $form['website'] ?> <?php echo $form['website']->renderError() ?></td>
         </tr>
+	<tr>
+            <th><?php echo $form['adress']->renderLabel() ?> :</th>
+            <td><?php echo $form['adress'] ?> <?php echo $form['adress']->renderError() ?></td>
+ 	</tr>
+	<tr>
+            <th><?php echo $form['ville']->renderLabel() ?> :</th>
+            <td><?php echo $form['ville'] ?> <?php echo $form['ville']->renderError() ?></td>
+ 	</tr>
+	<tr>
+            <th><?php echo $form['code_postal']->renderLabel() ?> :</th>
+            <td><?php echo $form['code_postal'] ?> <?php echo $form['code_postal']->renderError() ?></td>
+ 	</tr>
+
+	<tr>
+            <th><?php echo $form['tel']->renderLabel() ?> :</th>
+            <td><?php echo $form['tel'] ?> <?php echo $form['tel']->renderError() ?></td>
+ 	</tr>
+
+
+	<tr>
+            <th><?php echo $form['mail']->renderLabel() ?> :</th>
+            <td><?php echo $form['mail'] ?> <?php echo $form['mail']->renderError() ?></td>
+ 	</tr>
 
 
         <!-- Display a checkbox to warn Piwam's author -->
@@ -68,4 +90,3 @@
 
     </tbody>
 </table>
-</form>

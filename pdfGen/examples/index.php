@@ -1,5 +1,6 @@
 <?php
 echo '<'.'?'.'xml version="1.0" encoding="UTF-8"'.'?'.'>';
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -16,10 +17,14 @@ echo '<'.'?'.'xml version="1.0" encoding="UTF-8"'.'?'.'>';
 <body>
 
 <h1>pdf piwam first release</h1>
+<?php 
 
+echo 'all right';
+echo 'ville = '.$_POST['ville']; 
+?>
 <ol>
 <li>Simple PDF with default Header and Footer: [<a href="pdf.php" title="PDF [new window]" target="_blank">PDF</a>]</li>
 </ol>
-
+    
 </body>
 </html>

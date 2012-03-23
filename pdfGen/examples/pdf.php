@@ -79,6 +79,7 @@ $pdf->SetFont('dejavusans', '', 14, '', true);
 // This method has several options, check the source code documentation for more information.
 $pdf->AddPage();
 
+
 // Set some content to print
 $html = <<<EOD
   Ceci est un devis de notre part concernant votre implication dans notre entreprise, Veuillez racker svp, et nous remplir les poches.

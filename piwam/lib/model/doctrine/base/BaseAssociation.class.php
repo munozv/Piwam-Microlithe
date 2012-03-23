@@ -9,6 +9,11 @@ Doctrine_Manager::getInstance()->bindComponent('Association', 'doctrine');
  * 
  * @property integer $id
  * @property string $name
+ * @property string $ville
+ * @property string $adress
+ * @property string $code_postal
+ * @property string $mail
+ * @property integer $tel
  * @property string $description
  * @property string $website
  * @property integer $created_by
@@ -27,6 +32,11 @@ Doctrine_Manager::getInstance()->bindComponent('Association', 'doctrine');
  * 
  * @method integer             getId()              Returns the current record's "id" value
  * @method string              getName()            Returns the current record's "name" value
+ * @method string              getVille()           Returns the current record's "ville" value
+ * @method string              getAdress()          Returns the current record's "adress" value
+ * @method string              getCodePostal()      Returns the current record's "code_postal" value
+ * @method string              getMail()            Returns the current record's "mail" value
+ * @method integer             getTel()             Returns the current record's "tel" value
  * @method string              getDescription()     Returns the current record's "description" value
  * @method string              getWebsite()         Returns the current record's "website" value
  * @method integer             getCreatedBy()       Returns the current record's "created_by" value
@@ -44,6 +54,11 @@ Doctrine_Manager::getInstance()->bindComponent('Association', 'doctrine');
  * @method Doctrine_Collection getMemberExtraRow()  Returns the current record's "MemberExtraRow" collection
  * @method Association         setId()              Sets the current record's "id" value
  * @method Association         setName()            Sets the current record's "name" value
+ * @method Association         setVille()           Sets the current record's "ville" value
+ * @method Association         setAdress()          Sets the current record's "adress" value
+ * @method Association         setCodePostal()      Sets the current record's "code_postal" value
+ * @method Association         setMail()            Sets the current record's "mail" value
+ * @method Association         setTel()             Sets the current record's "tel" value
  * @method Association         setDescription()     Sets the current record's "description" value
  * @method Association         setWebsite()         Sets the current record's "website" value
  * @method Association         setCreatedBy()       Sets the current record's "created_by" value
@@ -80,6 +95,30 @@ abstract class BaseAssociation extends sfDoctrineRecord
              'type' => 'string',
              'notnull' => true,
              'length' => 120,
+             ));
+        $this->hasColumn('ville', 'string', 120, array(
+             'type' => 'string',
+             'notnull' => false,
+             'length' => 120,
+             ));
+        $this->hasColumn('adress', 'string', 120, array(
+             'type' => 'string',
+             'notnull' => false,
+             'length' => 120,
+             ));
+        $this->hasColumn('code_postal', 'string', 120, array(
+             'type' => 'string',
+             'notnull' => false,
+             'length' => 120,
+             ));
+        $this->hasColumn('mail', 'string', 120, array(
+             'type' => 'string',
+             'notnull' => false,
+             'length' => 120,
+             ));
+        $this->hasColumn('tel', 'integer', 10, array(
+             'type' => 'integer',
+             'length' => 10,
              ));
         $this->hasColumn('description', 'string', 255, array(
              'type' => 'string',

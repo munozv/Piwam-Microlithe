@@ -1,0 +1,1023 @@
+Feb 07 18:19:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'login',  'action' => 'login',)
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:19:45 symfony [info] {installActions} Call "installActions->executeIndex()"
+Feb 07 18:19:45 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:19:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:19:45 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:19:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Configuration 424.57 ms (12)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Factories 345.24 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Action "install/index" 9.39 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebResponse} Send content (155 o)
+Feb 07 18:19:45 symfony [info] {sfPatternRouting} Match route "check_config" (/verification_configuration) for /verification_configuration with parameters array (  'module' => 'install',  'action' => 'checkConfig',)
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:19:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:19:45 symfony [info] {installActions} Call "installActions->executeCheckConfig()"
+Feb 07 18:19:45 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:19:45 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/checkConfigSuccess.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isCacheFolderWritable.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isLogFolderWritable.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isTrombinoscopeFolderWritable.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isDatabasesFileWritable.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpOpenSSLLoaded.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpGdLoaded.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isMemoryLimitHighEnough.php"
+Feb 07 18:19:45 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isModRewriteEnabled.php"
+Feb 07 18:19:45 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:45 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:19:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Configuration 9.28 ms (10)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Factories 17.64 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Action "install/checkConfig" 0.52 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} View "Success" for "install/checkConfig" 28.23 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isCacheFolderWritable" 0.57 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isLogFolderWritable" 0.56 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isTrombinoscopeFolderWritable" 0.57 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isDatabasesFileWritable" 0.56 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpOpenSSLLoaded" 5.62 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpGdLoaded" 0.63 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isMemoryLimitHighEnough" 0.57 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebDebugLogger} Partial "install/_isModRewriteEnabled" 0.55 ms (1)
+Feb 07 18:19:45 symfony [info] {sfWebResponse} Send content (46231 o)
+Feb 07 18:19:48 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:19:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:19:48 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:19:48 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:19:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:19:48 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:19:48 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:19:48 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:19:48 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:19:48 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:48 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:19:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:19:48 symfony [info] {sfWebDebugLogger} Configuration 4.04 ms (9)
+Feb 07 18:19:48 symfony [info] {sfWebDebugLogger} Factories 20.16 ms (1)
+Feb 07 18:19:48 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.72 ms (1)
+Feb 07 18:19:48 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 8.39 ms (1)
+Feb 07 18:19:48 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.44 ms (1)
+Feb 07 18:19:48 symfony [info] {sfWebResponse} Send content (39782 o)
+Feb 07 18:19:54 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:19:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:19:54 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:19:54 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:19:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:19:54 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:19:55 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[42000] [1049] Unknown database 'piwam-12'
+Feb 07 18:19:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 07 18:19:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:19:55 symfony [info] {sfWebDebugLogger} Configuration 12.63 ms (12)
+Feb 07 18:19:55 symfony [info] {sfWebDebugLogger} Factories 14.65 ms (1)
+Feb 07 18:19:55 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 638.50 ms (1)
+Feb 07 18:19:58 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:19:58 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:19:58 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:19:58 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:19:58 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:58 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:19:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Configuration 2.80 ms (9)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Factories 15.31 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.71 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 7.38 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.32 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebResponse} Send content (39783 o)
+Feb 07 18:19:58 symfony [info] {sfPatternRouting} Match route "check_config" (/verification_configuration) for /verification_configuration with parameters array (  'module' => 'install',  'action' => 'checkConfig',)
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:19:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:19:58 symfony [info] {installActions} Call "installActions->executeCheckConfig()"
+Feb 07 18:19:58 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:19:58 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/checkConfigSuccess.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isCacheFolderWritable.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isLogFolderWritable.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isTrombinoscopeFolderWritable.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isDatabasesFileWritable.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpOpenSSLLoaded.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpGdLoaded.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isMemoryLimitHighEnough.php"
+Feb 07 18:19:58 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isModRewriteEnabled.php"
+Feb 07 18:19:58 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:58 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:19:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:19:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Configuration 2.94 ms (9)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Factories 16.27 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Action "install/checkConfig" 0.54 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} View "Success" for "install/checkConfig" 12.71 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isCacheFolderWritable" 0.57 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isLogFolderWritable" 0.56 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isTrombinoscopeFolderWritable" 0.57 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isDatabasesFileWritable" 0.60 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpOpenSSLLoaded" 0.57 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpGdLoaded" 0.54 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isMemoryLimitHighEnough" 0.60 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebDebugLogger} Partial "install/_isModRewriteEnabled" 0.57 ms (1)
+Feb 07 18:19:58 symfony [info] {sfWebResponse} Send content (46230 o)
+Feb 07 18:20:00 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:20:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:20:00 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:20:00 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:20:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:20:00 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:20:00 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:20:00 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:20:00 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:20:00 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:20:00 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:20:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:20:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:20:00 symfony [info] {sfWebDebugLogger} Configuration 2.55 ms (9)
+Feb 07 18:20:00 symfony [info] {sfWebDebugLogger} Factories 14.36 ms (1)
+Feb 07 18:20:00 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.81 ms (1)
+Feb 07 18:20:00 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 7.74 ms (1)
+Feb 07 18:20:00 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.37 ms (1)
+Feb 07 18:20:00 symfony [info] {sfWebResponse} Send content (39783 o)
+Feb 07 18:20:05 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:20:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:20:05 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:20:05 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:20:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:20:05 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:20:05 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[42000] [1049] Unknown database 'piwam-12'
+Feb 07 18:20:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 07 18:20:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:20:05 symfony [info] {sfWebDebugLogger} Configuration 12.78 ms (12)
+Feb 07 18:20:05 symfony [info] {sfWebDebugLogger} Factories 13.81 ms (1)
+Feb 07 18:20:05 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 644.39 ms (1)
+Feb 07 18:20:09 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:20:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:20:09 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:20:09 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:20:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:20:09 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:20:09 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:20:09 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:20:09 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:20:09 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:20:09 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:20:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:20:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:20:09 symfony [info] {sfWebDebugLogger} Configuration 2.50 ms (9)
+Feb 07 18:20:09 symfony [info] {sfWebDebugLogger} Factories 13.88 ms (1)
+Feb 07 18:20:09 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.71 ms (1)
+Feb 07 18:20:09 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 7.34 ms (1)
+Feb 07 18:20:09 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.29 ms (1)
+Feb 07 18:20:09 symfony [info] {sfWebResponse} Send content (39783 o)
+Feb 07 18:23:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pwSandbox with parameters array (  'module' => 'pwSandbox',  'action' => 'index',)
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:23:23 symfony [info] {installActions} Call "installActions->executeIndex()"
+Feb 07 18:23:23 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:23:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:23:23 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:23:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Configuration 20.68 ms (13)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Factories 18.81 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Action "install/index" 8.64 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebResponse} Send content (155 o)
+Feb 07 18:23:23 symfony [info] {sfPatternRouting} Match route "check_config" (/verification_configuration) for /verification_configuration with parameters array (  'module' => 'install',  'action' => 'checkConfig',)
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:23:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:23:23 symfony [info] {installActions} Call "installActions->executeCheckConfig()"
+Feb 07 18:23:23 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:23:23 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/checkConfigSuccess.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isCacheFolderWritable.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isLogFolderWritable.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isTrombinoscopeFolderWritable.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isDatabasesFileWritable.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpOpenSSLLoaded.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpGdLoaded.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isMemoryLimitHighEnough.php"
+Feb 07 18:23:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isModRewriteEnabled.php"
+Feb 07 18:23:23 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:23:23 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:23:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:23:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Configuration 2.49 ms (9)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Factories 14.56 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Action "install/checkConfig" 0.49 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} View "Success" for "install/checkConfig" 12.78 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isCacheFolderWritable" 0.62 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isLogFolderWritable" 0.56 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isTrombinoscopeFolderWritable" 0.59 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isDatabasesFileWritable" 0.57 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpOpenSSLLoaded" 0.54 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpGdLoaded" 0.54 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isMemoryLimitHighEnough" 0.55 ms (1)
+Feb 07 18:23:23 symfony [info] {sfWebDebugLogger} Partial "install/_isModRewriteEnabled" 0.54 ms (1)
+Feb 07 18:23:24 symfony [info] {sfWebResponse} Send content (46230 o)
+Feb 07 18:23:28 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:23:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:23:28 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:23:28 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:23:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:23:28 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:23:28 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:23:28 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:23:28 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:23:28 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:23:28 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:23:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:23:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:23:28 symfony [info] {sfWebDebugLogger} Configuration 2.62 ms (9)
+Feb 07 18:23:28 symfony [info] {sfWebDebugLogger} Factories 25.85 ms (1)
+Feb 07 18:23:28 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.84 ms (1)
+Feb 07 18:23:28 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 7.79 ms (1)
+Feb 07 18:23:28 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.63 ms (1)
+Feb 07 18:23:28 symfony [info] {sfWebResponse} Send content (39783 o)
+Feb 07 18:23:34 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:23:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:23:34 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:23:34 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:23:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:23:34 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:23:34 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[42000] [1049] Unknown database 'piwam-12'
+Feb 07 18:23:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 07 18:23:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:23:34 symfony [info] {sfWebDebugLogger} Configuration 12.47 ms (12)
+Feb 07 18:23:34 symfony [info] {sfWebDebugLogger} Factories 14.13 ms (1)
+Feb 07 18:23:34 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 643.02 ms (1)
+Feb 07 18:24:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'login',  'action' => 'login',)
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:24:23 symfony [info] {installActions} Call "installActions->executeIndex()"
+Feb 07 18:24:23 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:24:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:24:23 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:24:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Configuration 3.28 ms (12)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Factories 19.10 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Action "install/index" 23.40 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebResponse} Send content (155 o)
+Feb 07 18:24:23 symfony [info] {sfPatternRouting} Match route "check_config" (/verification_configuration) for /verification_configuration with parameters array (  'module' => 'install',  'action' => 'checkConfig',)
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:24:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:24:23 symfony [info] {installActions} Call "installActions->executeCheckConfig()"
+Feb 07 18:24:23 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:24:23 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/checkConfigSuccess.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isCacheFolderWritable.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isLogFolderWritable.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isTrombinoscopeFolderWritable.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isDatabasesFileWritable.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpOpenSSLLoaded.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpGdLoaded.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isMemoryLimitHighEnough.php"
+Feb 07 18:24:23 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isModRewriteEnabled.php"
+Feb 07 18:24:23 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:24:23 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:24:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:24:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Configuration 2.80 ms (9)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Factories 18.71 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Action "install/checkConfig" 0.50 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} View "Success" for "install/checkConfig" 13.04 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isCacheFolderWritable" 0.57 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isLogFolderWritable" 0.56 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isTrombinoscopeFolderWritable" 0.57 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isDatabasesFileWritable" 0.55 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpOpenSSLLoaded" 0.54 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpGdLoaded" 0.99 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isMemoryLimitHighEnough" 0.58 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebDebugLogger} Partial "install/_isModRewriteEnabled" 0.57 ms (1)
+Feb 07 18:24:23 symfony [info] {sfWebResponse} Send content (46230 o)
+Feb 07 18:24:26 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:24:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:24:26 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:24:26 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:24:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:24:26 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:24:26 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:24:26 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:24:26 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:24:26 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:24:26 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:24:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:24:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:24:26 symfony [info] {sfWebDebugLogger} Configuration 2.50 ms (9)
+Feb 07 18:24:26 symfony [info] {sfWebDebugLogger} Factories 13.96 ms (1)
+Feb 07 18:24:26 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.74 ms (1)
+Feb 07 18:24:26 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 7.56 ms (1)
+Feb 07 18:24:26 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.38 ms (1)
+Feb 07 18:24:26 symfony [info] {sfWebResponse} Send content (39783 o)
+Feb 07 18:24:30 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:24:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:24:30 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:24:30 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:24:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:24:30 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:24:31 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[42000] [1049] Unknown database 'piwam-12'
+Feb 07 18:24:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 07 18:24:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:24:31 symfony [info] {sfWebDebugLogger} Configuration 13.03 ms (12)
+Feb 07 18:24:31 symfony [info] {sfWebDebugLogger} Factories 14.07 ms (1)
+Feb 07 18:24:31 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 635.35 ms (1)
+Feb 07 18:26:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'login',  'action' => 'login',)
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:26:30 symfony [info] {installActions} Call "installActions->executeIndex()"
+Feb 07 18:26:30 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:26:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:26:30 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/verification_configuration"
+Feb 07 18:26:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Configuration 3.29 ms (12)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Factories 15.64 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Action "install/index" 8.62 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebResponse} Send content (155 o)
+Feb 07 18:26:30 symfony [info] {sfPatternRouting} Match route "check_config" (/verification_configuration) for /verification_configuration with parameters array (  'module' => 'install',  'action' => 'checkConfig',)
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:26:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:26:30 symfony [info] {installActions} Call "installActions->executeCheckConfig()"
+Feb 07 18:26:30 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:26:30 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/checkConfigSuccess.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isCacheFolderWritable.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isLogFolderWritable.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isTrombinoscopeFolderWritable.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isDatabasesFileWritable.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpOpenSSLLoaded.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpGdLoaded.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isMemoryLimitHighEnough.php"
+Feb 07 18:26:30 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isModRewriteEnabled.php"
+Feb 07 18:26:30 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:26:30 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:26:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:26:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Configuration 2.45 ms (9)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Factories 14.14 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Action "install/checkConfig" 0.52 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} View "Success" for "install/checkConfig" 13.78 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isCacheFolderWritable" 0.54 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isLogFolderWritable" 0.54 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isTrombinoscopeFolderWritable" 0.56 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isDatabasesFileWritable" 0.55 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpOpenSSLLoaded" 0.58 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpGdLoaded" 0.58 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isMemoryLimitHighEnough" 0.61 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebDebugLogger} Partial "install/_isModRewriteEnabled" 0.56 ms (1)
+Feb 07 18:26:30 symfony [info] {sfWebResponse} Send content (46230 o)
+Feb 07 18:26:44 symfony [info] {sfPatternRouting} Match route "check_config" (/verification_configuration) for /verification_configuration with parameters array (  'module' => 'install',  'action' => 'checkConfig',)
+Feb 07 18:26:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:26:44 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:26:44 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:26:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:26:44 symfony [info] {installActions} Call "installActions->executeCheckConfig()"
+Feb 07 18:26:44 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:26:44 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/checkConfigSuccess.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isCacheFolderWritable.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isLogFolderWritable.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isTrombinoscopeFolderWritable.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isDatabasesFileWritable.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpOpenSSLLoaded.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isPhpGdLoaded.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isMemoryLimitHighEnough.php"
+Feb 07 18:26:44 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_isModRewriteEnabled.php"
+Feb 07 18:26:44 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:26:44 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:26:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:26:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Configuration 11.90 ms (10)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Factories 14.07 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Action "install/checkConfig" 0.48 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} View "Success" for "install/checkConfig" 12.80 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isCacheFolderWritable" 0.57 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isLogFolderWritable" 0.54 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isTrombinoscopeFolderWritable" 0.58 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isDatabasesFileWritable" 0.55 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpOpenSSLLoaded" 0.54 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isPhpGdLoaded" 0.61 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isMemoryLimitHighEnough" 0.59 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebDebugLogger} Partial "install/_isModRewriteEnabled" 0.65 ms (1)
+Feb 07 18:26:44 symfony [info] {sfWebResponse} Send content (46233 o)
+Feb 07 18:26:46 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:26:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:26:46 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:26:46 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:26:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:26:46 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:26:46 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:26:46 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:26:46 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:26:46 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:26:46 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:26:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:26:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:26:46 symfony [info] {sfWebDebugLogger} Configuration 2.56 ms (9)
+Feb 07 18:26:46 symfony [info] {sfWebDebugLogger} Factories 13.95 ms (1)
+Feb 07 18:26:46 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.67 ms (1)
+Feb 07 18:26:46 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 7.83 ms (1)
+Feb 07 18:26:46 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.38 ms (1)
+Feb 07 18:26:46 symfony [info] {sfWebResponse} Send content (39783 o)
+Feb 07 18:26:50 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:26:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:26:50 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:26:50 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:26:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:26:50 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_member_extra_row (id INT AUTO_INCREMENT, association_id INT NOT NULL, label VARCHAR(255) NOT NULL, description TEXT, type VARCHAR(255) NOT NULL, default_value VARCHAR(255) NOT NULL, slug VARCHAR(255) NOT NULL, parameters VARCHAR(255), required TINYINT(1) DEFAULT '0', INDEX association_id_idx (association_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_expense (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, amount DECIMAL(10, 2) NOT NULL, association_id INT NOT NULL, account_id INT NOT NULL, activity_id INT NOT NULL, date DATE NOT NULL, paid TINYINT(1) DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX account_id_idx (account_id), INDEX activity_id_idx (activity_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_income (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, amount DECIMAL(10, 2) NOT NULL, account_id INT NOT NULL, activity_id INT NOT NULL, date DATE NOT NULL, received TINYINT(1) DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX account_id_idx (account_id), INDEX activity_id_idx (activity_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_member_extra_value (row_id INT, member_id INT, value VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(row_id, member_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_activity (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, state TINYINT DEFAULT '1', association_id INT NOT NULL, created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_acl_action (id INT AUTO_INCREMENT, acl_module_id INT, label VARCHAR(255) NOT NULL, code VARCHAR(100) NOT NULL, INDEX acl_module_id_idx (acl_module_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_acl_credential (id INT AUTO_INCREMENT, member_id INT, acl_action_id INT, INDEX acl_action_id_idx (acl_action_id), INDEX member_id_idx (member_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_config_variable (id INT AUTO_INCREMENT, code VARCHAR(25) NOT NULL, category_code VARCHAR(25) NOT NULL, label VARCHAR(255) NOT NULL, description TEXT, type VARCHAR(255) NOT NULL, default_value VARCHAR(255) NOT NULL, INDEX category_code_idx (category_code), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_config_category (code VARCHAR(25), label VARCHAR(255) NOT NULL, PRIMARY KEY(code)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_due_type (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, period INT NOT NULL, amount DECIMAL(10, 2) NOT NULL, state TINYINT DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_data (id INT AUTO_INCREMENT, config_key VARCHAR(255) NOT NULL, value VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_account (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, reference VARCHAR(64) NOT NULL, state TINYINT DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_due (id INT AUTO_INCREMENT, account_id INT NOT NULL, due_type_id INT NOT NULL, member_id INT NOT NULL, date DATE NOT NULL, amount DECIMAL(10, 2) NOT NULL, created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX account_id_idx (account_id), INDEX due_type_id_idx (due_type_id), INDEX member_id_idx (member_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwampg_debt (id INT AUTO_INCREMENT, member_id INT NOT NULL, income_id INT NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX member_id_idx (member_id), INDEX income_id_idx (income_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_member (id INT AUTO_INCREMENT, lastname VARCHAR(255) NOT NULL, firstname VARCHAR(255) NOT NULL, username VARCHAR(255), password VARCHAR(255), status_id INT NOT NULL, subscription_date DATE NOT NULL, due_exempt TINYINT(1) NOT NULL, street VARCHAR(255), zipcode VARCHAR(8), city VARCHAR(255), country VARCHAR(8), picture VARCHAR(255), email VARCHAR(255), website VARCHAR(255), phone_home VARCHAR(16), phone_mobile VARCHAR(16), tutor VARCHAR(16), state TINYINT DEFAULT '1' NOT NULL, association_id INT NOT NULL, created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX status_id_idx (status_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_status (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, state TINYINT DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_association (id INT AUTO_INCREMENT, name VARCHAR(120) NOT NULL, description VARCHAR(255), website VARCHAR(255), created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_acl_module (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_config_value (config_variable_id INT, association_id INT, custom_value VARCHAR(255) NOT NULL, PRIMARY KEY(config_variable_id, association_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:26:51 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member_extra_row ADD CONSTRAINT piwam_member_extra_row_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:26:51 symfony [err] {Doctrine_Export_Exception} SQLSTATE[HY000]: General error: 1005 Can't create table 'piwam.#sql-8e4_ef' (errno: 121). Failing Query: "ALTER TABLE piwam_member_extra_row ADD CONSTRAINT piwam_member_extra_row_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE". Failing Query: ALTER TABLE piwam_member_extra_row ADD CONSTRAINT piwam_member_extra_row_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE
+Feb 07 18:26:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 07 18:26:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:26:51 symfony [info] {sfWebDebugLogger} Configuration 12.40 ms (12)
+Feb 07 18:26:51 symfony [info] {sfWebDebugLogger} Factories 14.02 ms (1)
+Feb 07 18:26:51 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 758.01 ms (1)
+Feb 07 18:26:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 07 18:35:19 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:35:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:35:19 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:35:19 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:35:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:35:19 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:35:19 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:35:19 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/configDatabaseSuccess.php"
+Feb 07 18:35:19 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/_form.php"
+Feb 07 18:35:19 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:19 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:35:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:35:19 symfony [info] {sfWebDebugLogger} Configuration 12.08 ms (10)
+Feb 07 18:35:19 symfony [info] {sfWebDebugLogger} Factories 14.60 ms (1)
+Feb 07 18:35:19 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 2.90 ms (1)
+Feb 07 18:35:19 symfony [info] {sfWebDebugLogger} View "Success" for "install/configDatabase" 8.34 ms (1)
+Feb 07 18:35:19 symfony [info] {sfWebDebugLogger} Partial "install/_form" 2.57 ms (1)
+Feb 07 18:35:19 symfony [info] {sfWebResponse} Send content (39673 o)
+Feb 07 18:35:28 symfony [info] {sfPatternRouting} Match route "config_db" (/config_database) for /config_database with parameters array (  'module' => 'install',  'action' => 'configDatabase',)
+Feb 07 18:35:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:35:28 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:35:28 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:35:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:35:28 symfony [info] {installActions} Call "installActions->executeConfigDatabase()"
+Feb 07 18:35:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:28 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_member_extra_row (id INT AUTO_INCREMENT, association_id INT NOT NULL, label VARCHAR(255) NOT NULL, description TEXT, type VARCHAR(255) NOT NULL, default_value VARCHAR(255) NOT NULL, slug VARCHAR(255) NOT NULL, parameters VARCHAR(255), required TINYINT(1) DEFAULT '0', INDEX association_id_idx (association_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:28 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_expense (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, amount DECIMAL(10, 2) NOT NULL, association_id INT NOT NULL, account_id INT NOT NULL, activity_id INT NOT NULL, date DATE NOT NULL, paid TINYINT(1) DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX account_id_idx (account_id), INDEX activity_id_idx (activity_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:28 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_income (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, amount DECIMAL(10, 2) NOT NULL, account_id INT NOT NULL, activity_id INT NOT NULL, date DATE NOT NULL, received TINYINT(1) DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX account_id_idx (account_id), INDEX activity_id_idx (activity_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:28 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_member_extra_value (row_id INT, member_id INT, value VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(row_id, member_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_activity (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, state TINYINT DEFAULT '1', association_id INT NOT NULL, created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_acl_action (id INT AUTO_INCREMENT, acl_module_id INT, label VARCHAR(255) NOT NULL, code VARCHAR(100) NOT NULL, INDEX acl_module_id_idx (acl_module_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_acl_credential (id INT AUTO_INCREMENT, member_id INT, acl_action_id INT, INDEX acl_action_id_idx (acl_action_id), INDEX member_id_idx (member_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_config_variable (id INT AUTO_INCREMENT, code VARCHAR(25) NOT NULL, category_code VARCHAR(25) NOT NULL, label VARCHAR(255) NOT NULL, description TEXT, type VARCHAR(255) NOT NULL, default_value VARCHAR(255) NOT NULL, INDEX category_code_idx (category_code), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_config_category (code VARCHAR(25), label VARCHAR(255) NOT NULL, PRIMARY KEY(code)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_due_type (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, period INT NOT NULL, amount DECIMAL(10, 2) NOT NULL, state TINYINT DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_data (id INT AUTO_INCREMENT, config_key VARCHAR(255) NOT NULL, value VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_account (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, reference VARCHAR(64) NOT NULL, state TINYINT DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_due (id INT AUTO_INCREMENT, account_id INT NOT NULL, due_type_id INT NOT NULL, member_id INT NOT NULL, date DATE NOT NULL, amount DECIMAL(10, 2) NOT NULL, created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX account_id_idx (account_id), INDEX due_type_id_idx (due_type_id), INDEX member_id_idx (member_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwampg_debt (id INT AUTO_INCREMENT, member_id INT NOT NULL, income_id INT NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX member_id_idx (member_id), INDEX income_id_idx (income_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_member (id INT AUTO_INCREMENT, lastname VARCHAR(255) NOT NULL, firstname VARCHAR(255) NOT NULL, username VARCHAR(255), password VARCHAR(255), status_id INT NOT NULL, subscription_date DATE NOT NULL, due_exempt TINYINT(1) NOT NULL, street VARCHAR(255), zipcode VARCHAR(8), city VARCHAR(255), country VARCHAR(8), picture VARCHAR(255), email VARCHAR(255), website VARCHAR(255), phone_home VARCHAR(16), phone_mobile VARCHAR(16), tutor VARCHAR(16), state TINYINT DEFAULT '1' NOT NULL, association_id INT NOT NULL, created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX status_id_idx (status_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_status (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, association_id INT NOT NULL, state TINYINT DEFAULT '1', created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX association_id_idx (association_id), INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_association (id INT AUTO_INCREMENT, name VARCHAR(120) NOT NULL, description VARCHAR(255), website VARCHAR(255), created_by INT, updated_by INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX created_by_idx (created_by), INDEX updated_by_idx (updated_by), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_acl_module (id INT AUTO_INCREMENT, label VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : CREATE TABLE piwam_config_value (config_variable_id INT, association_id INT, custom_value VARCHAR(255) NOT NULL, PRIMARY KEY(config_variable_id, association_id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = INNODB - ()
+Feb 07 18:35:30 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member_extra_row ADD CONSTRAINT piwam_member_extra_row_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:30 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_expense ADD CONSTRAINT piwam_expense_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:30 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_expense ADD CONSTRAINT piwam_expense_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:30 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_expense ADD CONSTRAINT piwam_expense_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:30 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_expense ADD CONSTRAINT piwam_expense_activity_id_piwam_activity_id FOREIGN KEY (activity_id) REFERENCES piwam_activity(id) ON DELETE CASCADE - ()
+Feb 07 18:35:30 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_expense ADD CONSTRAINT piwam_expense_account_id_piwam_account_id FOREIGN KEY (account_id) REFERENCES piwam_account(id) ON DELETE CASCADE - ()
+Feb 07 18:35:31 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_income ADD CONSTRAINT piwam_income_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:31 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_income ADD CONSTRAINT piwam_income_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:31 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_income ADD CONSTRAINT piwam_income_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:31 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_income ADD CONSTRAINT piwam_income_activity_id_piwam_activity_id FOREIGN KEY (activity_id) REFERENCES piwam_activity(id) ON DELETE CASCADE - ()
+Feb 07 18:35:31 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_income ADD CONSTRAINT piwam_income_account_id_piwam_account_id FOREIGN KEY (account_id) REFERENCES piwam_account(id) ON DELETE CASCADE - ()
+Feb 07 18:35:31 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member_extra_value ADD CONSTRAINT piwam_member_extra_value_row_id_piwam_member_extra_row_id FOREIGN KEY (row_id) REFERENCES piwam_member_extra_row(id) ON DELETE CASCADE - ()
+Feb 07 18:35:32 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member_extra_value ADD CONSTRAINT piwam_member_extra_value_member_id_piwam_member_id FOREIGN KEY (member_id) REFERENCES piwam_member(id) ON DELETE CASCADE - ()
+Feb 07 18:35:32 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_activity ADD CONSTRAINT piwam_activity_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:32 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_activity ADD CONSTRAINT piwam_activity_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:32 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_activity ADD CONSTRAINT piwam_activity_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:32 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_acl_action ADD CONSTRAINT piwam_acl_action_acl_module_id_piwam_acl_module_id FOREIGN KEY (acl_module_id) REFERENCES piwam_acl_module(id) ON DELETE CASCADE - ()
+Feb 07 18:35:32 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_acl_credential ADD CONSTRAINT piwam_acl_credential_member_id_piwam_member_id FOREIGN KEY (member_id) REFERENCES piwam_member(id) ON DELETE CASCADE - ()
+Feb 07 18:35:33 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_acl_credential ADD CONSTRAINT piwam_acl_credential_acl_action_id_piwam_acl_action_id FOREIGN KEY (acl_action_id) REFERENCES piwam_acl_action(id) ON DELETE CASCADE - ()
+Feb 07 18:35:33 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_config_variable ADD CONSTRAINT piwam_config_variable_category_code_piwam_config_category_code FOREIGN KEY (category_code) REFERENCES piwam_config_category(code) ON DELETE CASCADE - ()
+Feb 07 18:35:33 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due_type ADD CONSTRAINT piwam_due_type_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:33 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due_type ADD CONSTRAINT piwam_due_type_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:33 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due_type ADD CONSTRAINT piwam_due_type_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:33 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_account ADD CONSTRAINT piwam_account_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:34 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_account ADD CONSTRAINT piwam_account_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:34 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_account ADD CONSTRAINT piwam_account_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:34 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due ADD CONSTRAINT piwam_due_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:34 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due ADD CONSTRAINT piwam_due_member_id_piwam_member_id FOREIGN KEY (member_id) REFERENCES piwam_member(id) ON DELETE CASCADE - ()
+Feb 07 18:35:34 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due ADD CONSTRAINT piwam_due_due_type_id_piwam_due_type_id FOREIGN KEY (due_type_id) REFERENCES piwam_due_type(id) ON DELETE CASCADE - ()
+Feb 07 18:35:34 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due ADD CONSTRAINT piwam_due_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:35 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_due ADD CONSTRAINT piwam_due_account_id_piwam_account_id FOREIGN KEY (account_id) REFERENCES piwam_account(id) ON DELETE CASCADE - ()
+Feb 07 18:35:35 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwampg_debt ADD CONSTRAINT piwampg_debt_member_id_piwam_member_id FOREIGN KEY (member_id) REFERENCES piwam_member(id) ON DELETE CASCADE - ()
+Feb 07 18:35:35 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwampg_debt ADD CONSTRAINT piwampg_debt_income_id_piwam_income_id FOREIGN KEY (income_id) REFERENCES piwam_income(id) ON DELETE CASCADE - ()
+Feb 07 18:35:35 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member ADD CONSTRAINT piwam_member_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:35 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member ADD CONSTRAINT piwam_member_status_id_piwam_status_id FOREIGN KEY (status_id) REFERENCES piwam_status(id) ON DELETE CASCADE - ()
+Feb 07 18:35:35 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member ADD CONSTRAINT piwam_member_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:35 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_member ADD CONSTRAINT piwam_member_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:36 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_status ADD CONSTRAINT piwam_status_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:36 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_status ADD CONSTRAINT piwam_status_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:36 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_status ADD CONSTRAINT piwam_status_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:36 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_association ADD CONSTRAINT piwam_association_updated_by_piwam_member_id FOREIGN KEY (updated_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:36 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_association ADD CONSTRAINT piwam_association_created_by_piwam_member_id FOREIGN KEY (created_by) REFERENCES piwam_member(id) ON DELETE SET NULL - ()
+Feb 07 18:35:36 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_config_value ADD CONSTRAINT piwam_config_value_config_variable_id_piwam_config_variable_id FOREIGN KEY (config_variable_id) REFERENCES piwam_config_variable(id) ON DELETE CASCADE - ()
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Mysql} exec : ALTER TABLE piwam_config_value ADD CONSTRAINT piwam_config_value_association_id_piwam_association_id FOREIGN KEY (association_id) REFERENCES piwam_association(id) ON DELETE CASCADE - ()
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Mysql} exec : DELETE FROM piwam_config_variable - ()
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Mysql} exec : DELETE FROM piwam_data - ()
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Mysql} exec : DELETE FROM piwam_config_category - ()
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_category (label, code) VALUES (?, ?) - (Affichage, affichage)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_category (label, code) VALUES (?, ?) - (Mailing, mailing)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_category (label, code) VALUES (?, ?) - (Services, services)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (address, mailing, Adresse expéditeur, Les emails envoyés apparaîtront comme expédiés avec cette adresse., EMAIL, info@piwam.org)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (method, mailing, Méthode, Méthode avec laquelle seront envoyés les e-mails, {mail,smtp,gmail,sendmail}, mail)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (gmail_username, mailing, Gmail: Identifiant, Adresse GMail dans le cadre d'un envoi avec GMail, EMAIL, )
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (gmail_password, mailing, GMail: Password, Mot de passe pour envoyer les mails via GMail, VARCHAR, )
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (smtp_server, mailing, SMTP: Serveur, Serveur SMTP utilisé pour l'envoi de mails, VARCHAR, )
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (smtp_username, mailing, SMTP: Identifiant, Identifiant pour se connecter au serveur SMTP, VARCHAR, )
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (smtp_password, mailing, SMTP: Mot de passe, Mot de passe utilisé pour se connecter au serveur SMTP., VARCHAR, )
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (sendmail_path, mailing, Sendmail, Accès au binaire Sendmail, VARCHAR, /usr/bin/sendmail)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (users_by_page, affichage, Membres par page, Nombre de membres à afficher par page dans le listing., INTEGER, 20)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_config_variable (code, category_code, label, description, type, default_value) VALUES (?, ?, ?, ?, ?, ?) - (googlemap_key, services, Clé Google Map, Clé utilisée pour accéder à Google Map. Générez la votre sur http://code.google.com/intl/fr-FR/apis/maps/signup.html., VARCHAR, ABQIAAAAL8IvKFhg9nRCwpMHeoYEKhQu6C5tfcTOznQAfibWXRksA7VQJxQAvTbET15fVW6RQnHsk3BmZqGKLw)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_data (config_key, value) VALUES (?, ?) - (dbversion, 1034)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Mysql} exec : DELETE FROM piwam_acl_action - ()
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Mysql} exec : DELETE FROM piwam_acl_module - ()
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Association)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Membre)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Compte)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Activité)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Dépense)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Recette)
+Feb 07 18:35:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Cotisations)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Statuts)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_module (label) VALUES (?) - (Piwam)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (1, Éditer et configurer l'association, edit_association)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (1, Utiliser l'outil de mailing, mailing)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (1, Utiliser l'outil d'export, export)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (1, Voir les bilans, balance)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (4, Enregistrer une activité, add_activity)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (4, Éditer une activité, edit_activity)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (4, Supprimer une activité, del_activity)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (4, Lister les activités, list_activity)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (4, Voir les détails d'une activités, show_activity)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (2, Enregistrer un membre, add_member)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (2, Éditer un membre, edit_member)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (2, Supprimer un membre, del_member)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (2, Lister les membres, list_member)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (2, Afficher les détails d'un membre, show_member)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (8, Ajouter un statut, add_status)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (8, Éditer un statut, edit_status)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (8, Supprimer un statut, del_status)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (8, Lister les statuts, list_status)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (7, Enregistrer une cotisation, add_due)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (7, Éditer une cotisation, edit_due)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (7, Supprimer une cotisation, del_due)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (7, Lister les cotisations, list_due)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (7, Gérer les types de cotisations, config_dues)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (3, Enregistrer un compte, add_account)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (3, Éditer un compte, edit_account)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (3, Supprimer un compte, del_account)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (3, Lister les comptes, list_account)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (6, Enregistrer une recette, add_income)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (6, Éditer une recette, edit_income)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (6, Supprimer une recette, del_income)
+Feb 07 18:35:38 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (6, Lister les recettes, list_income)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (5, Enregistrer une dépense, add_expense)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (5, Éditer une dépense, edit_expense)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (5, Supprimer une dépense, del_expense)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (5, Lister les dépenses, list_expense)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (2, Gérer les droits, edit_acl)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (9, Mettre à jour Piwam, update_piwam)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (9, Éditer les préférences, edit_piwam_preferences)
+Feb 07 18:35:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_action (acl_module_id, label, code) VALUES (?, ?, ?) - (2, Ajouter des champs aux fiches membres, config_member)
+Feb 07 18:35:39 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/fin_installation"
+Feb 07 18:35:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:35:39 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/fin_installation"
+Feb 07 18:35:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} Configuration 12.25 ms (12)
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} Factories 13.87 ms (1)
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} Action "install/configDatabase" 11425.46 ms (1)
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.97 ms (132)
+Feb 07 18:35:39 symfony [info] {sfWebResponse} Send content (145 o)
+Feb 07 18:35:39 symfony [info] {sfPatternRouting} Match route "install_success" (/fin_installation) for /fin_installation with parameters array (  'module' => 'install',  'action' => 'end',)
+Feb 07 18:35:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:35:39 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:35:39 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:35:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:35:39 symfony [info] {installActions} Call "installActions->executeEnd()"
+Feb 07 18:35:39 symfony [info] {installActions} Change layout to "no_menu"
+Feb 07 18:35:39 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/install/templates/endSuccess.php"
+Feb 07 18:35:39 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:39 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:35:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} Configuration 330.37 ms (9)
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} Factories 200.19 ms (1)
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} Action "install/end" 0.31 ms (1)
+Feb 07 18:35:39 symfony [info] {sfWebDebugLogger} View "Success" for "install/end" 11.99 ms (1)
+Feb 07 18:35:39 symfony [info] {sfWebResponse} Send content (35135 o)
+Feb 07 18:35:42 symfony [info] {sfPatternRouting} Match route "association_new" (/association/nouvelle) for /association/nouvelle with parameters array (  'module' => 'association',  'action' => 'new',)
+Feb 07 18:35:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:35:42 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:35:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:42 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:35:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:35:42 symfony [info] {associationActions} Call "associationActions->executeNew()"
+Feb 07 18:35:42 symfony [info] {associationActions} Change layout to "no_menu"
+Feb 07 18:35:42 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/association/templates/newSuccess.php"
+Feb 07 18:35:42 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/association/templates/_form.php"
+Feb 07 18:35:42 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:42 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:35:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:35:42 symfony [info] {sfWebDebugLogger} Configuration 59.13 ms (11)
+Feb 07 18:35:42 symfony [info] {sfWebDebugLogger} Factories 17.26 ms (1)
+Feb 07 18:35:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 07 18:35:42 symfony [info] {sfWebDebugLogger} Action "association/new" 12.89 ms (1)
+Feb 07 18:35:42 symfony [info] {sfWebDebugLogger} View "Success" for "association/new" 14.31 ms (1)
+Feb 07 18:35:42 symfony [info] {sfWebDebugLogger} Partial "association/_form" 3.58 ms (1)
+Feb 07 18:35:42 symfony [info] {sfWebResponse} Send content (42049 o)
+Feb 07 18:35:51 symfony [info] {sfPatternRouting} Match route "association_create" (/association/creation) for /association/creation with parameters array (  'module' => 'association',  'action' => 'create',)
+Feb 07 18:35:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:35:51 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:51 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:35:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:35:51 symfony [info] {associationActions} Call "associationActions->executeCreate()"
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_association (name, description, website, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (toto, test , , 2012-02-07 18:35:51, 2012-02-07 18:35:51)
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_status (state, association_id, label, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (1, 1, Président, 2012-02-07 18:35:51, 2012-02-07 18:35:51)
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_status (state, association_id, label, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (1, 1, Trésorier, 2012-02-07 18:35:51, 2012-02-07 18:35:51)
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_status (state, association_id, label, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (1, 1, Secrétaire, 2012-02-07 18:35:51, 2012-02-07 18:35:51)
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_status (state, association_id, label, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (1, 1, Membre actif, 2012-02-07 18:35:51, 2012-02-07 18:35:51)
+Feb 07 18:35:51 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_status (state, association_id, label, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (1, 1, Membre d'honneur, 2012-02-07 18:35:51, 2012-02-07 18:35:51)
+Feb 07 18:35:52 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_activity (state, label, association_id, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (1, Fonctionnement général de l'association, 1, 2012-02-07 18:35:52, 2012-02-07 18:35:52)
+Feb 07 18:35:52 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_account (state, association_id, label, reference, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?) - (1, 1, Caisse de monnaie, CAISSE_MONNAIE, 2012-02-07 18:35:52, 2012-02-07 18:35:52)
+Feb 07 18:35:52 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/register_first_member"
+Feb 07 18:35:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:35:52 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/register_first_member"
+Feb 07 18:35:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Configuration 2.47 ms (9)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Factories 14.92 ms (1)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (10)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Action "association/create" 396.75 ms (1)
+Feb 07 18:35:52 symfony [info] {sfWebResponse} Send content (150 o)
+Feb 07 18:35:52 symfony [info] {sfPatternRouting} Match route "register_first_member" (/register_first_member) for /register_first_member with parameters array (  'module' => 'member',  'action' => 'newfirst',)
+Feb 07 18:35:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:35:52 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:35:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:35:52 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:35:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:35:52 symfony [info] {memberActions} Call "memberActions->executeNewfirst()"
+Feb 07 18:35:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.association_id AS p__association_id, p.label AS p__label, p.description AS p__description, p.type AS p__type, p.default_value AS p__default_value, p.slug AS p__slug, p.parameters AS p__parameters, p.required AS p__required FROM piwam_member_extra_row p WHERE (p.association_id = ?) ORDER BY p.id DESC - (1)
+Feb 07 18:35:52 symfony [info] {memberActions} Change layout to "no_menu"
+Feb 07 18:35:52 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/templates/newfirstSuccess.php"
+Feb 07 18:35:52 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/templates/_form.php"
+Feb 07 18:35:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.label AS p__label, p.association_id AS p__association_id, p.state AS p__state, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_status p WHERE (p.association_id = ? AND p.state = ?) ORDER BY p.label ASC - (1, 1)
+Feb 07 18:35:52 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:52 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:35:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:35:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Configuration 22.63 ms (11)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Factories 14.32 ms (1)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (4)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Action "member/newfirst" 43.52 ms (1)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} View "Success" for "member/newfirst" 40.99 ms (1)
+Feb 07 18:35:52 symfony [info] {sfWebDebugLogger} Partial "member/_form" 29.89 ms (1)
+Feb 07 18:35:52 symfony [info] {sfWebResponse} Send content (62745 o)
+Feb 07 18:36:05 symfony [info] {sfPatternRouting} Match route "member_first" (/membre/premier_membre) for /membre/premier_membre with parameters array (  'module' => 'member',  'action' => 'firstcreate',)
+Feb 07 18:36:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:36:05 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:05 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:36:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:36:05 symfony [info] {memberActions} Call "memberActions->executeFirstcreate()"
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.association_id AS p__association_id, p.label AS p__label, p.description AS p__description, p.type AS p__type, p.default_value AS p__default_value, p.slug AS p__slug, p.parameters AS p__parameters, p.required AS p__required FROM piwam_member_extra_row p WHERE (p.association_id = ?) ORDER BY p.id DESC - (1)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM piwam_status p WHERE p.id = ? - (4)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.lastname AS p__lastname, p.firstname AS p__firstname, p.username AS p__username, p.password AS p__password, p.status_id AS p__status_id, p.subscription_date AS p__subscription_date, p.due_exempt AS p__due_exempt, p.street AS p__street, p.zipcode AS p__zipcode, p.city AS p__city, p.country AS p__country, p.picture AS p__picture, p.email AS p__email, p.website AS p__website, p.phone_home AS p__phone_home, p.phone_mobile AS p__phone_mobile, p.tutor AS p__tutor, p.state AS p__state, p.association_id AS p__association_id, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_member p WHERE (p.username = ?) - (toto)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_member (state, association_id, lastname, firstname, username, password, status_id, subscription_date, zipcode, country, email, website, phone_home, phone_mobile, tutor, due_exempt, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (1, 1, toto, toto, toto, 0b9c2625dc21ef05f6ad4ddf47c5f203837aa32c, 4, 2012-02-07, , FR, , , , , , 0, 2012-02-07 18:36:05, 2012-02-07 18:36:05)
+Feb 07 18:36:05 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/actions/actions.class.php on line 596 (Undefined index: extra_rows)
+Feb 07 18:36:05 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/actions/actions.class.php on line 598 (Invalid argument supplied for foreach())
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.lastname AS p__lastname, p.firstname AS p__firstname, p.username AS p__username, p.password AS p__password, p.status_id AS p__status_id, p.subscription_date AS p__subscription_date, p.due_exempt AS p__due_exempt, p.street AS p__street, p.zipcode AS p__zipcode, p.city AS p__city, p.country AS p__country, p.picture AS p__picture, p.email AS p__email, p.website AS p__website, p.phone_home AS p__phone_home, p.phone_mobile AS p__phone_mobile, p.tutor AS p__tutor, p.state AS p__state, p.association_id AS p__association_id, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_member p WHERE (p.id = ?) LIMIT 1 - (1)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id FROM piwam_association p WHERE (p.id = ?) - (1)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.website AS p__website, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_association p WHERE (p.id = ?) LIMIT 1 - (1)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE piwam_association SET created_by = ?, updated_at = ? WHERE id = ? - (1, 2012-02-07 18:36:05, 1)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p - ()
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_association)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 1)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (mailing)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 2)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (export)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 3)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (balance)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 4)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (add_activity)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 5)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_activity)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 6)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (del_activity)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 7)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (list_activity)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 8)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (show_activity)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 9)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (add_member)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 10)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_member)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 11)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (del_member)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 12)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (list_member)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 13)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (show_member)
+Feb 07 18:36:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 14)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (add_status)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 15)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_status)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 16)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (del_status)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 17)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (list_status)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 18)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (add_due)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 19)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_due)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 20)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (del_due)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 21)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (list_due)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 22)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (config_dues)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 23)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (add_account)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 24)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_account)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 25)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (del_account)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 26)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (list_account)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 27)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (add_income)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 28)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_income)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 29)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (del_income)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 30)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (list_income)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 31)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (add_expense)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 32)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_expense)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 33)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (del_expense)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 34)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (list_expense)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 35)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_acl)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 36)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (update_piwam)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 37)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (edit_piwam_preferences)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 38)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.acl_module_id AS p__acl_module_id, p.label AS p__label, p.code AS p__code FROM piwam_acl_action p WHERE (p.code = ?) - (config_member)
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO piwam_acl_credential (member_id, acl_action_id) VALUES (?, ?) - (1, 39)
+Feb 07 18:36:06 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/membre/inscription_finie"
+Feb 07 18:36:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:36:06 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/membre/inscription_finie"
+Feb 07 18:36:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Configuration 2.78 ms (9)
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Factories 14.57 ms (1)
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.54 ms (89)
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Action "member/firstcreate" 1496.36 ms (1)
+Feb 07 18:36:06 symfony [info] {sfWebResponse} Send content (153 o)
+Feb 07 18:36:06 symfony [info] {sfPatternRouting} Match route "member_endregistration" (/membre/inscription_finie) for /membre/inscription_finie with parameters array (  'module' => 'member',  'action' => 'endregistration',)
+Feb 07 18:36:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:36:06 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:06 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:36:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:36:06 symfony [info] {memberActions} Call "memberActions->executeEndregistration()"
+Feb 07 18:36:06 symfony [info] {memberActions} Change layout to "no_menu"
+Feb 07 18:36:06 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/templates/endregistrationSuccess.php"
+Feb 07 18:36:06 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:36:06 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/no_menu.php"
+Feb 07 18:36:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:36:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Configuration 2.76 ms (10)
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Factories 14.18 ms (1)
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} Action "member/endregistration" 0.31 ms (1)
+Feb 07 18:36:06 symfony [info] {sfWebDebugLogger} View "Success" for "member/endregistration" 5.23 ms (1)
+Feb 07 18:36:06 symfony [info] {sfWebResponse} Send content (36508 o)
+Feb 07 18:36:09 symfony [info] {sfPatternRouting} Match route "login" (/identification) for /identification with parameters array (  'module' => 'login',  'action' => 'login',)
+Feb 07 18:36:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:36:09 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:09 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:36:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:36:09 symfony [info] {loginActions} Call "loginActions->executeLogin()"
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_association p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_config_variable p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_member p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_status p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_account p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_due p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_due_type p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_income p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_expense p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_acl_action p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_config_variable p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_association p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_association p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_member p - ()
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.website AS p__website, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_association p LIMIT 1 - ()
+Feb 07 18:36:09 symfony [info] {loginActions} Change layout to ""
+Feb 07 18:36:09 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/login/templates/loginSuccess.php"
+Feb 07 18:36:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM piwam_member p WHERE p.association_id = ? AND p.state = ? - (1, 1)
+Feb 07 18:36:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:36:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:36:09 symfony [info] {sfWebDebugLogger} Configuration 19.28 ms (11)
+Feb 07 18:36:09 symfony [info] {sfWebDebugLogger} Factories 14.20 ms (1)
+Feb 07 18:36:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (18)
+Feb 07 18:36:09 symfony [info] {sfWebDebugLogger} Action "login/login" 52.53 ms (1)
+Feb 07 18:36:09 symfony [info] {sfWebDebugLogger} View "Success" for "login/login" 19.02 ms (1)
+Feb 07 18:36:09 symfony [info] {sfWebResponse} Send content (49249 o)
+Feb 07 18:36:14 symfony [info] {sfPatternRouting} Match route "login" (/identification) for /identification with parameters array (  'module' => 'login',  'action' => 'login',)
+Feb 07 18:36:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:36:14 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:14 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:36:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:36:14 symfony [info] {loginActions} Call "loginActions->executeLogin()"
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_association p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_config_variable p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_member p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_status p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_account p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_due p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_due_type p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_income p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_expense p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_acl_action p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_config_variable p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_association p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_association p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM piwam_member p - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.website AS p__website, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_association p LIMIT 1 - ()
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id FROM piwam_member p WHERE (p.username = ? AND p.password = ? AND p.state = ?) LIMIT 1 - (toto, 0b9c2625dc21ef05f6ad4ddf47c5f203837aa32c, 1)
+Feb 07 18:36:14 symfony [info] {myUser} User is authenticated
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.lastname AS p__lastname, p.firstname AS p__firstname, p.username AS p__username, p.password AS p__password, p.status_id AS p__status_id, p.subscription_date AS p__subscription_date, p.due_exempt AS p__due_exempt, p.street AS p__street, p.zipcode AS p__zipcode, p.city AS p__city, p.country AS p__country, p.picture AS p__picture, p.email AS p__email, p.website AS p__website, p.phone_home AS p__phone_home, p.phone_mobile AS p__phone_mobile, p.tutor AS p__tutor, p.state AS p__state, p.association_id AS p__association_id, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_member p WHERE (p.id = ?) LIMIT 1 - (1)
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.website AS p__website, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_association p WHERE (p.id = ?) - (1)
+Feb 07 18:36:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.member_id AS p__member_id, p2.id AS p2__id, p2.code AS p2__code FROM piwam_acl_credential p LEFT JOIN piwam_acl_action p2 ON p.acl_action_id = p2.id WHERE (p.member_id = ?) - (1)
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_association"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "mailing"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "export"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "balance"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "add_activity"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_activity"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "del_activity"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "list_activity"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "show_activity"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "add_member"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_member"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "del_member"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "list_member"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "show_member"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "add_status"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_status"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "del_status"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "list_status"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "add_due"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_due"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "del_due"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "list_due"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "config_dues"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "add_account"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_account"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "del_account"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "list_account"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "add_income"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_income"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "del_income"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "list_income"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "add_expense"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_expense"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "del_expense"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "list_expense"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_acl"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "update_piwam"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "edit_piwam_preferences"
+Feb 07 18:36:15 symfony [info] {myUser} Add credential(s) "config_member"
+Feb 07 18:36:15 symfony [info] {sfFrontWebController} Redirect to "http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/membres"
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send header "Location: http://localhost/Piwam-Microlithe/piwam/web/front_dev.php/membres"
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send cookie "Piwam": "1"
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Configuration 2.44 ms (9)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Factories 13.77 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.14 ms (21)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Action "login/login" 110.72 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send content (136 o)
+Feb 07 18:36:15 symfony [info] {sfPatternRouting} Match route "members_list" (/membres/*) for /membres with parameters array (  'module' => 'member',  'action' => 'index',)
+Feb 07 18:36:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:36:15 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Feb 07 18:36:15 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:15 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:36:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:36:15 symfony [info] {memberActions} Call "memberActions->executeIndex()"
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.config_variable_id AS p__config_variable_id, p.association_id AS p__association_id, p.custom_value AS p__custom_value, p2.id AS p2__id, p2.code AS p2__code, p2.category_code AS p2__category_code, p2.label AS p2__label, p2.description AS p2__description, p2.type AS p2__type, p2.default_value AS p2__default_value FROM piwam_config_value p LEFT JOIN piwam_config_variable p2 ON p.config_variable_id = p2.id WHERE (p.association_id = ? AND p2.code = ?) - (1, users_by_page)
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.code AS p__code, p.category_code AS p__category_code, p.label AS p__label, p.description AS p__description, p.type AS p__type, p.default_value AS p__default_value FROM piwam_config_variable p WHERE (p.code = ?) - (users_by_page)
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM piwam_member p WHERE p.association_id = ? AND p.state = ? - (1, 1)
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.lastname AS p__lastname, p.firstname AS p__firstname, p.username AS p__username, p.password AS p__password, p.status_id AS p__status_id, p.subscription_date AS p__subscription_date, p.due_exempt AS p__due_exempt, p.street AS p__street, p.zipcode AS p__zipcode, p.city AS p__city, p.country AS p__country, p.picture AS p__picture, p.email AS p__email, p.website AS p__website, p.phone_home AS p__phone_home, p.phone_mobile AS p__phone_mobile, p.tutor AS p__tutor, p.state AS p__state, p.association_id AS p__association_id, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_member p WHERE (p.association_id = ? AND p.state = ?) - (1, 2)
+Feb 07 18:36:15 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/templates/indexSuccess.php"
+Feb 07 18:36:15 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/templates/_searchForm.php"
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.lastname AS p__lastname, p.firstname AS p__firstname, p.username AS p__username, p.password AS p__password, p.status_id AS p__status_id, p.subscription_date AS p__subscription_date, p.due_exempt AS p__due_exempt, p.street AS p__street, p.zipcode AS p__zipcode, p.city AS p__city, p.country AS p__country, p.picture AS p__picture, p.email AS p__email, p.website AS p__website, p.phone_home AS p__phone_home, p.phone_mobile AS p__phone_mobile, p.tutor AS p__tutor, p.state AS p__state, p.association_id AS p__association_id, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_member p WHERE (p.association_id = ? AND p.state = ?) ORDER BY p.lastname ASC LIMIT 20 - (1, 1)
+Feb 07 18:36:15 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/modules/member/templates/_memberRow.php"
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.account_id AS p__account_id, p.due_type_id AS p__due_type_id, p.member_id AS p__member_id, p.date AS p__date, p.amount AS p__amount, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_due p WHERE (p.member_id = ?) ORDER BY p.date DESC LIMIT 1 - (1)
+Feb 07 18:36:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.label AS p__label, p.association_id AS p__association_id, p.state AS p__state, p.created_by AS p__created_by, p.updated_by AS p__updated_by, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM piwam_status p WHERE (p.id = ?) - (4)
+Feb 07 18:36:15 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/_deleteButton.php"
+Feb 07 18:36:15 symfony [info] {sfPartialView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/_pager.php"
+Feb 07 18:36:15 symfony [info] {sfPHPView} Decorate content with "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/layout.php"
+Feb 07 18:36:15 symfony [info] {sfPHPView} Render "/var/www/html/Piwam-Microlithe/piwam/apps/front/templates/layout.php"
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Configuration 2.88 ms (10)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Factories 14.66 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (9)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Action "member/index" 38.85 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} View "Success" for "member/index" 41.29 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Partial "member/_searchForm" 4.23 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Partial "member/_memberRow" 17.08 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Partial "global/_deleteButton" 0.98 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebDebugLogger} Partial "global/_pager" 0.70 ms (1)
+Feb 07 18:36:15 symfony [info] {sfWebResponse} Send content (63629 o)
+Feb 07 18:36:24 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pwSandbox with parameters array (  'module' => 'pwSandbox',  'action' => 'index',)
+Feb 07 18:36:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:36:24 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Feb 07 18:36:24 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:36:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:36:24 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:36:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:36:24 symfony [info] {pwSandboxActions} Call "pwSandboxActions->executeIndex()"
+Feb 07 18:41:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pwSandbox with parameters array (  'module' => 'pwSandbox',  'action' => 'index',)
+Feb 07 18:41:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 07 18:41:56 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Feb 07 18:41:56 symfony [info] {sfFilterChain} Executing filter "CheckDBAvailabilityFilter"
+Feb 07 18:41:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:41:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'utf8' - ()
+Feb 07 18:41:56 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Feb 07 18:41:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 07 18:41:56 symfony [info] {pwSandboxActions} Call "pwSandboxActions->executeIndex()"

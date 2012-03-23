@@ -65,6 +65,11 @@ Association:
   columns:
     id:             { type: integer(4), primary: true, autoincrement: true }
     name:           { type: string(120), notnull: true }
+    ville:          { type: string(120), notnull: false }
+    adress:         { type: string(120), notnull: false }
+    code_postal:    { type: string(120), notnull: false }
+    mail:           { type: string(120), notnull: false }
+    tel:      	    { type: integer(10) }
     description:    { type: string(255) }
     website:        { type: string(255) }
     created_by:     { type: integer(4) }

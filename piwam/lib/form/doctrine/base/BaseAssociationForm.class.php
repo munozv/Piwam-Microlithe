@@ -17,6 +17,11 @@ abstract class BaseAssociationForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
       'name'        => new sfWidgetFormInputText(),
+      'ville'       => new sfWidgetFormInputText(),
+      'adress'      => new sfWidgetFormInputText(),
+      'code_postal' => new sfWidgetFormInputText(),
+      'mail'        => new sfWidgetFormInputText(),
+      'tel'         => new sfWidgetFormInputText(),
       'description' => new sfWidgetFormInputText(),
       'website'     => new sfWidgetFormInputText(),
       'created_by'  => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('CreatedByMember'), 'add_empty' => true)),
@@ -28,6 +33,11 @@ abstract class BaseAssociationForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'name'        => new sfValidatorString(array('max_length' => 120)),
+      'ville'       => new sfValidatorString(array('max_length' => 120, 'required' => false)),
+      'adress'      => new sfValidatorString(array('max_length' => 120, 'required' => false)),
+      'code_postal' => new sfValidatorString(array('max_length' => 120, 'required' => false)),
+      'mail'        => new sfValidatorString(array('max_length' => 120, 'required' => false)),
+      'tel'         => new sfValidatorInteger(array('required' => false)),
       'description' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'website'     => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'created_by'  => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('CreatedByMember'), 'required' => false)),
