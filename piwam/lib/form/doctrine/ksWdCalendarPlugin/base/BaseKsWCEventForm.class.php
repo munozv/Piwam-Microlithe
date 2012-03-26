@@ -23,11 +23,7 @@ abstract class BaseKsWCEventForm extends BaseFormDoctrine
       'is_all_day_event' => new sfWidgetFormInputCheckbox(),
       'color'            => new sfWidgetFormInputText(),
       'recurring_rule'   => new sfWidgetFormInputText(),
-      'people'           => new sfWidgetFormTextarea(),
-      'price'            => new sfWidgetFormInputText(),
-      'nbPlaceLeft'      => new sfWidgetFormInputText(),
-      'nbTotalPlace'     => new sfWidgetFormInputText(),
-      'activitePayee'    => new sfWidgetFormInputCheckbox(),
+      'listUser'         => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
@@ -39,11 +35,7 @@ abstract class BaseKsWCEventForm extends BaseFormDoctrine
       'is_all_day_event' => new sfValidatorBoolean(array('required' => false)),
       'color'            => new sfValidatorPass(array('required' => false)),
       'recurring_rule'   => new sfValidatorPass(array('required' => false)),
-      'people'           => new sfValidatorString(array('max_length' => 4000, 'required' => false)),
-      'price'            => new sfValidatorPass(array('required' => false)),
-      'nbPlaceLeft'      => new sfValidatorPass(array('required' => false)),
-      'nbTotalPlace'     => new sfValidatorPass(array('required' => false)),
-      'activitePayee'    => new sfValidatorBoolean(array('required' => false)),
+      'listUser'         => new sfValidatorString(array('max_length' => 8000, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('ks_wc_event[%s]');

@@ -16,4 +16,12 @@ class KsWCEventTable extends PluginKsWCEventTable
     {
         return Doctrine_Core::getTable('KsWCEvent');
     }
+    public function getListUser($id)
+    {
+      $q = Doctrine_Query::create()
+	->select('k.listUser')
+	->from('ksWCEvent k')
+	->where("k.id = ".$id);
+      return ($q->fetchOne());
+    }
 }

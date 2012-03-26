@@ -480,6 +480,15 @@ calendar:
   url:    /ksWdCalendar
   param:  { module: ksWdCalendar, action: index }
 
+listAct:
+  url:    /listAct
+  param: { module: listAct, action: index }
+
+listAct_edit:
+  url:    /listAct/edit/:id
+  param: { module: listAct, action: edit }
+
+
 # -----------------------------------------------------------------------------
 #     BILAN ACTIONS
 # -----------------------------------------------------------------------------

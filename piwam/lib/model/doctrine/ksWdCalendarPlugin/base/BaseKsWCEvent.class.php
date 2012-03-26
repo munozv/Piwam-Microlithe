@@ -12,11 +12,7 @@
  * @property boolean $is_all_day_event
  * @property varchar $color
  * @property varchar $recurring_rule
- * @property string $people
- * @property int $price
- * @property int $nbPlaceLeft
- * @property int $nbTotalPlace
- * @property boolean $activitePayee
+ * @property string $listUser
  * 
  * @method varchar   getSubject()          Returns the current record's "subject" value
  * @method string    getDescription()      Returns the current record's "description" value
@@ -25,11 +21,7 @@
  * @method boolean   getIsAllDayEvent()    Returns the current record's "is_all_day_event" value
  * @method varchar   getColor()            Returns the current record's "color" value
  * @method varchar   getRecurringRule()    Returns the current record's "recurring_rule" value
- * @method string    getPeople()           Returns the current record's "people" value
- * @method int       getPrice()            Returns the current record's "price" value
- * @method int       getNbPlaceLeft()      Returns the current record's "nbPlaceLeft" value
- * @method int       getNbTotalPlace()     Returns the current record's "nbTotalPlace" value
- * @method boolean   getActivitePayee()    Returns the current record's "activitePayee" value
+ * @method string    getListUser()         Returns the current record's "listUser" value
  * @method KsWCEvent setSubject()          Sets the current record's "subject" value
  * @method KsWCEvent setDescription()      Sets the current record's "description" value
  * @method KsWCEvent setStartTime()        Sets the current record's "start_time" value
@@ -37,11 +29,7 @@
  * @method KsWCEvent setIsAllDayEvent()    Sets the current record's "is_all_day_event" value
  * @method KsWCEvent setColor()            Sets the current record's "color" value
  * @method KsWCEvent setRecurringRule()    Sets the current record's "recurring_rule" value
- * @method KsWCEvent setPeople()           Sets the current record's "people" value
- * @method KsWCEvent setPrice()            Sets the current record's "price" value
- * @method KsWCEvent setNbPlaceLeft()      Sets the current record's "nbPlaceLeft" value
- * @method KsWCEvent setNbTotalPlace()     Sets the current record's "nbTotalPlace" value
- * @method KsWCEvent setActivitePayee()    Sets the current record's "activitePayee" value
+ * @method KsWCEvent setListUser()         Sets the current record's "listUser" value
  * 
  * @package    piwam
  * @subpackage model
@@ -83,26 +71,10 @@ abstract class BaseKsWCEvent extends sfDoctrineRecord
              'type' => 'varchar',
              'length' => 255,
              ));
-        $this->hasColumn('people', 'string', 4000, array(
+        $this->hasColumn('listUser', 'string', 8000, array(
              'type' => 'string',
              'notnull' => false,
-             'length' => 4000,
-             ));
-        $this->hasColumn('price', 'int', 4, array(
-             'type' => 'int',
-             'length' => 4,
-             ));
-        $this->hasColumn('nbPlaceLeft', 'int', 4, array(
-             'type' => 'int',
-             'length' => 4,
-             ));
-        $this->hasColumn('nbTotalPlace', 'int', 4, array(
-             'type' => 'int',
-             'length' => 4,
-             ));
-        $this->hasColumn('activitePayee', 'boolean', null, array(
-             'type' => 'boolean',
-             'default' => false,
+             'length' => 8000,
              ));
     }
 

@@ -7,8 +7,4 @@ KsWCEvent:
     is_all_day_event: {type: boolean, default: false}
     color: {type: varchar(10)}
     recurring_rule: {type: varchar(255)}
-    people: {type: string(4000), notnull: false}
-    price: {type: int(4)}
-    nbPlaceLeft: {type: int(4)}
-    nbTotalPlace: {type: int(4)}
-    activitePayee: {type: boolean, default: false}
+    listUser: {type: string(8000), notnull: false}

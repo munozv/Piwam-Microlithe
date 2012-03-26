@@ -85,45 +85,6 @@ use_stylesheets_for_form($form) ?>
           <?php echo $form['recurring_rule'] ?>
         </td>
       </tr>
-      <tr>
-  <th><?php echo $form['people']->renderRow(array(), "Inscrit ") ?></th>
-        <td>
-          <?php echo $form['people']->renderError() ?>
-
-        </td>
-      </tr>
-
-      <tr>
-  <th><?php echo $form['price']->renderRow(array(), "Prix ") ?></th>
-        <td>
-          <?php echo $form['price']->renderError() ?>
-
-        </td>
-      </tr>
-
-      <tr>
-  <th><?php echo $form['nbPlaceLeft']->renderRow(array(), "Place Restante ") ?></th>
-        <td>
-          <?php echo $form['people']->renderError() ?>
-
-        </td>
-      </tr>
-
-      <tr>
-  <th><?php echo $form['nbTotalPlace']->renderRow(array(), "Place Totale ") ?></th>
-        <td>
-          <?php echo $form['nbTotalPlace']->renderError() ?>
-
-        </td>
-      </tr>
-
-      <tr>
-  <th><?php echo $form['activitePayee']->renderRow(array(), "Payee ?") ?></th>
-        <td>
-          <?php echo $form['activitePayee']->renderError() ?>
-        </td>
-      </tr>
-
-  </tbody>
+    </tbody>
   </table>
 </form>

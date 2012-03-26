@@ -52,6 +52,14 @@ class MemberTable extends Doctrine_Table
     return ($q->execute());
   }
 
+  public function listActi()
+  {
+    $q = Doctrine_Query::create()
+      ->select('k.subject')
+      ->from('KsWCEvent k');
+    return ($q->execute());
+  }
+
   public static function getEnabledForAssociation($id)
   {
     $q = self::getQueryEnabledForAssociation($id);

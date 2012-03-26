@@ -20,11 +20,7 @@ abstract class BaseKsWCEventFormFilter extends BaseFormFilterDoctrine
       'is_all_day_event' => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'color'            => new sfWidgetFormFilterInput(),
       'recurring_rule'   => new sfWidgetFormFilterInput(),
-      'people'           => new sfWidgetFormFilterInput(),
-      'price'            => new sfWidgetFormFilterInput(),
-      'nbPlaceLeft'      => new sfWidgetFormFilterInput(),
-      'nbTotalPlace'     => new sfWidgetFormFilterInput(),
-      'activitePayee'    => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'listUser'         => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
@@ -35,11 +31,7 @@ abstract class BaseKsWCEventFormFilter extends BaseFormFilterDoctrine
       'is_all_day_event' => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'color'            => new sfValidatorPass(array('required' => false)),
       'recurring_rule'   => new sfValidatorPass(array('required' => false)),
-      'people'           => new sfValidatorPass(array('required' => false)),
-      'price'            => new sfValidatorPass(array('required' => false)),
-      'nbPlaceLeft'      => new sfValidatorPass(array('required' => false)),
-      'nbTotalPlace'     => new sfValidatorPass(array('required' => false)),
-      'activitePayee'    => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'listUser'         => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('ks_wc_event_filters[%s]');
@@ -67,11 +59,7 @@ abstract class BaseKsWCEventFormFilter extends BaseFormFilterDoctrine
       'is_all_day_event' => 'Boolean',
       'color'            => 'Text',
       'recurring_rule'   => 'Text',
-      'people'           => 'Text',
-      'price'            => 'Text',
-      'nbPlaceLeft'      => 'Text',
-      'nbTotalPlace'     => 'Text',
-      'activitePayee'    => 'Boolean',
+      'listUser'         => 'Text',
     );
   }
 }

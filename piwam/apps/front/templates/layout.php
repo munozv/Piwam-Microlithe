@@ -50,6 +50,7 @@
                 <li class="mainSection">Comptabilit&eacute;</li>
                 <li><?php echo link_to('Gestion des activit&eacute;s', '@activities_list') ?></li>
                 <li><?php echo link_to('Planning des activit&eacute;s', '@calendar') ?></li>
+                <li><?php echo link_to('Gestions des inscrits', '@listAct') ?></li>
                 <li><?php echo link_to('Gestion des comptes', '@accounts_list') ?></li>
                 <li><?php echo link_to('Gestion des d&eacute;penses', '@expenses_list') ?></li>
                 <li><?php echo link_to('Gestion des recettes', '@incomes_list') ?></li>

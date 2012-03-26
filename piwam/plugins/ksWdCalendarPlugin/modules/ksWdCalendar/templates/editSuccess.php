@@ -39,4 +39,3 @@ include_stylesheets() ;
 <h1>Edit Sf wc event</h1>
 
 <?php include_partial('form', array('form' => $form)) ?>
-
